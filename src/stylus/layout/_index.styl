@@ -235,7 +235,7 @@
 .l-center 
   margin-left auto !important
   margin-right auto !important
-  
+
 
 // fp-$x or floating point $x
 $positions = "l", "r", "t", "b"
@@ -269,73 +269,5 @@ for $x in (0..5)
     .l-{$spaces[$space]}--fp-{$x}
       {$spacing} ($x/10em) !important
 
-
-  for $value, $pos in "left" "right" "top" "bottom"
-
-    .l-mgn--{$positions[$pos]}-{$x}
-      margin-{$value} $x * 1em !important
-
-    .l-mgn--{$positions[$pos]}-fp-{$x}
-      margin-{$value} ($x/10em) !important
-
-    .l-mgn--{$positions[$pos]}-tabt-min-fp-{$x}
-      @media $medium-min
-        margin-{$value} ($x/10em) !important
-
-    .l-mgn--{$positions[$pos]}-tabt-max-fp-{$x}
-      @media $medium-max
-        margin-{$value} ($x/10em) !important
-
-    .l-mgn--{$positions[$pos]}-mobi-fp-{$x}
-      @media $small
-        margin-{$value} ($x/10em) !important
-
-    .l-mgn--{$positions[$pos]}-desk-{$x}
-      @media $large
-        margin-{$value} $x * 1em !important
-      +ie(8)
-        margin-{$value} $x * 1em !important
-
-    .l-mgn--{$positions[$pos]}-tabt-{$x}
-      @media $medium
-        margin-{$value} $x * 1em !important
-
-    .l-mgn--{$positions[$pos]}-tabt-min-{$x}
-      @media $medium-min
-        margin-{$value} $x * 1em !important
-
-    .l-mgn--{$positions[$pos]}-mobi-{$x}
-      @media $small
-        margin-{$value} $x * 1em !important
-
-    .l-pad--{$positions[$pos]}-mobi-{$x}
-      @media $small
-        padding-{$value} $x * 1em !important
-
-    .l-pad--{$positions[$pos]}-tabt-{$x}
-      @media $medium
-        padding-{$value} $x * 1em !important
-
-    .l-pad--{$positions[$pos]}-tabt-min-{$x}
-      @media $medium-min
-        padding-{$value} $x * 1em !important
-
-    .l-pad--{$positions[$pos]}-tabt-max-{$x}
-      @media $medium-max
-        padding-{$value} $x * 1em !important
-
-    .l-pad--{$positions[$pos]}-desk-{$x}
-      @media $large
-        padding-{$value} $x * 1em !important
-
-    .l-pad--{$positions[$pos]}-{$x}
-      padding-{$value} $x * 1em !important
-
-    .l-pad--{$positions[$pos]}-fp-{$x}
-      padding-{$value} ($x/10em) !important
-
-    .l-pad--{$positions[$pos]}-mobi-fp-{$x}
-      @media $small
-        padding-{$value} ($x/10em) !important
 
         

@@ -79,99 +79,99 @@ for $color, $color-index in colors()
   text-overflow ellipsis
   white-space nowrap
   overflow hidden
-  
+
 $positions = "r", "l", "c"
 for $dir, $index in right left center
   .txt--{$positions[$index]}
     text-align $dir !important
-  
+
   .txt--{$positions[$index]}-mobi
     @media $small
       text-align $dir !important
-    
+
   .txt--{$positions[$index]}-tabt
     @media $medium
       text-align $dir !important
-    
+
   .txt--{$positions[$index]}-desk
     @media $large
       text-align $dir !important
 
-  
-for $x in (0..30)
+
+for $x in (0..10)
   .txt--sz-{$x}
     font-size $x * 1em !important
-    
+
   .txt--tabt-min-sz-{$x}
     @media $medium-min
       font-size $x * 1em !important
-      
+
   .txt--tabt-min-lh-{$x}
     @media $medium-min
       line-height $x * 1em !important
-    
+
   .txt--desk-sz-{$x}
     @media $large
       font-size $x * 1em !important
-      
+
   .txt--tabt-sz-{$x}
     @media $medium
       font-size $x * 1em !important
-      
+
   .txt--mobi-sz-{$x}
     @media $small
       font-size $x * 1em !important
-      
+
   .txt--szp-{$x}
     font-size ($x/10em) !important
-      
+
   .txt--desk-szp-{$x}
     @media $large
       font-size ($x/10em) !important
-      
+
   .txt--tabt-min-szp-{$x}
     @media $medium-min
       font-size ($x/10em) !important
-      
+
   .txt--tabt-max-szp-{$x}
     @media $medium-max
       font-size ($x/10em) !important
-      
+
   .txt--mobi-lhp-{$x}
     @media $small
       font-size ($x/10em) !important
-      
+
   .txt--mobi-lhp-{$x}
     @media $small
       line-height ($x/10em) !important
-      
+
   .txt--desk-lhp-{$x}
     @media $large
       line-height ($x/10em) !important
-      
+
   .txt--tabt-min-lhp-{$x}
     @media $medium-min
       line-height ($x/10em) !important
-      
+
   .txt--tabt-max-lhp-{$x}
     @media $medium-max
       line-height ($x/10em) !important
-      
+
   .txt--mobi-lhp-{$x}
     @media $small
       line-height ($x/10em) !important
-      
+
   .txt--desk-lh-{$x}
     @media $large
       line-height $x * 1em !important
-      
+
   .txt--tabt-lh-{$x}
     @media $medium
       line-height $x * 1em !important
-       
+
   .txt--mobi-lh-{$x}
     @media $small
       line-height $x * 1em !important
-  
+
   .txt--lh-{$x}
     line-height $x * 1em !important
