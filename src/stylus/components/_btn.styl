@@ -1,0 +1,68 @@
+// Components/Modules
+//
+// Styleguide 1
+
+// Buttons
+//
+// `.c-btn`
+//
+// .c-btn--primary - Primary yellow button
+// .c-btn--primary--white - Primary white
+// .c-btn--primary--white.c-btn--download - Primary white with download icon
+// .c-btn.bg--dark-grey.has-hover.txt--white - Combine with BG styles to get various colours
+// .c-btn--secondary.l-w--100p - Full width/block button 
+//
+// Markup:
+// <button class="c-btn {$modifiers}">Hello World</button>
+//
+// Styleguide 1.1
+
+.c-btn
+  inl-block(middle)
+  appearance none
+  text-decoration none
+  cursor pointer
+  border none
+  text-align center
+  font-size 16px
+  padding 11px 40px
+  background-color transparent
+  border-radius 2px
+  a&
+    &:hover
+      lnk-formatted($col-profero-yellow)
+  &.txt--white
+    &:hover
+      color white
+      
+  &--download 
+    position relative
+    &:after
+      font-fa()
+      content '\f019'
+      padding-left 10px
+    
+  &--primary
+    background-color $col-profero-yellow
+    color white
+    &:hover
+      background-color darken($col-profero-yellow, 10%)
+    &--white 
+      color $col-profero-yellow
+      border solid 2px $col-profero-yellow
+      &:hover
+        background-color darken($col-profero-yellow, 10%)
+        border-color darken($col-profero-yellow, 10%)
+        color white
+  &--secondary
+    background-color darken($col-profero-yellow, 10%)
+    color white
+    &:hover
+      background-color $col-profero-yellow
+    &--white 
+      color darken($col-profero-yellow, 10%)
+      border solid 2px darken($col-profero-yellow, 10%)
+      &:hover
+        background-color $col-profero-yellow
+        border-color $col-profero-yellow
+        color white

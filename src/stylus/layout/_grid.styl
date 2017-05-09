@@ -1,0 +1,27 @@
+// Grid
+//
+// `.l-grid`
+//
+// .l-grid - 2 Column grid at 50% width each
+//
+// Markup:
+// <div class="l-grid">
+//   <div class="l-grid__col l-w--tabt-min-50p">
+//     <div class="bg--grey">Col 1</div>
+//   </div>
+//   <div class="l-grid__col l-w--tabt-min-50p">
+//     <div class="bg--grey">Col 2</div>
+//   </div>
+// </div>
+//
+// Styleguide 3.7
+ 
+.l-grid
+  >* 
+    padding-left 40px
+    &.l-grid__col--mobi-collapse
+      @media $small
+        padding-left 0
+      
+  &__col
+    fl()

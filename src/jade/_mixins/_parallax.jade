@@ -1,0 +1,16 @@
+mixin parallax(ops)
+  - attrs = ops.attrs || {}
+  .c-parallax
+    .c-parallax__wrapper.txt--primary-blue(data-js-bg-loader, data-background="#{paths.img}hero-1.jpg", data-bg-mobile="#{paths.img}hero-1.jpg", data-btn-next="#{paths.img}ic-angle-right.png", data-btn-prev="#{paths.img}ic-angle-left.png")&attributes(attrs)
+      .c-parallax__content
+        .c-parallax__txt.font--clio-regular
+          .c-parallax__txt__body!=ops.text
+          .c-intro__footer.l-padding-top-1
+            a.c-input.c-input--next(href='#')
+              span.txt--uppercase=view_more
+          .c-parallax__side-img
+            img(src=paths.img + 'hero-layer.png', alt='')
+      .c-parallax__content
+        .c-parallax__txt.font--clio-regular
+          h1 Slide 2
+          .c-parallax__txt__body Lorem ipsum

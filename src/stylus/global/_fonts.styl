@@ -1,0 +1,24 @@
+
+@import 'fonts/_*.styl'
+
+
+
+
+font($name, $important = false)
+  $style = "Arial"
+  if $important 
+    $style = $style !important  
+
+  font-family $name, $style
+  
+
+font-fa()
+  font-family 'FontAwesome'
+  
+
+$fontNames = "Roboto Light" "Roboto Regular" "Roboto Condensed" "Roboto Bold" "Roboto Black" "Bomb" "Kilogram"
+$classNames = "roboto-light" "roboto-regular" "roboto-condensed" "roboto-bold" "roboto-black" "bomb" "kilogram"
+
+for $name, $i in $fontNames
+  .font--{$classNames[$i]}
+    font($name, true)

@@ -1,0 +1,6 @@
+mixin footer
+  .c-footer
+    each item in footerLinks
+      a.c-footer__link(href="#{item.url}", class="#{item.class}")!= item.name
+    .c-footer__copyright(role='contentinfo')
+      p!=app.copyright

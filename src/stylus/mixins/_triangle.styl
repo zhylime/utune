@@ -1,0 +1,22 @@
+triangle(direction, zsize, ysize, xsize, xcolor)
+  if (direction == 'up')
+    direction = 'bottom'
+    horizontal = true
+  else if (direction == 'down')
+    direction = 'top'
+    horizontal = true
+  else if (direction == 'left')
+    direction = 'right'
+    horizontal = false
+  else
+    direction = 'right'
+    horizontal = false
+  width 0
+  height 0
+  if (horizontal)
+    border-left zsize solid transparent
+    border-right ysize solid transparent
+  else 
+    border-bottom zsize solid transparent
+    border-top ysize solid transparent
+  border-{direction} xsize solid xcolor

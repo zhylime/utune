@@ -1,0 +1,36 @@
+// Intro
+//
+// `.c-intro` - Main container 
+//
+// .m-content - Regular content
+// 
+// Markup:
+// <div class="c-intro">
+//   <h1 class="c-intro c-intro__title">Intro title</h1>
+//   <p class="c-intro c-intro__txt">Some description text.</p>
+//   <p class="c-intro c-intro__footer">Footer of intro.</p>
+// </div>
+// 
+// Styleguide 1.4
+   
+.c-intro
+  clearfix()
+  text-align center
+  &__title
+    @extend .h2
+    text-transform uppercase
+  &__txt 
+    font-size 110%
+    line-height 140%
+    width 65%
+    margin-left auto 
+    margin-right auto
+    padding-top 1em
+    padding-bottom .5em
+    +bp(max, $mobile-max)
+      width 80%
+  &__footer
+    padding-top 2em
+    padding-bottom 2em
+  
+    

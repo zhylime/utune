@@ -1,0 +1,30 @@
+// Image hue - grayscale
+//
+// `.c-image-hue` - Supported in IE10+ and other modern browsers.
+//
+// .c-image-hue - Regular content
+// .c-image-hue.is-active - Regular content
+// 
+// Markup:
+// <svg id="svgroot" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 325 203" width="100%" height="100%" style="background-image: url(/assets/img/thumb-global-hotels.jpg)" class="{$modifiers}">
+//   <defs>
+//     <filter id="filtersPicture">
+//       <fecomposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="0" k4="0"></fecomposite>
+//       <fecolormatrix id="filter_38" type="saturate" values="0" data-filterid="38"></fecolormatrix>
+//     </filter>
+//   </defs>
+//   <image id="js-svg-img0" filter="url(&quot;#filtersPicture&quot;)" x="0" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/thumb-global-hotels.jpg" width="100%" height="100%" data-width="325" data-height="203"></image>
+// </svg>
+// 
+// Styleguide 1.3
+
+   
+.c-image-hue 
+  bg-size(100%, true)
+  background-repeat no-repeat
+  image
+    transition all .6s ease
+    display block
+    &:hover, &.is-active
+      cursor pointer
+      opacity 0

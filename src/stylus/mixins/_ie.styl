@@ -1,0 +1,17 @@
+/**
+  Inserts a block of css if IE is loaded.
+  @version, int - the version of IE
+  @strict, boolean - whether to inclue the css for only the version specified or also older versions
+  
+  Example:
+    +ie(8)
+      width 100%
+**/
+ie(version, strict = false)
+  if ($is-ie == true)
+    if(strict == true)
+      if ($ie-version == version)
+        {block}
+    else
+      if ($ie-version <= version)
+        {block}

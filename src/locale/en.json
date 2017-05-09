@@ -1,0 +1,14 @@
+{
+  "app": {"name": "MullenLowe Profero <span class=\"text-yellow\">Tech</string>", "copyright": "&copy; 2016 MullenLowe Profero Ltd.", "description": "", "keywords": ""},
+  "titleStarterKit": "FE Web Starter Kit v7",
+  "slogan": "Boilerplate and Tooling for FE development.",
+  "forDetails": "See the README.md file of this repository for usage details.",
+  "features": [
+    {"title":"Live Browser Reloading", "detail": "Reload the browser in real-time anytime an edit is made with BrowserSync across multiple connected devices."},
+    {"title":"Performance optimization", "detail": "Minify and concatenate JavaScript, CSS, HTML and Images to help keep pages lean."},
+    {"title":"<a href=https://pugjs.org/api/getting-started.html>Jade</a> Support", "detail": "Never worry about unclosed HTML tags again. Jade also supports dynamic code and reusability."},
+    {"title":"<a href=http://stylus-lang.com/>Stylus</a> + <a href=http://nibstyl.us/docs/>Nib</a> / <a href=http://kouto-swiss.io/>Kouto-Swiss Support</a>", "detail": "Expressive, dynamic, robust CSS. Includes automated prefixing and more."},
+    {"title":"<a href=http://coffeescript.org/>CoffeeScript</a> Support", "detail": "Code quick, code concise; output 'clean' JavaScript/JQuery"},
+    {"title":"<a href=https://babeljs.io/docs/learn-es2015/>Babel (ES2015)</a> Support", "detail": "For the Babel lovers, we've got you."}
+  ]
+}

@@ -1,0 +1,35 @@
+// Background
+//
+// Styleguide 4
+
+// Colors
+//
+// `.bg` - Look through common/base/bg.styl for more styles.
+//
+// .bg--white - White background
+// .bg--black.txt--white - Black background
+// .bg--primary-yellow - Primary yellow background
+//
+// Markup:
+// <div class="{$modifiers}">BG Color</div>
+// 
+// Styleguide 4.1
+   
+
+.bg--cover
+  bg-size(cover)
+  
+.bg--transparent 
+  background-color transparent !important
+  
+for $color, $colorIndex in colors()
+  .bg--{$color-names[$colorIndex]}--hover
+    &:hover, &.is-active 
+      background-color $color !important
+  .bg--{$color-names[$colorIndex]}
+    background-color $color !important
+    &.is-inactive
+      background-color darken($color, 20%) !important 
+    &.has-hover
+      &:hover
+        background-color darken($color, 20%) !important

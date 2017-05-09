@@ -1,0 +1,8 @@
+opacity-rgba(rd, grn, blu, opacity, color, setIE)
+  background rgb(rd, grn, blu)
+  background rgba(rd, grn, blu, opacity)
+  if (setIE)
+    +ie(8)
+      background color
+      -ms-filter 'progid:DXImageTransform.Microsoft.Alpha(Opacity=75)'
+      zoom 1

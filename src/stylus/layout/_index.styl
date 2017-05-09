@@ -1,0 +1,341 @@
+// Layout
+//
+// Look through layout/_index.styl for more styles.
+//
+// Styleguide 3
+
+// Visibility
+//
+// `.l-[mobi|desk|tabt[-min|-max]]`
+//
+// .l-mobi - Mobile only
+// .l-desk - Desktop only
+// .l-tabt-min - Tablet and higher
+// .l-tabt-max - Tablet and lower
+// .l-tabt - Tablet only
+// 
+// Markup:
+// <div class="{$modifiers}">I may or may not show depending on screen size</div>
+//
+// Styleguide 3.1
+
+
+// Display
+//
+// `.l-[block|inl-block|hidden]`
+//
+// .l-block - Block display
+// .l-inl-block - Inline block display
+// 
+// Markup:
+// <div class="bg--dark-grey {$modifiers}">Hello World</div>
+//
+// Styleguide 3.2
+
+
+// Vertical Alignment
+//
+// `.l-vcenter--[l|r]`
+//
+// .l-vcenter--[l|r] - Vertical alignment
+// 
+// Markup:
+// <div style="height: 200px;" class="l-relative">
+//   <div class="l-vcenter--l">Left align</div>
+//   <div class="l-vcenter">Middle align</div>
+//   <div class="l-vcenter--r">Right align</div>
+// </div>
+//
+// Styleguide 3.3
+
+
+// Width
+//
+// `.l-w--[$x]p`
+//
+// .l-w--30p - 30% width box 
+// .l-w--tabt-min-50p - 50% width in tablet and higer
+// 
+// Markup:
+// <div class="bg--primary-yellow {$modifiers}">Hello World</div>
+//
+// Styleguide 3.4
+
+
+// Paddings
+//
+// `.l-pad--[[l|r|t|b]-[desk|tabt[-min|-max]|mobi]-[fp-]$x]`
+//
+// .l-pad--2 - 2em padding all around
+// .l-pad--l-3 - 3em padding left
+// .l-pad--l-tabt-min-2 - 2em padding left in tablet and higher
+// .l-pad--r-desk-2 2em - padding top in desktop
+// .l-pad--b-fp-2 0.2em - padding bottom
+// .l-pad--t-mobi-fp-12 - 1.2em padding top in mobile
+// 
+// Markup:
+// <div class="bg--dark-grey {$modifiers}">Hello World</div>
+//
+// Styleguide 3.5
+
+
+// Margins
+//
+// `.l-mgn--[[l|r|t|b]-[desk|tabt[-min|-max]|mobi]-[fp-]$x]`
+//
+// .l-mgn--2 - 2em margin all around
+// .l-mgn--l-3 - 3em margin left
+// .l-mgn--l-tabt-min-2 - 2em margin left in tablet and higher
+// .l-mgn--r-desk-2 2em - margin top in desktop
+// .l-mgn--b-fp-2 0.2em - margin bottom
+// .l-mgn--t-mobi-fp-12 - 1.2em margin top in mobile
+// 
+// Markup:
+// <div class="bg--primary-yellow {$modifiers}">Hello World</div>
+//
+// Styleguide 3.6
+
+   
+.l-container
+  clear()
+  clearfix()
+  position relative
+  margin  0 auto
+  padding 0 20px
+  
+  @media $medium-max 
+    width 90%
+    
+  @media $large
+    width 980px
+    
+  &--wide, &--xwide 
+    width 1100px
+    @media $medium-max
+      width 100%
+    @media $medium-min
+      width 940px
+    @media $large
+      width 1100px
+    
+  &--xwide 
+    @media (min-width: 1200px)
+      width 1200px
+    
+  &--narrow
+    max-width 768px
+    
+
+.l-mobi 
+  display none !important
+  +bp(max, $mobile-max)
+    display block !important
+    
+.l-desk
+  +bp(max, $tablet-max)
+    display none !important
+    
+.l-tabt-max
+  +bp(min, $desktop-min)
+    display none !important
+
+  +bp(max, $tablet-max)
+    display block !important
+    
+.l-tabt
+  +bp(min, $desktop-min)
+    display none !important
+
+  +bp(max, $tablet-max)
+    display block !important
+    
+  +bp(max, $mobile-max)
+    display none !important
+    
+.l-tabt-min
+  display none !important
+  +bp(min, $tablet-min)
+    display block !important
+    
+.l-ghost
+  width 0
+  opacity 0
+  position absolute
+  -ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+  
+.l-offscreen
+  @extend .l-ghost 
+  left -1000px
+  
+.l-flt--r
+  float right !important
+  
+.l-flt--l
+  float left !important
+  
+.l-hidden 
+  display none !important
+  
+.l-block 
+  display block !important
+  
+.l-block--mobi
+  @media $small
+    display block !important
+    
+.l-block--tabt-min
+  @media $medium-min
+    display block !important
+    
+.l-block--tabt-max
+  @media $medium-max
+    display block !important
+    
+.l-block--tabt
+  @media $medium
+    display block !important
+  
+.l-inl-block 
+  display inline-block !important
+  
+.l-inl 
+  display inline !important
+
+.l-relative
+  position relative !important
+  
+.l-br-mobi
+  @media $small 
+    display block !important
+    
+.l-br-tabt
+  @media $medium 
+    display block !important
+
+.l-br-desk
+  @media $large 
+    display block !important
+  
+/* Vertical center */
+.l-vcenter--l
+  position absolute
+  top 50%
+  transform translate(0, -50%)
+  
+.l-vcenter
+  @extend .l-vcenter--l
+  left 50%
+  margin-right -50%
+  transform translate(-50%, -50%)
+  
+.l-vcenter--r
+  @extend .l-vcenter--l
+  right 0 
+
+.l-center 
+  margin-left auto !important
+  margin-right auto !important
+  
+
+// fp-$x or floating point $x
+$positions = "l", "r", "t", "b"
+$spaces = "mgn", "pad"
+
+for $x in (0..5)
+  for $spacing, $space in "margin" "padding"
+    .l-{$spaces[$space]}--{$x}
+      {$spacing} $x * 1em !important
+
+    .l-{$spaces[$space]}--mobi-{$x}
+      @media $small
+        {$spacing} $x * 1em !important
+
+    .l-{$spaces[$space]}--tabt-{$x}
+      @media $medium
+        {$spacing} $x * 1em !important
+
+    .l-{$spaces[$space]}--tabt-min-{$x}
+      @media $medium-min
+        {$spacing} $x * 1em !important
+
+    .l-{$spaces[$space]}--tabt-max-{$x}
+      @media $medium-max
+        {$spacing} $x * 1em !important
+
+    .l-{$spaces[$space]}--desk-{$x}
+      @media $large
+        {$spacing} $x * 1em !important
+
+    .l-{$spaces[$space]}--fp-{$x}
+      {$spacing} ($x/10em) !important
+
+
+  for $value, $pos in "left" "right" "top" "bottom"
+
+    .l-mgn--{$positions[$pos]}-{$x}
+      margin-{$value} $x * 1em !important
+
+    .l-mgn--{$positions[$pos]}-fp-{$x}
+      margin-{$value} ($x/10em) !important
+
+    .l-mgn--{$positions[$pos]}-tabt-min-fp-{$x}
+      @media $medium-min
+        margin-{$value} ($x/10em) !important
+
+    .l-mgn--{$positions[$pos]}-tabt-max-fp-{$x}
+      @media $medium-max
+        margin-{$value} ($x/10em) !important
+
+    .l-mgn--{$positions[$pos]}-mobi-fp-{$x}
+      @media $small
+        margin-{$value} ($x/10em) !important
+
+    .l-mgn--{$positions[$pos]}-desk-{$x}
+      @media $large
+        margin-{$value} $x * 1em !important
+      +ie(8)
+        margin-{$value} $x * 1em !important
+
+    .l-mgn--{$positions[$pos]}-tabt-{$x}
+      @media $medium
+        margin-{$value} $x * 1em !important
+
+    .l-mgn--{$positions[$pos]}-tabt-min-{$x}
+      @media $medium-min
+        margin-{$value} $x * 1em !important
+
+    .l-mgn--{$positions[$pos]}-mobi-{$x}
+      @media $small
+        margin-{$value} $x * 1em !important
+
+    .l-pad--{$positions[$pos]}-mobi-{$x}
+      @media $small
+        padding-{$value} $x * 1em !important
+
+    .l-pad--{$positions[$pos]}-tabt-{$x}
+      @media $medium
+        padding-{$value} $x * 1em !important
+
+    .l-pad--{$positions[$pos]}-tabt-min-{$x}
+      @media $medium-min
+        padding-{$value} $x * 1em !important
+
+    .l-pad--{$positions[$pos]}-tabt-max-{$x}
+      @media $medium-max
+        padding-{$value} $x * 1em !important
+
+    .l-pad--{$positions[$pos]}-desk-{$x}
+      @media $large
+        padding-{$value} $x * 1em !important
+
+    .l-pad--{$positions[$pos]}-{$x}
+      padding-{$value} $x * 1em !important
+
+    .l-pad--{$positions[$pos]}-fp-{$x}
+      padding-{$value} ($x/10em) !important
+
+    .l-pad--{$positions[$pos]}-mobi-fp-{$x}
+      @media $small
+        padding-{$value} ($x/10em) !important
+
+        

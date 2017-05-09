@@ -1,0 +1,177 @@
+// Text Alignments
+//
+// `.txt--[l|c|r]`
+// 
+// .txt--l - Left text
+// .txt--c - Center text
+// .txt--r - Right text
+// 
+// Markup:
+// <p class="{$modifiers}">Font</p>
+//
+// Styleguide 2.4
+
+// Text Colors
+//
+// `.txt--[$colorName]` - There are many colour names to choose 
+// from besides what is currently documented. See src for details.
+// 
+// .txt--black - Black text
+// .txt--dark-grey - Dark Grey text
+// .txt--white.bg--black - White text
+// .txt--primary-yellow - Primary yellow text
+// 
+// Markup:
+// <p class="{$modifiers}">Text color</p>
+//
+// Styleguide 2.5
+
+// Font Sizes
+//
+// `.txt--[mobi|tabt[-min|max]|desk]-sz[p]-$x` - where `$x` are numbers (even to 1 decimal place) from 0 - 30.
+// 
+// .txt--sz-1 - 1em font-size
+// .txt--tabt-min-sz-2 - 2em font-size in tablet or higher
+// .txt--szp-15 - 1.5em font-size
+// 
+// Markup:
+// <p class="{$modifiers}">Font</p>
+//
+// Styleguide 2.6
+
+// Line Heights
+//
+// `.txt--[mobi|tabt[-min|max]|desk]-lh[p]-$x` - where `$x` are numbers (even to 1 decimal place) from 0 - 30.
+// 
+// .txt--lh-1 - 1em line-height
+// .txt--tabt-min-lh-2 - 2em line-height in tablet or higher
+// .txt--lhp-15 - 1.5em line-height
+// 
+// Markup:
+// <p class="{$modifiers}">Font</p>
+//
+// Styleguide 2.7
+
+   
+html
+  font-family $font-family
+  
+for $color, $color-index in colors()
+  .txt--{$color-names[$color-index]}
+    color $color !important
+  
+.txt--bold
+  font-weight bold !important
+  
+.txt--normal
+  font-weight normal !important
+  
+.txt--italic
+  font-style italic !important
+  
+.txt--nodecoration
+  text-decoration none !important
+  
+.txt--underline
+  text-decoration underline !important
+  
+.txt--ellipsis
+  text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+  
+$positions = "r", "l", "c"
+for $dir, $index in right left center
+  .txt--{$positions[$index]}
+    text-align $dir !important
+  
+  .txt--{$positions[$index]}-mobi
+    @media $small
+      text-align $dir !important
+    
+  .txt--{$positions[$index]}-tabt
+    @media $medium
+      text-align $dir !important
+    
+  .txt--{$positions[$index]}-desk
+    @media $large
+      text-align $dir !important
+
+  
+for $x in (0..30)
+  .txt--sz-{$x}
+    font-size $x * 1em !important
+    
+  .txt--tabt-min-sz-{$x}
+    @media $medium-min
+      font-size $x * 1em !important
+      
+  .txt--tabt-min-lh-{$x}
+    @media $medium-min
+      line-height $x * 1em !important
+    
+  .txt--desk-sz-{$x}
+    @media $large
+      font-size $x * 1em !important
+      
+  .txt--tabt-sz-{$x}
+    @media $medium
+      font-size $x * 1em !important
+      
+  .txt--mobi-sz-{$x}
+    @media $small
+      font-size $x * 1em !important
+      
+  .txt--szp-{$x}
+    font-size ($x/10em) !important
+      
+  .txt--desk-szp-{$x}
+    @media $large
+      font-size ($x/10em) !important
+      
+  .txt--tabt-min-szp-{$x}
+    @media $medium-min
+      font-size ($x/10em) !important
+      
+  .txt--tabt-max-szp-{$x}
+    @media $medium-max
+      font-size ($x/10em) !important
+      
+  .txt--mobi-lhp-{$x}
+    @media $small
+      font-size ($x/10em) !important
+      
+  .txt--mobi-lhp-{$x}
+    @media $small
+      line-height ($x/10em) !important
+      
+  .txt--desk-lhp-{$x}
+    @media $large
+      line-height ($x/10em) !important
+      
+  .txt--tabt-min-lhp-{$x}
+    @media $medium-min
+      line-height ($x/10em) !important
+      
+  .txt--tabt-max-lhp-{$x}
+    @media $medium-max
+      line-height ($x/10em) !important
+      
+  .txt--mobi-lhp-{$x}
+    @media $small
+      line-height ($x/10em) !important
+      
+  .txt--desk-lh-{$x}
+    @media $large
+      line-height $x * 1em !important
+      
+  .txt--tabt-lh-{$x}
+    @media $medium
+      line-height $x * 1em !important
+       
+  .txt--mobi-lh-{$x}
+    @media $small
+      line-height $x * 1em !important
+  
+  .txt--lh-{$x}
+    line-height $x * 1em !important

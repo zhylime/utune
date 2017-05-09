@@ -1,0 +1,20 @@
+extends ../_partials/_template
+block content
+  .c-content.l-pad--b-1
+    section.c-content__bar(aria-label='Company')
+      img(src=paths.img + 'logo-160.png', alt=stripTags(app.name), width='110')
+      br
+      h1.name!=app.name
+    .c-content__main(role='main')
+      section.c-content__screen(aria-label='Introduction') 
+        h1=titleStarterKit
+        p.c-content__screen__sub-title=slogan
+        p.c-content__screen__unit-title=forDetails
+      section.c-content__details(aria-label='Details')
+        each feature in features
+          .c-content__item
+            h1!=feature.title
+            p=feature.detail
+  .c-footer.l-pad--1
+    .c-footer__copyright(role='contentinfo')
+      p!=app.copyright
