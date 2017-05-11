@@ -1,0 +1,35 @@
+.c-nav
+  position fixed
+  z-index 10
+  background-color $col-nav-background
+  top 0
+  width 100%
+  height 70px
+  padding 20px 29px 0
+  
+  &__logo
+  &__menu
+    display-inline(middle)
+  &__logo
+    margin-right 80px
+    img
+      height 25px
+  &__menu
+    ul
+      li
+        float left
+        margin-right 80px
+        a
+          display block
+          font-size 16px
+          text-transform uppercase
+          color white
+          margin-top 7px
+          &.active
+            border 1px solid white
+            border-radius 17px
+            padding 7px 20px
+            margin-top 0
+        &:nth-last-of-type(1)
+          margin-right 0
+    

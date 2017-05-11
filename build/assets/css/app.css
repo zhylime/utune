@@ -16,6 +16,13 @@ body {
   font-size: 16px;
   line-height: 18px;
 }
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 /* Mixins */
 .bg--cover {
   background-size: cover;
@@ -371,6 +378,13 @@ body {
   position: relative;
   font-size: 16px;
   line-height: 18px;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
 .theme--dark-grey.theme--colored-txt {
   color: #2c2e2f;
@@ -2309,46 +2323,46 @@ html {
 }
 @-moz-keyframes moveUpDown {
   0% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
   50% {
-    background-position: center 20px;
+    background-position: center -10px;
   }
   100% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
 }
 @-webkit-keyframes moveUpDown {
   0% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
   50% {
-    background-position: center 20px;
+    background-position: center -10px;
   }
   100% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
 }
 @-o-keyframes moveUpDown {
   0% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
   50% {
-    background-position: center 20px;
+    background-position: center -10px;
   }
   100% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
 }
 @keyframes moveUpDown {
   0% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
   50% {
-    background-position: center 20px;
+    background-position: center -10px;
   }
   100% {
-    background-position: center 10px;
+    background-position: center -20px;
   }
 }
 .c-image-hue {
@@ -2387,6 +2401,50 @@ html {
 .c-intro__footer {
   padding-top: 2em;
   padding-bottom: 2em;
+}
+.c-nav {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.1);
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 20px 29px 0;
+}
+.c-nav__logo,
+.c-nav__menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+.c-nav__logo {
+  margin-right: 80px;
+}
+.c-nav__logo img {
+  height: 25px;
+}
+.c-nav__menu ul li {
+  float: left;
+  margin-right: 80px;
+}
+.c-nav__menu ul li a {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 7px;
+}
+.c-nav__menu ul li a.active {
+  border: 1px solid #fff;
+  border-radius: 17px;
+  padding: 7px 20px;
+  margin-top: 0;
+}
+.c-nav__menu ul li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fff;
 }
 .c-parallax {
   position: relative;

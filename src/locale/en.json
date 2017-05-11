@@ -10,5 +10,28 @@
     {"title":"<a href=http://stylus-lang.com/>Stylus</a> + <a href=http://nibstyl.us/docs/>Nib</a> / <a href=http://kouto-swiss.io/>Kouto-Swiss Support</a>", "detail": "Expressive, dynamic, robust CSS. Includes automated prefixing and more."},
     {"title":"<a href=http://coffeescript.org/>CoffeeScript</a> Support", "detail": "Code quick, code concise; output 'clean' JavaScript/JQuery"},
     {"title":"<a href=https://babeljs.io/docs/learn-es2015/>Babel (ES2015)</a> Support", "detail": "For the Babel lovers, we've got you."}
+  ],
+
+  "navMenu":[
+    {
+      "name":"home",
+      "link":"#"
+    },
+    {
+      "name":"what we do",
+      "link":"#"
+    },
+    {
+      "name":"about us",
+      "link":"#"
+    },
+    {
+      "name":"contact",
+      "link":"#"
+    },
+    {
+      "name":"mall",
+      "link":"#"
+    }
   ]
 }

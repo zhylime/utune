@@ -1,0 +1,11 @@
+mixin nav(activeClass)
+  .c-nav
+    a.c-nav__logo(href="#")
+      img(src=paths.img + "logo-nav.svg", alt="Utune logo")
+    .c-nav__menu
+      ul
+        each item, index in navMenu
+          - var className = activeClass == index ? "active" : "" 
+          li
+            a(href=item.link, class=className)!= item.name
+
