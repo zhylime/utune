@@ -80,7 +80,7 @@ var config = {
 
 var generateStyleguide = function() {
   changedFile = config.styleguide;
-  run('sg');
+  // run('sg');
 };
 
 var toggle = function(feature, featureEnabled, args) {
