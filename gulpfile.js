@@ -70,7 +70,7 @@ var config = {
   root: './',
   root2: '/',
   src: './src/',
-  jsLang: 'coffee',
+  jsLang: 'js',
   host: 'http://127.0.0.1:5000',
   deployHost: '//host.uidev.proferochina.com',
   port: 5000,
@@ -102,7 +102,7 @@ var swallowError = function(error) {
 
 var paths = {
   regex: {
-    js: [config.src + 'js/helpers/_*.js', config.src + 'js/modules/_*.js'],
+    js: [config.src + 'js/helpers/_*.js', config.src + 'js/modules/_*.js', config.src + 'js/modules/_doc-ready.js'],
     coffee:
       [ config.src + 'coffee/helpers/_*.coffee', 
       config.src + 'coffee/modules/_menu.coffee', 

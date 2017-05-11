@@ -32,8 +32,8 @@ $.mlpPlugin = function(fn, name, bypass, elPlugin, returnContext) {
   if (typeof bypass == "undefined") {
     bypass = false;
   }
-  if (typeof elPluggin == "undefined") {
-    elPluggin = true;
+  if (typeof elPlugin == "undefined") {
+    elPlugin = true;
   }
   if (typeof returnContext == "undefined") {
     returnContext = true;
