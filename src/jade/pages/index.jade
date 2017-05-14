@@ -4,6 +4,54 @@ block content
   +nav(0)
   .c-content.c-homepage(data-js-fullpage)
     .section.c-homepage__1
-    .section
-    .section
+      .c-homepage__1__content
+        img(src=paths.img + 'logo-utune.png', alt="Utune Creative logo")
+        br
+        //- img(src=paths.img + '.png', alt="Utune Creative logo")
+      .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
+    .section.c-homepage__2
+      .c-homepage__tab-1
+      .c-homepage__tab-2
+      .c-homepage__tab-3
+      .c-homepage__tab-4
+      .c-homepage__tab-panel
+        ul
+          each item in weDoTabPanel
+            li.font--roboto-light
+              div.c-homepage__tab-panel__icon(class=item.icon)
+              span!= item.text
+              .c-homepage__tab-panel__button(class=item.buttonClass) View
+    .section.c-homepage__3(data-js-masonry)
+      .c-masonry-gallery__item
+        img.l-full-width(src=paths.img + 'ourwork-transfomers.jpg')
+      .c-masonry-gallery__item.w2
+        img.l-full-width(src=paths.img + 'ourwork-jld.jpg')
+      .c-masonry-gallery__item
+        img.l-full-width(src=paths.img + 'ourwork-tes.jpg')
+      .c-masonry-gallery__item.w2
+        img.l-full-width(src=paths.img + 'ourwork-hongguo.jpg')
+      .c-masonry-gallery__item
+        img.l-full-width(src=paths.img + 'ourwork-midot.jpg')
+      .c-masonry-gallery__item
+        img.l-full-width(src=paths.img + 'ourwork-food-truck.jpg')
+
+      .clear
+    .section.c-homepage__4
+      h2 our clients
+
+
+      
+      
+      
+      
+      //- div
+      //-   img(src=paths.img + 'ourwork-transfomers.jpg')
+      //- div
+      //-   img(src=paths.img + 'ourwork-tes.jpg')
+      //- div
+      //-   img(src=paths.img + 'ourwork-jld.jpg')
+
+    //- .section
+    //- .section
+
 

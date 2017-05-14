@@ -15,23 +15,46 @@
   "navMenu":[
     {
       "name":"home",
-      "link":"#"
+      "link":"#homepage"
     },
     {
       "name":"what we do",
-      "link":"#"
+      "link":"#what-we-do"
     },
     {
       "name":"about us",
-      "link":"#"
+      "link":"#about-us"
     },
     {
       "name":"contact",
-      "link":"#"
+      "link":"#contact"
     },
     {
       "name":"mall",
-      "link":"#"
+      "link":"#mall"
+    }
+  ],
+
+  "weDoTabPanel":[
+    {
+      "icon":"font-icon-brand",
+      "text":"Brand communication",
+      "buttonClass":"active"
+    },
+    {
+      "icon":"font-icon-product",
+      "text":"Product<br/>planning",
+      "buttonClass":""
+    },
+    {
+      "icon":"font-icon-supply-chain",
+      "text":"Supply chain management",
+      "buttonClass":""
+    },
+    {
+      "icon":"font-icon-space",
+      "text":"Space<br/>design",
+      "buttonClass":""
     }
   ]
 }

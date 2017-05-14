@@ -1,28 +1,31 @@
 /*
-# extends jquery.fullpage.js, jquery.slimscroll.js
+# extends jquery.fullpage.js, scrolloverflow.js
 #
 
 */
 
 class FullPage extends MLP.apps.MLPModule {
 
-  defaults() {
-    this.defaults = {
-      property: 'foo'
-    };
-  }
-
   init() {
     super.init();
+
     this.event();
   }
 
   event(){
+    var _this = this;
     this.el.target.fullpage({
-    // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-    'navigation': true,
-    'scrollOverflow': true
-  });
+      'navigation': true,
+      'scrollOverflow': true,
+      'anchors': ['homepage', 'what-we-do', 'about-us', 'contact', 'mall']
+    });
+
+
+    $('.js-fullpage-next-button').on('click', function(){
+      $.fn.fullpage.moveSectionDown();
+    });
+
+
   }
 }
 $.mlpPlugin(FullPage, 'FullPage', false);

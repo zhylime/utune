@@ -13,24 +13,66 @@
   </head>
   <body>
     <div class="c-nav"><a href="#" class="c-nav__logo"><img src="/assets/img/logo-nav.svg" alt="Utune logo"/></a>
-      <div class="c-nav__menu">
+      <div data-js-top-nav="data-js-top-nav" class="c-nav__menu">
         <ul>
-          <li><a href="#" class="active">home</a></li>
-          <li><a href="#">what we do</a></li>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">mall</a></li>
+          <li><a href="#homepage" class="active">home</a></li>
+          <li><a href="#what-we-do">what we do</a></li>
+          <li><a href="#about-us">about us</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="#mall">mall</a></li>
         </ul>
       </div>
     </div>
     <div data-js-fullpage class="c-content c-homepage">
-      <div class="section c-homepage__1"></div>
-      <div class="section"></div>
-      <div class="section"></div>
+      <div class="section c-homepage__1">
+        <div class="c-homepage__1__content"><img src="/assets/img/logo-utune.png" alt="Utune Creative logo"><br>
+        </div>
+        <div class="font-icon-btn-next c-homepage__next-button js-fullpage-next-button"></div>
+      </div>
+      <div class="section c-homepage__2">
+        <div class="c-homepage__tab-1"></div>
+        <div class="c-homepage__tab-2"></div>
+        <div class="c-homepage__tab-3"></div>
+        <div class="c-homepage__tab-4"></div>
+        <div class="c-homepage__tab-panel">
+          <ul>
+            <li class="font--roboto-light">
+              <div class="c-homepage__tab-panel__icon font-icon-brand"></div><span>Brand communication</span>
+              <div class="c-homepage__tab-panel__button active">View</div>
+            </li>
+            <li class="font--roboto-light">
+              <div class="c-homepage__tab-panel__icon font-icon-product"></div><span>Product<br/>planning</span>
+              <div class="c-homepage__tab-panel__button">View</div>
+            </li>
+            <li class="font--roboto-light">
+              <div class="c-homepage__tab-panel__icon font-icon-supply-chain"></div><span>Supply chain management</span>
+              <div class="c-homepage__tab-panel__button">View</div>
+            </li>
+            <li class="font--roboto-light">
+              <div class="c-homepage__tab-panel__icon font-icon-space"></div><span>Space<br/>design</span>
+              <div class="c-homepage__tab-panel__button">View</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div data-js-masonry class="section c-homepage__3">
+        <div class="c-masonry-gallery__item"><img src="/assets/img/ourwork-transfomers.jpg" class="l-full-width"></div>
+        <div class="c-masonry-gallery__item w2"><img src="/assets/img/ourwork-jld.jpg" class="l-full-width"></div>
+        <div class="c-masonry-gallery__item"><img src="/assets/img/ourwork-tes.jpg" class="l-full-width"></div>
+        <div class="c-masonry-gallery__item w2"><img src="/assets/img/ourwork-hongguo.jpg" class="l-full-width"></div>
+        <div class="c-masonry-gallery__item"><img src="/assets/img/ourwork-midot.jpg" class="l-full-width"></div>
+        <div class="c-masonry-gallery__item"><img src="/assets/img/ourwork-food-truck.jpg" class="l-full-width"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="section c-homepage__4">
+        <h2>our clients</h2>
+      </div>
+      
     </div><!--[if (gt IE 8)]><!-->
     <script src="/assets/js/vendor/jquery.js"></script><!--<![endif]-->
+    <script src="/assets/js/vendor/scrolloverflow.js"></script>
     <script src="/assets/js/vendor/jquery.fullpage.js"></script>
-    <script src="/assets/js/vendor/jquery.slimscroll.js"></script><!--[if (lte IE 8)]>
+    <script src="/assets/js/vendor/masonry.pkgd.js"></script><!--[if (lte IE 8)]>
     <script src="/assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
     <script src="/assets/js/vendor/old-ie/html5shiv.js"></script>
     <script src="/assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->

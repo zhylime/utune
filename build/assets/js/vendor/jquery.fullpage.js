@@ -1114,7 +1114,6 @@
         var touchEndX = 0;
 
         /* Detecting touch events
-
         * As we are changing the top property of the page on scrolling, we can not use the traditional way to detect it.
         * This way, the touchstart and the touch moves shows an small difference between them which is the
         * used one to determine the direction.
@@ -1510,7 +1509,6 @@
                         /* Hack!
                         The timeout prevents setting the most dominant section in the viewport as "active" when the user
                         scrolled to a smaller section by using the mousewheel (auto scrolling) rather than draging the scroll bar.
-
                         When using scrollBar:true It seems like the scroll events still getting propagated even after the scrolling animation has finished.
                         */
                         setTimeout(function(){
