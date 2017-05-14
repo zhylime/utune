@@ -1,7 +1,7 @@
 # font
 
 
-##使用方法
+##icon使用方法
 
 &lt;span class="font-icon-mail"&gt;&lt;/span&gt;"
 -------------
@@ -23,3 +23,22 @@ font-icon-product
 font-icon-space
 
 font-icon-supply-chain
+
+
+
+
+常规字体使用类名
+-------------
+font--roboto-light
+
+font--roboto-regular
+
+font--roboto-condensed
+
+font--roboto-bold
+
+font--roboto-black
+
+font--bomb
+
+font--kilogram

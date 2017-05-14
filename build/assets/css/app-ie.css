@@ -77,8 +77,8 @@ body {
 }
 @font-face {
   font-family: 'icoutune';
-  src: url("fonts/ico-utune.eot?s7de7d");
-  src: url("fonts/ico-utune.eot?s7de7d#iefix") format('embedded-opentype'), url("fonts/ico-utune.ttf?s7de7d") format('truetype'), url("fonts/ico-utune.woff?s7de7d") format('woff'), url("fonts/ico-utune.svg?s7de7d#icomoon") format('svg');
+  src: url("../fonts/ico-utune.eot?s7de7d");
+  src: url("../fonts/ico-utune.eot?s7de7d#iefix") format('embedded-opentype'), url("../fonts/ico-utune.ttf?s7de7d") format('truetype'), url("../fonts/ico-utune.woff?s7de7d") format('woff'), url("../fonts/ico-utune.svg?s7de7d#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
