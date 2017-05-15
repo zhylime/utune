@@ -2602,9 +2602,12 @@ html {
   padding: 5px 0;
   list-style: none;
 }
+.c-homepage {
+  min-width: 1024px;
+}
 .c-homepage__1 {
   background-image: url("../img/homepage-utune-hero.jpg");
-  background-size: auto 110%;
+  background-size: 100% 110%;
   animation: moveUpDown 3s infinite;
 }
 .c-homepage__next-button {
@@ -2700,10 +2703,73 @@ html {
   padding-bottom: 2em;
 }
 .c-masonry-gallery__item {
-  width: 33.333%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+.c-masonry-gallery__item::before,
+.c-masonry-gallery__item::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.c-masonry-gallery__item.w1 {
+  width: 37%;
 }
 .c-masonry-gallery__item.w2 {
-  width: 66.666%;
+  width: 63%;
+}
+.c-masonry-gallery__item.w3 {
+  width: 58.1%;
+}
+.c-masonry-gallery__item.w4 {
+  width: 41.9%;
+}
+.c-masonry-gallery__item.w5 {
+  width: 50%;
+}
+.c-masonry-gallery__item.w6 {
+  width: 54.5%;
+}
+.c-masonry-gallery__item.w7 {
+  width: 45.5%;
+}
+.draw {
+  transition: color 0.25s;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #5e0097;
+}
+.draw:hover::before {
+  border-top-color: #5e0097;
+  border-right-color: #5e0097;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #5e0097;
+  border-left-color: #5e0097;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+.draw::before,
+.draw::after {
+  border: 12px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
 }
 .c-nav {
   position: fixed;
@@ -2713,6 +2779,7 @@ html {
   width: 100%;
   height: 70px;
   padding: 20px 29px 0;
+  min-width: 1024px;
 }
 .c-nav__logo,
 .c-nav__menu {
@@ -2720,14 +2787,14 @@ html {
   vertical-align: middle;
 }
 .c-nav__logo {
-  margin-right: 60px;
+  margin-right: 80px;
 }
 .c-nav__logo img {
   height: 25px;
 }
 .c-nav__menu ul li {
   float: left;
-  margin-right: 60px;
+  margin-right: 50px;
 }
 .c-nav__menu ul li a {
   display: block;
@@ -2737,6 +2804,7 @@ html {
   padding: 7px 20px;
   border: 1px solid transparent;
   border-radius: 17px;
+  font-family: "Roboto Bold", "Arial";
 }
 .c-nav__menu ul li a.active {
   border-color: #fff;

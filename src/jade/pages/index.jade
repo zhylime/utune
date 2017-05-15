@@ -21,21 +21,12 @@ block content
               div.c-homepage__tab-panel__icon(class=item.icon)
               span!= item.text
               .c-homepage__tab-panel__button(class=item.buttonClass) View
-    .section.c-homepage__3(data-js-masonry)
-      .c-masonry-gallery__item
-        img.l-full-width(src=paths.img + 'ourwork-transfomers.jpg')
-      .c-masonry-gallery__item.w2
-        img.l-full-width(src=paths.img + 'ourwork-jld.jpg')
-      .c-masonry-gallery__item
-        img.l-full-width(src=paths.img + 'ourwork-tes.jpg')
-      .c-masonry-gallery__item.w2
-        img.l-full-width(src=paths.img + 'ourwork-hongguo.jpg')
-      .c-masonry-gallery__item
-        img.l-full-width(src=paths.img + 'ourwork-midot.jpg')
-      .c-masonry-gallery__item
-        img.l-full-width(src=paths.img + 'ourwork-food-truck.jpg')
-
-      .clear
+    .section.c-homepage__3
+      each item,key in ourwork
+        a.c-masonry-gallery__item.draw(href=item.href alt=item.alt class=item.widthClass+" "+item.floatClass)
+          img.l-full-width(src=paths.img + item.img)
+        if item.isEnd=="true"
+          .clear
     .section.c-homepage__4
       h2 our clients
 

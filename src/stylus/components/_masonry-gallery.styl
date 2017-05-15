@@ -1,7 +1,51 @@
 .c-masonry-gallery
   &__item
-    width 33.333%
-    // width 40%
-    &.w2
-      width 66.666%
-      // width 60%
+    padding 0px
+    margin 0px
+    position relative
+    &::before
+    &::after
+      box-sizing border-box
+      content ''
+      position absolute
+      width 100%
+      height 100%
+  &__item.w1
+    width 37%
+  &__item.w2
+    width 63%
+  &__item.w3
+    width 58.1%
+  &__item.w4
+    width 41.9%
+  &__item.w5
+    width 50%
+  &__item.w6
+    width 54.5%
+  &__item.w7
+    width 45.5%
+.draw
+  transition color 0.25s
+  &::before
+    top 0
+    left 0
+  &::after
+    bottom 0
+    right 0
+  &:hover
+    color $col-border-purple
+    &::before
+      border-top-color $col-border-purple
+      border-right-color $col-border-purple
+      transition width 0.25s ease-out, height 0.25s ease-out 0.25s
+    &::after
+      border-bottom-color $col-border-purple
+      border-left-color $col-border-purple
+      transition border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+.draw::before, .draw::after
+  border 12px solid transparent
+  width 0
+  height 0
+.draw:hover::before, .draw:hover::after
+  width 100%
+  height 100%
