@@ -22,8 +22,8 @@ block content
               span!= item.text
               .c-homepage__tab-panel__button(class=item.buttonClass) View
     .section.c-homepage__3
-      each item,key in ourwork
-        a.c-masonry-gallery__item.draw(href=item.href alt=item.alt class=item.widthClass+" "+item.floatClass)
+      each item in ourwork
+        a.c-gallery__item.draw(href=item.href alt=item.alt class=item.widthClass+" "+item.floatClass)
           img.l-full-width(src=paths.img + item.img)
         if item.isEnd=="true"
           .clear
