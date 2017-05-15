@@ -1,5 +1,5 @@
 {
-  "app": {"name": "MullenLowe Profero <span class=\"text-yellow\">Tech</string>", "copyright": "&copy; 2016 MullenLowe Profero Ltd.", "description": "", "keywords": ""},
+  "app": {"name": "utune", "copyright": "", "description": "", "keywords": ""},
   "titleStarterKit": "FE Web Starter Kit v7",
   "slogan": "Boilerplate and Tooling for FE development.",
   "forDetails": "See the README.md file of this repository for usage details.",
@@ -10,5 +10,165 @@
     {"title":"<a href=http://stylus-lang.com/>Stylus</a> + <a href=http://nibstyl.us/docs/>Nib</a> / <a href=http://kouto-swiss.io/>Kouto-Swiss Support</a>", "detail": "Expressive, dynamic, robust CSS. Includes automated prefixing and more."},
     {"title":"<a href=http://coffeescript.org/>CoffeeScript</a> Support", "detail": "Code quick, code concise; output 'clean' JavaScript/JQuery"},
     {"title":"<a href=https://babeljs.io/docs/learn-es2015/>Babel (ES2015)</a> Support", "detail": "For the Babel lovers, we've got you."}
+  ],
+
+  "navMenu":[
+    {
+      "name":"home",
+      "link":"#homepage"
+    },
+    {
+      "name":"what we do",
+      "link":"#what-we-do"
+    },
+    {
+      "name":"about us",
+      "link":"#about-us"
+    },
+    {
+      "name":"contact",
+      "link":"#contact"
+    },
+    {
+      "name":"mall",
+      "link":"#mall"
+    }
+  ],
+
+  "weDoTabPanel":[
+    {
+      "icon":"font-icon-brand",
+      "text":"Brand communication",
+      "buttonClass":"active"
+    },
+    {
+      "icon":"font-icon-product",
+      "text":"Product<br/>planning",
+      "buttonClass":""
+    },
+    {
+      "icon":"font-icon-supply-chain",
+      "text":"Supply chain management",
+      "buttonClass":""
+    },
+    {
+      "icon":"font-icon-space",
+      "text":"Space<br/>design",
+      "buttonClass":""
+    }
+  ],
+  "ourwork":[
+    {
+      "href":"#",
+      "img":"ourwork-transfomers.jpg",
+      "widthClass":"w1",
+      "floatClass":"l-flt--l",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-jld.jpg",
+      "widthClass":"w2",
+      "floatClass":"l-flt--r",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-tes.jpg",
+      "widthClass":"w1",
+      "floatClass":"l-flt--l",
+      "isEnd":"true",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-hongguo.jpg",
+      "widthClass":"w3",
+      "floatClass":"l-flt--l",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-midot.jpg",
+      "widthClass":"w4",
+      "floatClass":"l-flt--r",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-lijian.jpg",
+      "widthClass":"w4",
+      "floatClass":"l-flt--r",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-food-truck.jpg",
+      "widthClass":"w3",
+      "floatClass":"l-flt--l",
+      "isEnd":"true",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-mm.jpg",
+      "widthClass":"",
+      "floatClass":"l-flt--l",
+      "isEnd":"true",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-think.jpg",
+      "widthClass":"w5",
+      "floatClass":"l-flt--l",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-tea-time.jpg",
+      "widthClass":"w5",
+      "floatClass":"l-flt--r",
+      "isEnd":"true",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-lijian-cup.jpg",
+      "widthClass":"w6",
+      "floatClass":"l-flt--l",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-cat-bowl.jpg",
+      "widthClass":"w7",
+      "floatClass":"l-flt--r",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-run.jpg",
+      "widthClass":"w7",
+      "floatClass":"l-flt--r",
+      "isEnd":"false",
+      "alt":""
+    },
+    {
+      "href":"#",
+      "img":"ourwork-dove.jpg",
+      "widthClass":"w6",
+      "floatClass":"l-flt--l",
+      "isEnd":"true",
+      "alt":""
+    }
   ]
 }

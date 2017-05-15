@@ -16,7 +16,300 @@ body {
   font-size: 16px;
   line-height: 18px;
 }
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* Vendor */
+.v-styleguide {
+  margin: 3%;
+}
+.sg > h1 {
+  font-size: 40px;
+  margin: 3%;
+}
+/*
+ * fullPage 2.9.4
+ * https//github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html.fp-enabled,
+.fp-enabled body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+/*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+  height: 100%;
+  position: relative;
+/* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+/* IE 11 on Windows Phone 8.1*/
+  touch-action: none;
+}
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+/* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+/* <=28 */
+  box-sizing: border-box;
+}
+.fp-slide {
+  float: left;
+}
+.fp-slide,
+.fp-slidesContainer {
+  height: 100%;
+  display: block;
+}
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+/* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out;
+}
+.fp-section.fp-table,
+.fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.fp-slidesContainer {
+  float: left;
+  position: relative;
+}
+.fp-controlArrow {
+  -webkit-user-select: none;
+/* webkit (safari,  chrome) browsers */
+  -moz-user-select: none;
+/* mozilla browsers */
+  -khtml-user-select: none;
+/* webkit (konqueror) browsers */
+  -ms-user-select: none;
+/* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+  overflow: hidden;
+  position: relative;
+}
+.fp-scroller {
+  overflow: hidden;
+}
+.iScrollIndicator {
+  border: 0 !important;
+}
+.fp-notransition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+#fp-nav.right {
+  right: 17px;
+}
+#fp-nav.left {
+  left: 17px;
+}
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.fp-slidesNav.bottom {
+  bottom: 17px;
+}
+.fp-slidesNav.top {
+  top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+.fp-slidesNav ul li {
+  display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul lihover a.active span,
+.fp-slidesNav ul lihover a.active span {
+  height: 12px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 4px;
+  border: 0;
+  background: #333;
+  left: 50%;
+  top: 50%;
+  margin: -2px 0 0 -2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+#fp-nav ul lihover a span,
+.fp-slidesNav ul lihover a span {
+  width: 10px;
+  height: 10px;
+  margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li .fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  width: 0;
+  cursor: pointer;
+}
+#fp-nav ul lihover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+  right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+  left: 20px;
+}
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell {
+  height: auto !important;
+}
+.fp-responsive .fp-auto-height-responsive.fp-section,
+.fp-responsive .fp-auto-height-responsive .fp-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+  height: auto !important;
+}
 /* Mixins */
+@-moz-keyframes moveUpDown {
+  0% {
+    background-position: center -30px;
+  }
+  50% {
+    background-position: center -10px;
+  }
+  100% {
+    background-position: center -30px;
+  }
+}
+@-webkit-keyframes moveUpDown {
+  0% {
+    background-position: center -30px;
+  }
+  50% {
+    background-position: center -10px;
+  }
+  100% {
+    background-position: center -30px;
+  }
+}
+@-o-keyframes moveUpDown {
+  0% {
+    background-position: center -30px;
+  }
+  50% {
+    background-position: center -10px;
+  }
+  100% {
+    background-position: center -30px;
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    background-position: center -30px;
+  }
+  50% {
+    background-position: center -10px;
+  }
+  100% {
+    background-position: center -30px;
+  }
+}
 .bg--cover {
   background-size: cover;
 }
@@ -371,6 +664,13 @@ body {
   position: relative;
   font-size: 16px;
   line-height: 18px;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
 .theme--dark-grey.theme--colored-txt {
   color: #2c2e2f;
@@ -2158,6 +2458,9 @@ html {
 .l-section--alternate-b {
   padding-bottom: 0;
 }
+.l-full-width {
+  width: 100%;
+}
 /* Components */
 .c-btn {
   display: inline;
@@ -2302,6 +2605,137 @@ html {
   padding: 5px 0;
   list-style: none;
 }
+.c-gallery__item {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+.c-gallery__item::before,
+.c-gallery__item::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.c-gallery__item.w1 {
+  width: 37%;
+}
+.c-gallery__item.w2 {
+  width: 63%;
+}
+.c-gallery__item.w3 {
+  width: 58.1%;
+}
+.c-gallery__item.w4 {
+  width: 41.9%;
+}
+.c-gallery__item.w5 {
+  width: 50%;
+}
+.c-gallery__item.w6 {
+  width: 54.5%;
+}
+.c-gallery__item.w7 {
+  width: 45.5%;
+}
+.draw {
+  transition: color 0.25s;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #5e0097;
+}
+.draw:hover::before {
+  border-top-color: #5e0097;
+  border-right-color: #5e0097;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #5e0097;
+  border-left-color: #5e0097;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+.draw::before,
+.draw::after {
+  border: 12px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.c-homepage {
+  min-width: 1024px;
+}
+.c-homepage__1 {
+  background-image: url("../img/homepage-utune-hero.jpg");
+  background-size: 100% 110%;
+  animation: moveUpDown 3s infinite;
+}
+.c-homepage__next-button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -20px;
+  height: 83px;
+  width: 40px;
+  font-size: 84px;
+}
+.c-homepage__tab-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../img/background-wedo-star.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-homepage__tab-panel {
+  position: relative;
+}
+.c-homepage__tab-panel ul {
+  width: 984px;
+  margin: auto;
+}
+.c-homepage__tab-panel li {
+  color: #fff;
+  float: left;
+  width: 118px;
+  margin: 0 50px;
+}
+.c-homepage__tab-panel span {
+  margin: 30px 0 20px;
+  display: block;
+}
+.c-homepage__tab-panel__icon {
+  font-size: 40px;
+}
+.c-homepage__tab-panel__button {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  height: 44px;
+  width: 80px;
+  border-radius: 44px;
+  line-height: 44px;
+  margin: auto;
+  cursor: pointer;
+}
+.c-homepage__tab-panel__button:hover,
+.c-homepage__tab-panel__button.active {
+  background-color: #fff;
+  color: #000;
+}
 .c-image-hue {
   background-size: 100%;
   background-repeat: no-repeat;
@@ -2338,6 +2772,67 @@ html {
 .c-intro__footer {
   padding-top: 2em;
   padding-bottom: 2em;
+}
+.c-nav {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.1);
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 20px 29px 0;
+  min-width: 1024px;
+}
+.c-nav__logo,
+.c-nav__menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+.c-nav__logo {
+  margin-right: 80px;
+}
+.c-nav__logo img {
+  height: 25px;
+}
+.c-nav__menu ul li {
+  float: left;
+  margin-right: 50px;
+}
+.c-nav__menu ul li a {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 7px 20px;
+  border: 1px solid transparent;
+  border-radius: 17px;
+  font-family: "Roboto Bold", "Arial";
+}
+.c-nav__menu ul li a.active {
+  border-color: #fff;
+}
+.c-nav__menu ul li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border: 1px solid #fff;
+  background: transparent;
+  height: 12px;
+  width: 12px;
+  margin: 0;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+  margin: 0;
+  background: #fff;
+}
+#fp-nav.right {
+  right: 45px;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  margin: 4px;
 }
 .c-parallax {
   position: relative;
@@ -2472,12 +2967,4 @@ html {
   position: relative;
   width: 100%;
   overflow: hidden;
-}
-/* Vendor */
-.v-styleguide {
-  margin: 3%;
-}
-.sg > h1 {
-  font-size: 40px;
-  margin: 3%;
 }

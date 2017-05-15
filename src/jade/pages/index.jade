@@ -1,20 +1,48 @@
 extends ../_partials/_template
+include ../_mixins/_nav
 block content
-  .c-content.l-pad--b-1
-    section.c-content__bar(aria-label='Company')
-      img(src=paths.img + 'logo-160.png', alt=stripTags(app.name), width='110')
-      br
-      h1.name!=app.name
-    .c-content__main(role='main')
-      section.c-content__screen(aria-label='Introduction') 
-        h1=titleStarterKit
-        p.c-content__screen__sub-title=slogan
-        p.c-content__screen__unit-title=forDetails
-      section.c-content__details(aria-label='Details')
-        each feature in features
-          .c-content__item
-            h1!=feature.title
-            p=feature.detail
-  .c-footer.l-pad--1
-    .c-footer__copyright(role='contentinfo')
-      p!=app.copyright
+  +nav(0)
+  .c-content.c-homepage(data-js-fullpage)
+    .section.c-homepage__1
+      .c-homepage__1__content
+        img(src=paths.img + 'logo-utune.png', alt="Utune Creative logo")
+        br
+        //- img(src=paths.img + '.png', alt="Utune Creative logo")
+      .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
+    .section.c-homepage__2
+      .c-homepage__tab-1
+      .c-homepage__tab-2
+      .c-homepage__tab-3
+      .c-homepage__tab-4
+      .c-homepage__tab-panel
+        ul
+          each item in weDoTabPanel
+            li.font--roboto-light
+              div.c-homepage__tab-panel__icon(class=item.icon)
+              span!= item.text
+              .c-homepage__tab-panel__button(class=item.buttonClass) View
+    .section.c-homepage__3
+      each item in ourwork
+        a.c-gallery__item.draw(href=item.href alt=item.alt class=item.widthClass+" "+item.floatClass)
+          img.l-full-width(src=paths.img + item.img)
+        if item.isEnd=="true"
+          .clear
+    .section.c-homepage__4
+      h2 our clients
+
+
+      
+      
+      
+      
+      //- div
+      //-   img(src=paths.img + 'ourwork-transfomers.jpg')
+      //- div
+      //-   img(src=paths.img + 'ourwork-tes.jpg')
+      //- div
+      //-   img(src=paths.img + 'ourwork-jld.jpg')
+
+    //- .section
+    //- .section
+
+
