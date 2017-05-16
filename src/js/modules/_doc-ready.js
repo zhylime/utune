@@ -9,6 +9,7 @@ $(document).ready(function() {
 
   $('[data-js-masonry]').MasonryGallery();
 
+ 
   setTimeout(function(){
     $('[data-js-fullpage]').FullPage();
   }, 0);

@@ -1,0 +1,52 @@
+form
+  button
+    background-color $col-button-blue
+    font-size 18px
+    font-family $font-roboto-condensed
+    height 46px
+    width 240px
+    line-height 46px
+    color white
+    border 0
+    border-radius 23px
+    cursor pointer
+  .text-input
+    position relative
+    font-family $font-roboto-light
+    margin-bottom 30px
+    input
+    textarea
+      padding 1rem 1rem
+      width 100%
+      background-color transparent
+      border 0
+      border-bottom 1px solid white
+      &:focus
+        outline 0
+        & ~ span
+          width 100%
+          
+        & ~ label
+          top -2.25rem
+    input
+      height 50px
+
+    label
+      top 0
+      left 0
+      position absolute
+      padding 15px 10px
+      transition all .3s ease
+    span
+      display block
+      width 0
+      height 3px
+      position absolute
+      bottom 0
+      left 0
+      transition width .3s ease
+      background-color white
+    
+    textarea
+      min-height 13em
+      

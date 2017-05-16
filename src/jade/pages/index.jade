@@ -29,22 +29,68 @@ block content
           .clear
     .section.c-homepage__4
       h2 our clients
-      .c-masonry(data-js-masonry)
+      //- (data-js-masonry)
+      .c-masonry
         each item in clients
           a.c-masonry__item(href=item.href alt=item.alt)
+            i
             img(src=paths.img + item.img)
 
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
-      
-      
-      //- div
-      //-   img(src=paths.img + 'ourwork-transfomers.jpg')
-      //- div
-      //-   img(src=paths.img + 'ourwork-tes.jpg')
-      //- div
-      //-   img(src=paths.img + 'ourwork-jld.jpg')
 
-    //- .section
-    //- .section
+    .section.c-homepage__5
+      h2 contact us
+      .c-homepage__5__main
+        .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1
+          form
+            .text-input.l-grid__col.l-col-10-5.l-pad--r-1
+              input#name(type="text", name="your-name", required)
+              label Your Name
+              span
+            .text-input.l-grid__col.l-col-10-5.l-pad--l-1
+              input#email(type="text", name="your-email", required)
+              label Your Email
+              span
+            .clear
+            .text-input
+              input#mySubject(type="text", name="your-subject", required)
+              label Your Subject
+              span
+            .text-input
+              textarea#myMessage(name="your-message", required)
+              label Your Message
+              span
+            button.txt--uppercase.l-flt--r(type="submit") send your message
+            .clear
+        .l-grid__col.l-col-10-5
+          .l-grid__col.l-col-10-5
+            .font-icon-mail
+            .c-homepage__5__email
+              each item in contactEmail
+                p!= item.name
+                  br
+                  a(href="mailto:#{item.email}")!= item.email
+                br
+                
+          .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1
+            div
+              .font-icon-address
+              .c-homepage__5__location
+                p!= contactAddress.add
+                br
+                
+                p!= contactAddress.postcode
+                br
+                
+                p!= contactAddress.chineseAdd
+            .clear
+            div
+              .font-icon-phone
+              .c-homepage__5__phone
+                p.
+                  #{contactPhone.name}
+                  <br>
+                  #{contactPhone.number}
+    .section
 
 
