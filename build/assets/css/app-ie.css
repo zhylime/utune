@@ -509,7 +509,7 @@ h1,
 h2,
 .h2,
 .c-intro__title {
-  font-size: 3em;
+  font-size: 58px;
   line-height: 105%;
 }
 h3,
@@ -2516,6 +2516,29 @@ html {
   border-color: #ffd923;
   color: #fff;
 }
+.c-masonry {
+  margin: 60px auto 90px;
+  width: 77%;
+}
+.c-masonry img {
+  max-width: 120px;
+}
+.c-masonry__item {
+  text-align: center;
+  width: 220px;
+  height: 120px;
+  display: inline-block;
+}
+@media (min-width: 1000px) {
+  .c-masonry__item {
+    width: 200px;
+  }
+}
+@media (min-width: 1441px) {
+  .c-masonry__item {
+    width: 220px;
+  }
+}
 .c-content {
   width: 100%;
   text-align: center;
@@ -2686,7 +2709,8 @@ html {
   margin-left: -20px;
   height: 83px;
   width: 40px;
-  font-size: 84px;
+  font-size: 64px;
+  cursor: pointer;
 }
 .c-homepage__tab-1 {
   position: absolute;
@@ -2732,6 +2756,13 @@ html {
 .c-homepage__tab-panel__button.active {
   background-color: #fff;
   color: #000;
+}
+.c-homepage__4 {
+  background-color: #292b2e;
+}
+.c-homepage__4 h2 {
+  margin: 140px auto 60px;
+  text-transform: uppercase;
 }
 .c-image-hue {
   background-size: 100%;

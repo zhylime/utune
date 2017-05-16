@@ -29,10 +29,12 @@ block content
           .clear
     .section.c-homepage__4
       h2 our clients
+      .c-masonry(data-js-masonry)
+        each item in clients
+          a.c-masonry__item(href=item.href alt=item.alt)
+            img(src=paths.img + item.img)
 
-
-      
-      
+      .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
       
       
       //- div
