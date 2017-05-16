@@ -78,7 +78,6 @@
 //
 // Styleguide 3.5
 
-
 // Margins
 //
 // `.l-mgn--[[l|r|t|b]-[desk|tabt[-min|-max]|mobi]-[fp-]$x]`
@@ -268,6 +267,13 @@ for $x in (0..5)
 
     .l-{$spaces[$space]}--fp-{$x}
       {$spacing} ($x/10em) !important
+    
+for $x in (0..5)
+  for $spacing, $space in "margin" "padding"
+    for $positioning, $positionIndex in "left" "right" "top" "bottom"
+      .l-{$spaces[$space]}--{$positions[$positionIndex]}-{$x}
+        {$spacing}-{$positioning} $x * 1em !important
+  
 
 
         

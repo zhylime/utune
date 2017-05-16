@@ -15,23 +15,23 @@
   "navMenu":[
     {
       "name":"home",
-      "link":"#homepage"
+      "link":"javascript:;"
     },
     {
       "name":"what we do",
-      "link":"#what-we-do"
+      "link":"javascript:;"
     },
     {
       "name":"about us",
-      "link":"#about-us"
+      "link":"javascript:;"
     },
     {
       "name":"contact",
-      "link":"#contact"
+      "link":"javascript:;"
     },
     {
       "name":"mall",
-      "link":"#mall"
+      "link":"javascript:;"
     }
   ],
 
@@ -307,5 +307,36 @@
       "img":"clients-zgyc.png",
       "alt":""
     }
-  ]
+  ],
+  "contactEmail":[
+    {
+      "name":"General Enquiry",
+      "email":"info@utune.com.cn"
+    },
+    {
+      "name":"For Career",
+      "email":"hr@utune.com.cn"
+    },
+    {
+      "name":"Beijing Headquarters",
+      "email":"Du.hong@utune.com.cn"
+    },
+    {
+      "name":"Guangzhou Office",
+      "email":"Dongsongjun@utune.com.cn"
+    },
+    {
+      "name":"Shenzhen Office",
+      "email":"wangxin@utune.com.cn"
+    }
+  ],
+  "contactAddress":{
+    "add":"603-606, Unit2, No.3,<br/>LingHang International<br/>Center Building,<br/>South XiaoJie,<br/>Guang qu men,<br/>Beijing, P.R. China.",
+    "postcode":"100061",
+    "chineseAdd":"北京市东城区广渠门<br/>领行国际3-2-603-606"
+  },
+  "contactPhone":{
+    "name":"Phone:",
+    "number":"+86 010 6711 0836"
+  }
 }

@@ -1,5 +1,8 @@
 .c-homepage
-  min-width 1024px
+  min-width $desktop-min
+  h2
+    margin 140px auto 60px
+    text-transform uppercase
   &__1
     background-image url("../img/homepage-utune-hero.jpg")
     background-size 100% 110%
@@ -54,6 +57,39 @@
         color black
   &__4
     background-color $col-primary-grey
-    h2
-      margin 140px auto 60px
-      text-transform uppercase
+    
+  
+  // contact section
+  &__5
+    background-image url("../img/background-contact.jpg")
+    background-size cover
+    background-repeat no-repeat
+    color white
+    &__main
+      max-width $desktop-min
+      margin auto
+      text-align left
+    &__email
+    &__location
+    &__phone
+      display table-cell
+      vertical-align top
+      line-height 1.4em
+      padding 4px 0 0 20px
+      word-break break-all
+      font-family $font-roboto-regular
+    &__location
+      padding-bottom 30px
+    &__email
+      a
+        text-decoration none
+        color white
+        &:hover
+          text-decoration underline
+    .font-icon-mail
+    .font-icon-address
+    .font-icon-phone
+      font-size 50px
+      width 50px
+      display table-cell
+      vertical-align top
