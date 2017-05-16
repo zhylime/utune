@@ -2520,7 +2520,7 @@ html {
   color: #fff;
 }
 .c-masonry {
-  margin: 60px auto 90px;
+  margin: 60px auto 60px;
   width: 77%;
 }
 .c-masonry img {
@@ -2528,19 +2528,9 @@ html {
 }
 .c-masonry__item {
   text-align: center;
-  width: 220px;
+  width: 210px;
   height: 120px;
   display: inline-block;
-}
-@media (min-width: 1000px) {
-  .c-masonry__item {
-    width: 200px;
-  }
-}
-@media (min-width: 1441px) {
-  .c-masonry__item {
-    width: 220px;
-  }
 }
 .c-content {
   width: 100%;
