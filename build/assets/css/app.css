@@ -2691,11 +2691,16 @@ html {
   width: 210px;
   height: 120px;
   display: inline-block;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 .c-masonry__item i {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
+}
+.c-masonry__item:hover {
+  background-color: #222;
 }
 .c-content {
   width: 100%;
