@@ -269,46 +269,34 @@ html.fp-enabled,
 }
 @-moz-keyframes moveUpDown {
   0% {
-    background-position: center -30px;
-  }
-  50% {
-    background-position: center -10px;
+    background-position: 0 0px;
   }
   100% {
-    background-position: center -30px;
+    background-position: 0 -350px;
   }
 }
 @-webkit-keyframes moveUpDown {
   0% {
-    background-position: center -30px;
-  }
-  50% {
-    background-position: center -10px;
+    background-position: 0 0px;
   }
   100% {
-    background-position: center -30px;
+    background-position: 0 -350px;
   }
 }
 @-o-keyframes moveUpDown {
   0% {
-    background-position: center -30px;
-  }
-  50% {
-    background-position: center -10px;
+    background-position: 0 0px;
   }
   100% {
-    background-position: center -30px;
+    background-position: 0 -350px;
   }
 }
 @keyframes moveUpDown {
   0% {
-    background-position: center -30px;
-  }
-  50% {
-    background-position: center -10px;
+    background-position: 0 0px;
   }
   100% {
-    background-position: center -30px;
+    background-position: 0 -350px;
   }
 }
 .bg--cover {
@@ -2928,8 +2916,8 @@ form .text-input textarea {
 }
 .c-homepage__1 {
   background-image: url("../img/homepage-utune-hero.jpg");
-  background-size: 100% 110%;
-  animation: moveUpDown 5s infinite;
+  background-size: 100% 200%;
+  animation: moveUpDown 15s infinite alternate linear;
 }
 .c-homepage__next-button {
   position: absolute;
@@ -3002,6 +2990,9 @@ form .text-input textarea {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
+}
+.c-homepage__5 h2 {
+  margin: 0px auto 100px;
 }
 .c-homepage__5__main {
   max-width: 1025px;
