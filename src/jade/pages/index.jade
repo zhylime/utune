@@ -22,11 +22,12 @@ block content
               span!= item.text
               .c-homepage__tab-panel__button(class=item.buttonClass) View
     .section.c-homepage__3
-      each item in ourwork
-        a.c-gallery__item.draw(href=item.href alt=item.alt class=item.widthClass+" "+item.floatClass)
-          img.l-full-width(src=paths.img + item.img)
-        if item.isEnd=="true"
-          .clear
+      .c-homepage__3--main
+        each item in ourwork
+          a.c-gallery__item.draw(href=item.href alt=item.alt class=item.widthClass+" "+item.floatClass)
+            img.l-full-width(src=paths.img + item.img)
+          if item.isEnd=="true"
+            .clear
     .section.c-homepage__4
       h2 our clients
       //- (data-js-masonry)
@@ -91,6 +92,7 @@ block content
                   #{contactPhone.name}
                   <br>
                   #{contactPhone.number}
+      .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
     .section.c-homepage__6
       .c-homepage__6--logo
         img(src=paths.img + "logo-green.svg")

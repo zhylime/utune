@@ -2989,6 +2989,14 @@ form .text-input textarea {
   background-color: #fff;
   color: #000;
 }
+.c-homepage__3 {
+  background-color: #292b2e;
+}
+.c-homepage__3--main {
+  width: 77%;
+  margin: 0 auto;
+  background-color: #fff;
+}
 .c-homepage__4 {
   background-color: #292b2e;
 }
