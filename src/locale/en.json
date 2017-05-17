@@ -338,5 +338,9 @@
   "contactPhone":{
     "name":"Phone:",
     "number":"+86 010 6711 0836"
+  },
+  "aboutUtune":{
+    "text":"This is <span>UTUNE</span><br>We insist on <span>Transboundary Insight</span><br>And <span>Original</span> design<br>With <span>Innovative</span> spirit<br>Creating business opportunities by<br><span>Ensouling</span> the products.",
+    "footer_text":"We do  branding strategy, products creative. production and logistics operation or management, space design<br>We make brands stand out and stand for something."
   }
 }
