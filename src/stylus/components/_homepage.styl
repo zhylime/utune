@@ -1,5 +1,11 @@
 .c-homepage
   min-width $desktop-min
+  .inPanel
+    opacity 1
+    transition-duration .6s
+  .outPanel
+    opacity 0
+    transition-duration .6s
   h2
     margin 140px auto 60px
     text-transform uppercase
@@ -16,17 +22,32 @@
     width 40px
     font-size 64px
     cursor pointer
+  &__2
+    background-color $col-bg-grey
   &__tab-1
+  &__tab-2
+  &__tab-3
+  &__tab-4
     position absolute
     width 100%
     height 100%
     top 0
     left 0
-    background-image url("../img/background-wedo-star.jpg")
     background-size cover
     background-repeat no-repeat
+    opacity 0
+  &__tab-1
+    background-image url("../img/background-wedo-star.jpg")
+    opacity 1
+  &__tab-2
+    background-image url("../img/background-wedo-mirror.jpg")
+  &__tab-3
+    background-image url("../img/background-wedo-water.jpg")
+  &__tab-4
+    background-image url("../img/background-wedo-hill.jpg")
   &__tab-panel
     position relative
+    cursor pointer
     ul
       width 984px
       margin auto
@@ -35,12 +56,13 @@
       float left
       width 118px
       margin 0 50px
+      opacity 0
     span
       margin 30px 0 20px
       display block
       // font-size 2em
     &__icon
-      font-size 40px
+      font-size 50px
     &__button
       border 1px solid white
       border-radius 15px
@@ -55,6 +77,15 @@
       &.active
         background-color white
         color black
+    &.in
+      li:nth-child(1)
+        animation panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) 0s both
+      li:nth-child(2)
+        animation panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) .2s both
+      li:nth-child(3)
+        animation panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) .4s both
+      li:nth-child(4)
+        animation panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) .6s both
   &__3
     background-color $col-primary-grey
     &--main

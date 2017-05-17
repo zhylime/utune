@@ -17,7 +17,8 @@ class FullPage extends MLP.apps.MLPModule {
   }
 
   event(){
-    var _this = this;
+    var _this = this,
+    _panel = $('.c-homepage__tab-panel');
     this.el.fullpageContainer.fullpage({
       'navigation': true,
       'scrollOverflow': true,
@@ -28,10 +29,15 @@ class FullPage extends MLP.apps.MLPModule {
         
         // 前两个section 分别对应前两个导航active
         if(_index < 2){
-          
           $(_this.el.navItems[_index]).addClass('active');
+          //添加第二屏菜单淡入效果
+          if(_index == 1){
+            _panel.addClass('in');
+          }
+          else{
+            _panel.removeClass('in');
+          }
         }
-
         // 最后一个section 导航倒数第二个加active
         else if(_index == navLong){
           _index -= 2;
@@ -41,6 +47,7 @@ class FullPage extends MLP.apps.MLPModule {
         else{
           _index -= 1;
           $(_this.el.navItems[_index]).addClass('active');
+          _panel.removeClass('in');
         }
         
       }
@@ -68,7 +75,7 @@ class FullPage extends MLP.apps.MLPModule {
       }
       
       else{
-         _index += 1;
+        _index += 1;
         $(this).on('click', function(){
           $.fn.fullpage.moveTo(_index);
         });

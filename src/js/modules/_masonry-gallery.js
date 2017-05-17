@@ -14,7 +14,7 @@ class MasonryGallery extends MLP.apps.MLPModule {
 
   event(){
     var _this = this;
-    this.el.target.masonry({
+    _this.el.target.masonry({
       columnWidth: 0,
       itemSelector: '.c-masonry-gallery__item'
     });

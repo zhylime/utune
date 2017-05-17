@@ -299,6 +299,126 @@ html.fp-enabled,
     background-position: 0 -350px;
   }
 }
+@-moz-keyframes panel-animation {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes panel-animation {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-o-keyframes panel-animation {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes panel-animation {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-moz-keyframes panelIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+@-webkit-keyframes panelIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+@-o-keyframes panelIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes panelIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+@-moz-keyframes panelOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes panelOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-o-keyframes panelOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes panelOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 .bg--cover {
   background-size: cover;
   -ms-behavior: url("$bg-size-htc-url");
@@ -2910,6 +3030,14 @@ form .text-input textarea {
 .c-homepage {
   min-width: 1025px;
 }
+.c-homepage .inPanel {
+  opacity: 1;
+  transition-duration: 0.6s;
+}
+.c-homepage .outPanel {
+  opacity: 0;
+  transition-duration: 0.6s;
+}
 .c-homepage h2 {
   margin: 140px auto 60px;
   text-transform: uppercase;
@@ -2929,18 +3057,38 @@ form .text-input textarea {
   font-size: 64px;
   cursor: pointer;
 }
-.c-homepage__tab-1 {
+.c-homepage__2 {
+  background-color: #222;
+}
+.c-homepage__tab-1,
+.c-homepage__tab-2,
+.c-homepage__tab-3,
+.c-homepage__tab-4 {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("../img/background-wedo-star.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0;
+}
+.c-homepage__tab-1 {
+  background-image: url("../img/background-wedo-star.jpg");
+  opacity: 1;
+}
+.c-homepage__tab-2 {
+  background-image: url("../img/background-wedo-mirror.jpg");
+}
+.c-homepage__tab-3 {
+  background-image: url("../img/background-wedo-water.jpg");
+}
+.c-homepage__tab-4 {
+  background-image: url("../img/background-wedo-hill.jpg");
 }
 .c-homepage__tab-panel {
   position: relative;
+  cursor: pointer;
 }
 .c-homepage__tab-panel ul {
   width: 984px;
@@ -2951,13 +3099,14 @@ form .text-input textarea {
   float: left;
   width: 118px;
   margin: 0 50px;
+  opacity: 0;
 }
 .c-homepage__tab-panel span {
   margin: 30px 0 20px;
   display: block;
 }
 .c-homepage__tab-panel__icon {
-  font-size: 40px;
+  font-size: 50px;
 }
 .c-homepage__tab-panel__button {
   border: 1px solid #fff;
@@ -2973,6 +3122,18 @@ form .text-input textarea {
 .c-homepage__tab-panel__button.active {
   background-color: #fff;
   color: #000;
+}
+.c-homepage__tab-panel.in li:nth-child(1) {
+  animation: panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) 0s both;
+}
+.c-homepage__tab-panel.in li:nth-child(2) {
+  animation: panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) 0.2s both;
+}
+.c-homepage__tab-panel.in li:nth-child(3) {
+  animation: panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) 0.4s both;
+}
+.c-homepage__tab-panel.in li:nth-child(4) {
+  animation: panel-animation 1s cubic-bezier(0.35, -0.1, 0.68, 1.1) 0.6s both;
 }
 .c-homepage__3 {
   background-color: #292b2e;
