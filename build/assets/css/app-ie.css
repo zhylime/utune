@@ -2986,6 +2986,14 @@ form .text-input textarea {
   background-color: #fff;
   color: #000;
 }
+.c-homepage__3 {
+  background-color: #292b2e;
+}
+.c-homepage__3--main {
+  width: 77%;
+  margin: 0 auto;
+  background-color: #fff;
+}
 .c-homepage__4 {
   background-color: #292b2e;
 }
@@ -3027,6 +3035,31 @@ form .text-input textarea {
   width: 50px;
   display: table-cell;
   vertical-align: top;
+}
+.c-homepage__6 {
+  background-color: #292b2e;
+  position: relative;
+  height: 100%;
+}
+.c-homepage__6--logo {
+  margin: 160px auto;
+}
+.c-homepage__6 img {
+  width: 181px;
+  height: 69px;
+}
+.c-homepage__6--text {
+  font-size: 20px;
+  line-height: 2em;
+}
+.c-homepage__6--text span {
+  color: #9ece12;
+}
+.c-homepage__6--footer {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-top: 180px;
+  margin-bottom: 100px;
 }
 .c-image-hue {
   background-size: 100%;
@@ -3106,6 +3139,12 @@ form .text-input textarea {
 }
 .c-nav__menu ul li:nth-last-of-type(1) {
   margin-right: 0;
+}
+.c-nav__menu ul li:nth-last-of-type(1) a {
+  border: 0;
+}
+.c-nav__menu ul li:nth-last-of-type(1) a.active {
+  border: 0;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
