@@ -54,9 +54,27 @@ class FullPage extends MLP.apps.MLPModule {
     // 点击nav页面滚动到特定section
     this.el.navItems.each(function(index){
       var _index = index + 1;
-      $(this).on('click', function(){
-        $.fn.fullpage.moveTo(_index);
-      });
+      var navLong = $(_this.el.navItems).length;
+      //前两个section
+      if(_index <= 2){
+        $(this).on('click', function(){
+          $.fn.fullpage.moveTo(_index);
+        });
+      }
+
+      // 导航最后一个链接
+      else if(_index == navLong){
+        return;
+      }
+      
+      else{
+         _index += 1;
+        $(this).on('click', function(){
+          $.fn.fullpage.moveTo(_index);
+        });
+
+      }
+      
     });
 
 
