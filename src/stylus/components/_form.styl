@@ -21,6 +21,7 @@ form
       background-color transparent
       border 0
       border-bottom 1px solid white
+      color white
       &:focus
         outline 0
         & ~ span
@@ -28,6 +29,10 @@ form
           
         & ~ label
           top -2.25rem
+      &:valid
+        & ~ label
+          top -2.25rem
+          
     input
       height 50px
 
