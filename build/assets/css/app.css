@@ -2812,6 +2812,7 @@ form .text-input textarea {
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #fff;
+  color: #fff;
 }
 form .text-input input:focus,
 form .text-input textarea:focus {
@@ -2823,6 +2824,10 @@ form .text-input textarea:focus ~ span {
 }
 form .text-input input:focus ~ label,
 form .text-input textarea:focus ~ label {
+  top: -2.25rem;
+}
+form .text-input input:valid ~ label,
+form .text-input textarea:valid ~ label {
   top: -2.25rem;
 }
 form .text-input input {
@@ -2927,7 +2932,7 @@ form .text-input textarea {
 .c-homepage__1 {
   background-image: url("../img/homepage-utune-hero.jpg");
   background-size: 100% 110%;
-  animation: moveUpDown 3s infinite;
+  animation: moveUpDown 5s infinite;
 }
 .c-homepage__next-button {
   position: absolute;
