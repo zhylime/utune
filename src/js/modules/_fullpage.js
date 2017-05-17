@@ -23,9 +23,26 @@ class FullPage extends MLP.apps.MLPModule {
       'scrollOverflow': true,
       afterLoad: function(anchor, index){
         var _index = index - 1;
-        console.log(index);
-        $(_this.el.navItems).removeClass('active');
-        $(_this.el.navItems[_index]).addClass('active');
+        var navLong = $(_this.el.navItems).length;
+        $(_this.el.navItems).removeClass('active'); 
+        
+        // 前两个section 分别对应前两个导航active
+        if(_index < 2){
+          
+          $(_this.el.navItems[_index]).addClass('active');
+        }
+
+        // 最后一个section 导航倒数第二个加active
+        else if(_index == navLong){
+          _index -= 2;
+          $(_this.el.navItems[_index]).addClass('active');
+        }
+
+        else{
+          _index -= 1;
+          $(_this.el.navItems[_index]).addClass('active');
+        }
+        
       }
     });
 
