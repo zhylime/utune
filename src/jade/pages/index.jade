@@ -23,6 +23,13 @@ block content
         img.lake.chuan(src=paths.img + "wedo-lake-fan.png")
         img.lake.chuan2(src=paths.img + "wedo-lake-fan2.png")
       .c-homepage__tab-4
+        img.star.star1(src=paths.img + "star.svg")
+        img.star.star2(src=paths.img + "star.svg")
+        img.star.star3(src=paths.img + "star.svg")
+        img.star.star4(src=paths.img + "star.svg")
+        img.star.star5(src=paths.img + "star.svg")
+        img.star.star6(src=paths.img + "star.svg")
+        img.tree(src=paths.img + "wedo-tree.png")
       .c-homepage__tab-panel
         ul
           each item in weDoTabPanel
@@ -30,6 +37,7 @@ block content
               div.c-homepage__tab-panel__icon(class=item.icon)
               span!= item.text
               a.c-homepage__tab-panel__button(class=item.buttonClass href=item.url) View
+      .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
     .section.c-homepage__3
       .c-homepage__3--main
         each item in ourwork

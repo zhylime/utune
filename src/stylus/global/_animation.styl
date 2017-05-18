@@ -18,24 +18,42 @@
 
 @keyframes lang
   0%
+  100%
     transform translateX(0%)
   50%
     transform translateX(10%)
-  100%
-    transform translateX(0%)
+
 
 @keyframes chuan
   0%
+  100%
     transform translateX(0%)
   50%
     transform translateX(5%)
-  100%
-    transform translateX(0%)
+
 
 @keyframes chuan2
   0%
+  100%
     transform translateX(3%)
   50%
     transform translateX(0%)
+
+
+@keyframes star
+  0%
   100%
-    transform translateX(3%)
+    box-shadow 0 0 25px transparent
+    opacity .9
+  50%
+    box-shadow 0 0 5px $col-white
+    opacity 0.3
+
+@keyframes star1
+  0%
+  100%
+    box-shadow 0 0 5px transparent
+    opacity .3
+  50%
+    box-shadow 0 0 25px $col-white
+    opacity 0.9
