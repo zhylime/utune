@@ -515,6 +515,26 @@ html.fp-enabled,
     opacity: 0.9;
   }
 }
+@-moz-keyframes creative {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes creative {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes creative {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes creative {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .bg--cover {
   background-size: cover;
   -ms-behavior: url("$bg-size-htc-url");
@@ -3615,6 +3635,25 @@ form .text-input textarea {
 .c-parallax h1 {
   font-size: 270%;
   margin-bottom: 20px;
+}
+#creative_word {
+  stroke-dasharray: 1090.15px;
+  stroke-dashoffset: 1090.15px;
+  animation: creative 3s linear forwards;
+}
+#creative_t {
+  stroke-dasharray: 52.2735px;
+  stroke-dashoffset: 52.2735px;
+  animation: creative 0.1s linear forwards;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+#creative_dot {
+  stroke-dasharray: 30.7049px;
+  stroke-dashoffset: 30.7049px;
+  animation: creative 0.1s linear forwards;
+  animation-delay: 3.1s;
+  -webkit-animation-delay: 3.1s;
 }
 .c-svg--responsive {
   display: inline;
