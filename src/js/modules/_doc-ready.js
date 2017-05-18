@@ -7,7 +7,7 @@ $(document).ready(function() {
   
   $('[data-js-top-nav]').TopNav();
   $('[data-js-switch-tab]').SwitchTab();
-
+  $('[data-js-skewing]').Skewing();
   $('[data-js-masonry]').MasonryGallery();
 
  

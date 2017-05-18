@@ -39,21 +39,25 @@
     {
       "icon":"font-icon-brand",
       "text":"Brand communication",
+      "url":"#",
       "buttonClass":"active"
     },
     {
       "icon":"font-icon-product",
       "text":"Product<br/>planning",
+      "url":"#",
       "buttonClass":""
     },
     {
       "icon":"font-icon-supply-chain",
       "text":"Supply chain management",
+      "url":"#",
       "buttonClass":""
     },
     {
       "icon":"font-icon-space",
       "text":"Space<br/>design",
+      "url":"#",
       "buttonClass":""
     }
   ],

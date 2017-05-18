@@ -339,6 +339,138 @@ html.fp-enabled,
     opacity: 1;
   }
 }
+@-moz-keyframes lang {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes lang {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-o-keyframes lang {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes lang {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-moz-keyframes chuan {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes chuan {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-o-keyframes chuan {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes chuan {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-moz-keyframes chuan2 {
+  0% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+@-webkit-keyframes chuan2 {
+  0% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+@-o-keyframes chuan2 {
+  0% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+@keyframes chuan2 {
+  0% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
 .bg--cover {
   background-size: cover;
   -ms-behavior: url("$bg-size-htc-url");
@@ -3003,6 +3135,27 @@ form .text-input textarea {
 .c-homepage__tab-3 {
   background-image: url("../img/background-wedo-water.jpg");
 }
+.c-homepage__tab-3 .hill,
+.c-homepage__tab-3 .lake {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
+.c-homepage__tab-3 .lang {
+  width: 120%;
+  left: -20%;
+  animation: lang 9s linear 0s infinite;
+}
+.c-homepage__tab-3 .chuan {
+  animation: chuan 20s linear 0s infinite;
+}
+.c-homepage__tab-3 .chuan2 {
+  animation: chuan2 24s linear 0s infinite;
+}
 .c-homepage__tab-4 {
   background-image: url("../img/background-wedo-hill.jpg");
 }
@@ -3024,6 +3177,11 @@ form .text-input textarea {
 .c-homepage__tab-panel span {
   margin: 30px 0 20px;
   display: block;
+}
+.c-homepage__tab-panel a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
 }
 .c-homepage__tab-panel__icon {
   font-size: 50px;

@@ -43,6 +43,23 @@
     background-image url("../img/background-wedo-mirror.jpg")
   &__tab-3
     background-image url("../img/background-wedo-water.jpg")
+    .hill
+    .lake
+      position absolute
+      left 0px
+      right 0px
+      top 0px
+      bottom 0px
+      width 100%
+      height 100%
+    .lang
+      width 120%
+      left -20%
+      animation lang 9s linear 0s infinite
+    .chuan
+      animation chuan 20s linear 0s infinite
+    .chuan2
+      animation chuan2 24s linear 0s infinite
   &__tab-4
     background-image url("../img/background-wedo-hill.jpg")
   &__tab-panel
@@ -61,6 +78,10 @@
       margin 30px 0 20px
       display block
       // font-size 2em
+    a
+      display block
+      text-decoration none
+      color $col-white
     &__icon
       font-size 50px
     &__button
@@ -94,8 +115,6 @@
       background-color $col-white
   &__4
     background-color $col-primary-grey
-    
-  
   // contact section
   &__5
     background-image url("../img/background-contact.jpg")

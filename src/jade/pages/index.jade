@@ -12,7 +12,16 @@ block content
     .section.c-homepage__2(data-js-switch-tab)
       .c-homepage__tab-1
       .c-homepage__tab-2
-      .c-homepage__tab-3
+      .c-homepage__tab-3(data-js-skewing)
+        img.lake(src=paths.img + "wedo-lake-light.png")
+        img.hill(src=paths.img + "wedo-hill-last.png")
+        img.hill(src=paths.img + "wedo-hill-mid.png")
+        img.hill(src=paths.img + "wedo-hill-front.png")
+        img.lake(src=paths.img + "wedo-lake.png")
+        img.lake.lang(src=paths.img + "wedo-lake-ripple.png")
+        img.lake.lang(src=paths.img + "wedo-lake-ripple2.png")
+        img.lake.chuan(src=paths.img + "wedo-lake-fan.png")
+        img.lake.chuan2(src=paths.img + "wedo-lake-fan2.png")
       .c-homepage__tab-4
       .c-homepage__tab-panel
         ul
@@ -20,7 +29,7 @@ block content
             li.font--roboto-light
               div.c-homepage__tab-panel__icon(class=item.icon)
               span!= item.text
-              .c-homepage__tab-panel__button(class=item.buttonClass) View
+              a.c-homepage__tab-panel__button(class=item.buttonClass href=item.url) View
     .section.c-homepage__3
       .c-homepage__3--main
         each item in ourwork
