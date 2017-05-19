@@ -438,7 +438,7 @@ html.fp-enabled,
 @-moz-keyframes star {
   0%, 100% {
     box-shadow: 0 0 25px transparent;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   50% {
     box-shadow: 0 0 5px #fff;
@@ -448,7 +448,7 @@ html.fp-enabled,
 @-webkit-keyframes star {
   0%, 100% {
     box-shadow: 0 0 25px transparent;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   50% {
     box-shadow: 0 0 5px #fff;
@@ -458,7 +458,7 @@ html.fp-enabled,
 @-o-keyframes star {
   0%, 100% {
     box-shadow: 0 0 25px transparent;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   50% {
     box-shadow: 0 0 5px #fff;
@@ -468,7 +468,7 @@ html.fp-enabled,
 @keyframes star {
   0%, 100% {
     box-shadow: 0 0 25px transparent;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   50% {
     box-shadow: 0 0 5px #fff;
@@ -513,6 +513,46 @@ html.fp-enabled,
   50% {
     box-shadow: 0 0 25px #fff;
     opacity: 0.9;
+  }
+}
+@-moz-keyframes star2 {
+  0%, 100% {
+    transform: translateX(0%);
+    transform: opacity 0.6;
+  }
+  50% {
+    transform: translateX(3%);
+    transform: opacity 0.9;
+  }
+}
+@-webkit-keyframes star2 {
+  0%, 100% {
+    transform: translateX(0%);
+    transform: opacity 0.6;
+  }
+  50% {
+    transform: translateX(3%);
+    transform: opacity 0.9;
+  }
+}
+@-o-keyframes star2 {
+  0%, 100% {
+    transform: translateX(0%);
+    transform: opacity 0.6;
+  }
+  50% {
+    transform: translateX(3%);
+    transform: opacity 0.9;
+  }
+}
+@keyframes star2 {
+  0%, 100% {
+    transform: translateX(0%);
+    transform: opacity 0.6;
+  }
+  50% {
+    transform: translateX(3%);
+    transform: opacity 0.9;
   }
 }
 @-moz-keyframes creative {
@@ -3190,8 +3230,17 @@ form .text-input textarea {
   opacity: 0;
 }
 .c-homepage__tab-1 {
-  background-image: url("../img/background-wedo-star.jpg");
+  background-image: url("../img/background-wedo-star1.jpg");
   opacity: 1;
+}
+.c-homepage__tab-1 .star {
+  position: absolute;
+  left: -10%;
+  bottom: 0px;
+  width: 106%;
+  height: 100%;
+  opacity: 0.4;
+  animation: lang 30s linear 0s infinite;
 }
 .c-homepage__tab-2 {
   background-image: url("../img/background-wedo-mirror.jpg");
@@ -3258,8 +3307,16 @@ form .text-input textarea {
   animation-name: star1;
 }
 .c-homepage__tab-4 .star6 {
-  left: 80%;
+  left: 75%;
   top: 17%;
+}
+.c-homepage__tab-4 .star7 {
+  left: 90%;
+  top: 17%;
+}
+.c-homepage__tab-4 .star8 {
+  left: 87%;
+  top: 36%;
 }
 .c-homepage__tab-4 .tree {
   position: absolute;
