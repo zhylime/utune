@@ -3206,6 +3206,9 @@ form .text-input textarea {
   background-size: 100% 200%;
   animation: moveUpDown 15s infinite alternate linear;
 }
+.c-homepage__1 svg {
+  opacity: 0;
+}
 .c-homepage__next-button {
   position: absolute;
   bottom: 30px;
@@ -3694,19 +3697,22 @@ form .text-input textarea {
   font-size: 270%;
   margin-bottom: 20px;
 }
-#creative_word {
+.section.c-homepage__1.in svg {
+  opacity: 1;
+}
+.section.c-homepage__1.in #creative_word {
   stroke-dasharray: 1090.15px;
   stroke-dashoffset: 1090.15px;
   animation: creative 3s linear forwards;
 }
-#creative_t {
+.section.c-homepage__1.in #creative_t {
   stroke-dasharray: 52.2735px;
   stroke-dashoffset: 52.2735px;
   animation: creative 0.1s linear forwards;
   animation-delay: 3s;
   -webkit-animation-delay: 3s;
 }
-#creative_dot {
+.section.c-homepage__1.in #creative_dot {
   stroke-dasharray: 30.7049px;
   stroke-dashoffset: 30.7049px;
   animation: creative 0.1s linear forwards;
