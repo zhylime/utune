@@ -70,3 +70,34 @@
 @keyframes creative
   to
     stroke-dashoffset 0
+
+@keyframes shake-leftright
+  0%
+  100%
+  60%
+    transform rotate(2deg)
+    transform-origin 50% 95%
+  20%
+    transform rotate(7deg)
+    transform-origin 50% 95%
+  40%
+    transform rotate(0deg)
+    transform-origin 50% 95%
+  80%
+    transform rotate(6deg)
+    transform-origin 50% 95%
+@keyframes shake-leftright-2
+  0%
+  100%
+    transform rotate(2deg)
+    transform-origin 50% 95%
+  20%
+  80%
+    transform rotate(5deg)
+    transform-origin 50% 95%
+  40%
+    transform rotate(0deg)
+    transform-origin 50% 95%
+  60%
+    transform rotate(1deg)
+    transform-origin 50% 95%
