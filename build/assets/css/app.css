@@ -3163,21 +3163,21 @@ form .text-input textarea {
   right: 0;
 }
 .draw:hover {
-  color: #5e0097;
+  color: #d200ff;
 }
 .draw:hover::before {
-  border-top-color: #5e0097;
-  border-right-color: #5e0097;
+  border-top-color: #d200ff;
+  border-right-color: #d200ff;
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 .draw:hover::after {
-  border-bottom-color: #5e0097;
-  border-left-color: #5e0097;
+  border-bottom-color: #d200ff;
+  border-left-color: #d200ff;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 .draw::before,
 .draw::after {
-  border: 12px solid transparent;
+  border: 11px solid transparent;
   width: 0;
   height: 0;
 }
