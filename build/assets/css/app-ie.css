@@ -725,7 +725,7 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   50% {
-    opacity: 1;
+    opacity: 0.8;
     transform: translateX(3%);
   }
 }
@@ -735,7 +735,7 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   50% {
-    opacity: 1;
+    opacity: 0.8;
     transform: translateX(3%);
   }
 }
@@ -745,7 +745,7 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   50% {
-    opacity: 1;
+    opacity: 0.8;
     transform: translateX(3%);
   }
 }
@@ -755,13 +755,13 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   50% {
-    opacity: 1;
+    opacity: 0.8;
     transform: translateX(3%);
   }
 }
 @-moz-keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.4;
+    opacity: 0.6;
     transform: translateX(2%);
     transform: translateY(0%);
   }
@@ -773,7 +773,7 @@ html.fp-enabled,
 }
 @-webkit-keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.4;
+    opacity: 0.6;
     transform: translateX(2%);
     transform: translateY(0%);
   }
@@ -785,7 +785,7 @@ html.fp-enabled,
 }
 @-o-keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.4;
+    opacity: 0.6;
     transform: translateX(2%);
     transform: translateY(0%);
   }
@@ -797,7 +797,7 @@ html.fp-enabled,
 }
 @keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.4;
+    opacity: 0.6;
     transform: translateX(2%);
     transform: translateY(0%);
   }
@@ -3479,7 +3479,7 @@ form .text-input textarea {
   animation: jiguang-1 10s linear 0s infinite;
 }
 .c-homepage__tab-1 .jiguang2 {
-  animation: jiguang-2 10s linear 0s infinite;
+  animation: jiguang-2 15s linear 0s infinite;
 }
 .c-homepage__tab-1 .jiguang3 {
   transform: translateY(-10%);
