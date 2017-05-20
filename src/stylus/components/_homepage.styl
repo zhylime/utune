@@ -39,9 +39,21 @@
     background-repeat no-repeat
     opacity 0
   &__tab-1
-    background-image url("../img/background-wedo-star1.jpg")
+    background-color $col-black
     background-size 100% 100%
+    overflow hidden
     opacity 1
+    .jiguang
+      position absolute
+      left 0px
+      bottom 0px
+    .jiguang1
+      animation jiguang-1 10s linear 0s infinite
+    .jiguang2
+      animation jiguang-2 10s linear 0s infinite
+    .jiguang3
+      transform translateY(-10%)
+      transform translateX(-10%)
     .star
       position absolute
       left -10%

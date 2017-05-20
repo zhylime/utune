@@ -719,6 +719,94 @@ html.fp-enabled,
     transform-origin: 50% 95%;
   }
 }
+@-moz-keyframes jiguang-1 {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(3%);
+  }
+}
+@-webkit-keyframes jiguang-1 {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(3%);
+  }
+}
+@-o-keyframes jiguang-1 {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(3%);
+  }
+}
+@keyframes jiguang-1 {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(3%);
+  }
+}
+@-moz-keyframes jiguang-2 {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translateX(2%);
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 0.1;
+    transform: translateX(0%);
+    transform: translateY(10%);
+  }
+}
+@-webkit-keyframes jiguang-2 {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translateX(2%);
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 0.1;
+    transform: translateX(0%);
+    transform: translateY(10%);
+  }
+}
+@-o-keyframes jiguang-2 {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translateX(2%);
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 0.1;
+    transform: translateX(0%);
+    transform: translateY(10%);
+  }
+}
+@keyframes jiguang-2 {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translateX(2%);
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 0.1;
+    transform: translateX(0%);
+    transform: translateY(10%);
+  }
+}
 .bg--cover {
   background-size: cover;
   -ms-behavior: url("$bg-size-htc-url");
@@ -3377,9 +3465,25 @@ form .text-input textarea {
   opacity: 0;
 }
 .c-homepage__tab-1 {
-  background-image: url("../img/background-wedo-star1.jpg");
+  background-color: #000;
   background-size: 100% 100%;
+  overflow: hidden;
   opacity: 1;
+}
+.c-homepage__tab-1 .jiguang {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.c-homepage__tab-1 .jiguang1 {
+  animation: jiguang-1 10s linear 0s infinite;
+}
+.c-homepage__tab-1 .jiguang2 {
+  animation: jiguang-2 10s linear 0s infinite;
+}
+.c-homepage__tab-1 .jiguang3 {
+  transform: translateY(-10%);
+  transform: translateX(-10%);
 }
 .c-homepage__tab-1 .star {
   position: absolute;
