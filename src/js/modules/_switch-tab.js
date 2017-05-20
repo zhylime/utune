@@ -9,7 +9,7 @@ class SwitchTab extends MLP.apps.MLPModule {
 
   event(){
     var _this = this, _currnetIndex;
-    $(_this.el._tabs).on('mouseover', function(){
+    $(_this.el._tabs).on("click", function(){
       _currnetIndex = $(this).index()+1;
       $(_this.el._tabs).each(function(index,item){
         var _index = index+1;
