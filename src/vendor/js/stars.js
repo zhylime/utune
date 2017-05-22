@@ -40,8 +40,7 @@ $(document).ready(function() {
   }
   
   setInterval(animate, 1000 / fps);
-  // requestAnimationFrame(animate);
-  // window.requestAnimationFrame(animate);  
+
 
 
 
