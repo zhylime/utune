@@ -9,8 +9,8 @@ $(document).ready(function() {
   $('[data-js-switch-tab]').SwitchTab();
   $('[data-js-skewing]').Skewing();
   $('[data-js-masonry]').MasonryGallery();
+  
 
- 
   setTimeout(function(){
     $('[data-js-fullpage]').FullPage();
   }, 0);
