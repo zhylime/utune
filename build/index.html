@@ -37,22 +37,24 @@
       </div>
       <div data-js-switch-tab class="section c-homepage__2">
         <div class="c-homepage__tab-1"><img src="/assets/img/wedo-jiguang.png" class="jiguang jiguang1"><img src="/assets/img/wedo-jiguang.png" class="jiguang jiguang3"><img src="/assets/img/wedo-jiguang2.png" class="jiguang jiguang2"><img src="/assets/img/wedo-hill-star.png" class="star"><img src="/assets/img/wedo-triple-prism.png" class="jiguang"></div>
-        <div class="c-homepage__tab-2"></div>
+        <div class="c-homepage__tab-2">
+          <canvas id="stars">该浏览器不支持canvas  </canvas><img src="/assets/img/wedo-mirrors.png" class="mirrors">
+        </div>
         <div data-js-skewing class="c-homepage__tab-3"><img src="/assets/img/wedo-lake-light.png" class="lake"><img src="/assets/img/wedo-hill-last.png" class="hill"><img src="/assets/img/wedo-hill-mid.png" class="hill"><img src="/assets/img/wedo-hill-front.png" class="hill"><img src="/assets/img/wedo-lake.png" class="lake"><img src="/assets/img/wedo-lake-ripple.png" class="lake lang"><img src="/assets/img/wedo-lake-ripple2.png" class="lake lang"><img src="/assets/img/wedo-lake-fan.png" class="lake chuan"><img src="/assets/img/wedo-lake-fan2.png" class="lake chuan2"></div>
         <div class="c-homepage__tab-4"><img src="/assets/img/star.svg" class="star star1"><img src="/assets/img/star.svg" class="star star2"><img src="/assets/img/star.svg" class="star star3"><img src="/assets/img/star.svg" class="star star4"><img src="/assets/img/star.svg" class="star star5"><img src="/assets/img/star.svg" class="star star6"><img src="/assets/img/star.svg" class="star star7"><img src="/assets/img/star.svg" class="star star8"><img src="/assets/img/wedo-tree-1.png" class="tree tree1"><img src="/assets/img/wedo-tree-2.png" class="tree tree2"><img src="/assets/img/wedo-tree-3.png" class="tree tree3"><img src="/assets/img/wedo-tree-4.png" class="tree tree4"><img src="/assets/img/wedo-tree-5.png" class="tree tree5"><img src="/assets/img/wedo-tree-6.png" class="tree tree6"><img src="/assets/img/wedo-tree-7.png" class="tree tree7"></div>
         <div class="c-homepage__tab-panel">
           <ul>
             <li class="font--roboto-light">
-              <div class="c-homepage__tab-panel__icon font-icon-brand"></div><span>Brand communication</span><a href="#" class="c-homepage__tab-panel__button active">View</a>
+              <div class="c-homepage__tab-panel__icon font-icon-brand"></div><span>Brand communication</span><a href="javascript:" class="c-homepage__tab-panel__button active">View</a>
             </li>
             <li class="font--roboto-light">
-              <div class="c-homepage__tab-panel__icon font-icon-product"></div><span>Product<br/>planning</span><a href="#" class="c-homepage__tab-panel__button">View</a>
+              <div class="c-homepage__tab-panel__icon font-icon-product"></div><span>Product<br/>planning</span><a href="javascript:" class="c-homepage__tab-panel__button">View</a>
             </li>
             <li class="font--roboto-light">
-              <div class="c-homepage__tab-panel__icon font-icon-supply-chain"></div><span>Supply chain management</span><a href="#" class="c-homepage__tab-panel__button">View</a>
+              <div class="c-homepage__tab-panel__icon font-icon-supply-chain"></div><span>Supply chain management</span><a href="javascript:" class="c-homepage__tab-panel__button">View</a>
             </li>
             <li class="font--roboto-light">
-              <div class="c-homepage__tab-panel__icon font-icon-space"></div><span>Space<br/>design</span><a href="#" class="c-homepage__tab-panel__button">View</a>
+              <div class="c-homepage__tab-panel__icon font-icon-space"></div><span>Space<br/>design</span><a href="javascript:" class="c-homepage__tab-panel__button">View</a>
             </li>
           </ul>
         </div>
@@ -76,14 +78,15 @@
       <div class="section c-homepage__5">
         <h2>contact us</h2>
         <div class="c-homepage__5__main">
-          <div class="l-grid__col l-col-10-5 l-pad--l-1 l-pad--r-1">
-            <form>
+          <div data-js-validate class="l-grid__col l-col-10-5 l-pad--l-1 l-pad--r-1">
+            <div class="c-contact-msg font--roboto-light"><p>Thank you for contacting us!<br> Your message has been sent successfully and we’ll get back to you soon.<br> Or you may also give us a call if this issue is urgent. We wish you a nice day!<br> <br> YOUNGS Experience Marketing Agency<br> <br> 感谢您联系我们，您的讯息已成功发送至我们的接收专员，我们将尽快反馈您的洽询。<br> 如您的洽询要求尽快回复，请您直接致电我们。再次感谢，顺祝安康！<br> <br>  <a href='javascript:;' class='js-msg_close'>关闭 x</a></p></div>
+            <form name="contact-form" id="contact-form" target="contact_mail" required>
               <div class="text-input l-grid__col l-col-10-5 l-pad--r-1">
                 <input id="name" type="text" name="your-name" required>
                 <label>Your Name</label><span></span>
               </div>
               <div class="text-input l-grid__col l-col-10-5 l-pad--l-1">
-                <input id="email" type="text" name="your-email" required>
+                <input id="email" name="your-email" type="email" required>
                 <label>Your Email</label><span></span>
               </div>
               <div class="clear"></div>
@@ -95,7 +98,9 @@
                 <textarea id="myMessage" name="your-message" required></textarea>
                 <label>Your Message</label><span></span>
               </div>
-              <button type="submit" class="txt--uppercase l-flt--r">send your message</button>
+              <button class="txt--uppercase l-flt--r">send your message</button>
+              <div class="c-err-msg font--roboto-regular"></div>
+              <iframe name="contact_mail" style="display:none!important"></iframe>
               <div class="clear"></div>
             </form>
           </div>

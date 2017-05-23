@@ -3235,6 +3235,22 @@ html {
 .c-masonry__item:hover {
   background-color: #222;
 }
+.c-contact-msg {
+  display: none;
+}
+.c-contact-msg p {
+  line-height: 1.4em;
+}
+.c-contact-msg a:link,
+.c-contact-msg a:visited,
+.c-contact-msg a:hover,
+.c-contact-msg a:focus {
+  color: #fff;
+}
+.c-err-msg {
+  color: #fff;
+  font-weight: bold;
+}
 .c-content {
   width: 100%;
   text-align: center;
@@ -3332,6 +3348,7 @@ form button {
   border: 0;
   border-radius: 23px;
   cursor: pointer;
+  outline: none;
 }
 form .text-input {
   position: relative;
@@ -3346,6 +3363,8 @@ form .text-input textarea {
   border: 0;
   border-bottom: 1px solid #fff;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 form .text-input input:focus,
 form .text-input textarea:focus {
@@ -3536,10 +3555,31 @@ form .text-input textarea {
   width: 106%;
   height: 100%;
   opacity: 0.4;
-  animation: lang 30s linear 0s infinite;
 }
 .c-homepage__tab-2 {
-  background-image: url("../img/background-wedo-mirror.jpg");
+  background-image: url("../img/background-wedo-tab2-stars.jpg");
+}
+.c-homepage__tab-2 .star {
+  position: absolute;
+  left: -10%;
+  bottom: 0px;
+  width: 106%;
+  height: 100%;
+  opacity: 0.4;
+}
+.c-homepage__tab-2 .mirrors {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.c-homepage__tab-2 canvas {
+  width: 100%;
+  height: 100%;
+  transform: 1s;
+  opacity: 0.6;
 }
 .c-homepage__tab-3 {
   background-image: url("../img/background-wedo-water.jpg");

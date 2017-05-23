@@ -9,6 +9,7 @@ $(document).ready(function() {
   $('[data-js-switch-tab]').SwitchTab();
   $('[data-js-skewing]').Skewing();
   $('[data-js-masonry]').MasonryGallery();
+  $('[data-js-validate]').Validate();
   
 
   setTimeout(function(){

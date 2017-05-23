@@ -78,14 +78,15 @@ block content
     .section.c-homepage__5
       h2 contact us
       .c-homepage__5__main
-        .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1
-          form
+        .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1(data-js-validate)
+          .c-contact-msg.font--roboto-light!=contactMsg
+          form(name="contact-form" id="contact-form" target="contact_mail" required)
             .text-input.l-grid__col.l-col-10-5.l-pad--r-1
               input#name(type="text", name="your-name", required)
               label Your Name
               span
             .text-input.l-grid__col.l-col-10-5.l-pad--l-1
-              input#email(type="text", name="your-email", required)
+              input#email( name="your-email",type="email" required)
               label Your Email
               span
             .clear
@@ -97,7 +98,9 @@ block content
               textarea#myMessage(name="your-message", required)
               label Your Message
               span
-            button.txt--uppercase.l-flt--r(type="submit") send your message
+            button.txt--uppercase.l-flt--r send your message
+            .c-err-msg.font--roboto-regular
+            iframe(name="contact_mail" style="display:none!important")
             .clear
         .l-grid__col.l-col-10-5
           .l-grid__col.l-col-10-5
