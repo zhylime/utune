@@ -1,0 +1,15 @@
+script(src=paths.js + 'vendor/jquery.js')
+script(src=paths.js + 'vendor/three.min.js')
+script(src=paths.js + 'vendor/vivus.min.js')
+
+<!--[if (lte IE 9)]>
+script(src=paths.js + 'vendor/old-ie/html5shiv.js')
+script(src=paths.js + 'vendor/old-ie/selectivizr-min.js')
+<![endif]-->
+script.
+  var MLP = MLP || {};
+  MLP.paths = !{JSON.stringify({static: paths.static, img: paths.img, css: paths.css, js: paths.js})};
+
+script(src=paths.js + 'vendor.min.js')
+script(src=paths.js + 'app.min.js')
+

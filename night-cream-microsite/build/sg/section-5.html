@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MullenLowe Profero &lt;span class=&quot;text-yellow&quot;&gt;Tech&lt;/string&gt;</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/sg/kss.css">
+    <link rel="stylesheet" href="/assets/css/sg/rainbow.css">
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./index.html">MullenLowe Profero <span class="text-yellow">Tech</string></a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul data-kss-ref="5" class="kss-menu">
+              <li class="kss-menu-item"><a href="./index.html"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>              
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Components/Modules</span></a></li>              
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Typography</span></a></li>              
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">Layout</span></a></li>              
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">Background</span></a></li>              
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">Presentation</span></a></li>              
+            </ul>                        <ul class="kss-menu-child">
+
+              <li class="kss-menu-item"><a href="#section-5.1"><span class="kss-ref">5.1</span><span class="kss-name">Separators/Dividers</span></a></li>              
+              <li class="kss-menu-item"><a href="#section-5.2"><span class="kss-ref">5.2</span><span class="kss-name">Theme Flexible</span></a></li>              
+              <li class="kss-menu-item"><a href="#section-5.3"><span class="kss-ref">5.3</span><span class="kss-name">Theme Automatic</span></a></li>              
+            </ul>            
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-5" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">5</span> Presentation</h1>            
+
+          </section>                    <section id="section-5.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.1</span> Separators/Dividers</h1>            
+            <div class="kss-description"><p><code>.hr</code> Horizontal Rules</p>
+</div>            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example ksskss"><hr class="hr {$modifiers}"></div>
+              </div>              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.hr--content</div>
+                  <div class="kss-modifier-description"><p>Content </p>
+</div>
+                </div>
+                <div class="kss-modifier-example ksskss"><hr class="hr hr--content"></div>
+              </div>              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.hr--headline</div>
+                  <div class="kss-modifier-description"><p>Headline</p>
+</div>
+                </div>
+                <div class="kss-modifier-example ksskss"><hr class="hr hr--headline"></div>
+              </div>              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;hr class=&quot;hr {$modifiers}&quot;&gt;</code></pre>
+              </div>
+            </div>                      </section>                    <section id="section-5.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.2</span> Theme Flexible</h1>            
+            <div class="kss-description"><p><code>.theme__[txt|bg]</code> Control what elements take on the text/background colour of the theme by manually setting appropriate class on the desired child element.
+In this way the developer can individually set the class on a per element basis.</p>
+</div>            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example ksskss"><div class="theme--primary-yellow">
+  <h1>Hello World</h1>
+  <p class="{$modifiers}">My property colour is based on the colour of the theme set directly on me</p>
+</div></div>
+              </div>              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.theme__txt</div>
+                  <div class="kss-modifier-description"><p>Translates text colour of children elements to that of the theme</p>
+</div>
+                </div>
+                <div class="kss-modifier-example ksskss"><div class="theme--primary-yellow">
+  <h1>Hello World</h1>
+  <p class="theme__txt">My property colour is based on the colour of the theme set directly on me</p>
+</div></div>
+              </div>              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.theme__bg</div>
+                  <div class="kss-modifier-description"><p>Translates background colour of children elements to that of the theme</p>
+</div>
+                </div>
+                <div class="kss-modifier-example ksskss"><div class="theme--primary-yellow">
+  <h1>Hello World</h1>
+  <p class="theme__bg">My property colour is based on the colour of the theme set directly on me</p>
+</div></div>
+              </div>              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;theme--primary-yellow&quot;&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;p class=&quot;{$modifiers}&quot;&gt;My property colour is based on the colour of the theme set directly on me&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>                      </section>                    <section id="section-5.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.3</span> Theme Automatic</h1>            
+            <div class="kss-description"><p><code>.theme--colored-[txt|bg]</code> Automatically use the selected theme colour as a text or background colour for the element and all its children.
+In this way all children will take on the colour of the theme. </p>
+</div>            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example ksskss"><div class="theme--primary-yellow {$modifiers}">
+  <h1>Hello World</h1>
+  <p>My property colour is based on the colour of the theme set on <code>$(this).parents('.theme--$color')</code></p>
+</div></div>
+              </div>              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.theme--colored-txt</div>
+                  <div class="kss-modifier-description"><p>Text colour of element and children is based on the colour of the theme</p>
+</div>
+                </div>
+                <div class="kss-modifier-example ksskss"><div class="theme--primary-yellow theme--colored-txt">
+  <h1>Hello World</h1>
+  <p>My property colour is based on the colour of the theme set on <code>$(this).parents('.theme--$color')</code></p>
+</div></div>
+              </div>              
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.theme--colored-bg</div>
+                  <div class="kss-modifier-description"><p>Background colour of element and children is based on the colour of the theme  </p>
+</div>
+                </div>
+                <div class="kss-modifier-example ksskss"><div class="theme--primary-yellow theme--colored-bg">
+  <h1>Hello World</h1>
+  <p>My property colour is based on the colour of the theme set on <code>$(this).parents('.theme--$color')</code></p>
+</div></div>
+              </div>              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;theme--primary-yellow {$modifiers}&quot;&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;p&gt;My property colour is based on the colour of the theme set on &lt;code&gt;$(this).parents(&#x27;.theme--$color&#x27;)&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>                      </section>          
+        </article>
+      </div>
+    </div>
+    <script src="/assets/js/vendor/jquery.js"></script>
+    <script src="/assets/js/app.min.js"></script>
+    <!-- [if gt IE 8] <!-->
+    <script src="/assets/js/sg/rainbow.min.js"></script>
+    <!-- <![endif]-->
+    <script src="/assets/js/sg/kss-custom.js"></script>
+  </body>
+</html>

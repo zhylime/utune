@@ -1,0 +1,51 @@
+anim-set(name, time)
+  -webkit-animation-name name 
+  -webkit-animation-duration time
+  animation-name name
+  animation-duration time
+    
+@keyframes anim-shooter--l
+  from 
+    top -100px
+    left -100px
+  to 
+    top 100%
+    left 200%
+    
+@keyframes anim-shooter--r
+  from 
+    top -100px
+    right -100px
+  to 
+    top 100%
+    right 200%
+    
+.c-galaxy
+  background url(../img/thumb-night-gradient-400x1.jpg) repeat-y center center
+  position relative
+  canvas
+    position absolute 
+    top 0
+    
+  &__shooter
+    width 100px
+    height 1px
+    display block
+    position absolute
+    
+    
+    &--l
+      top -100px
+      left -100px
+      background radial-gradient(ellipse at right, white 0%,rgba(255,255,255,0) 100%)
+      transform rotate(20deg)
+      anim-set(anim-shooter--l, 1s)
+      animation-iteration-count 1
+      
+    &--r
+      top -100px
+      right -100px
+      transform rotate(-20deg)
+      background radial-gradient(ellipse at left, white 0%,rgba(255,255,255,0) 100%)
+      anim-set(anim-shooter--r, 1s)
+      animation-iteration-count 1

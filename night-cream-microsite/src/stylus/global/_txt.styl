@@ -1,0 +1,75 @@
+// Text Alignments
+//
+// `.txt--[l|c|r]`
+// 
+// .txt--l - Left text
+// .txt--c - Center text
+// .txt--r - Right text
+// .txt--j - Justify text
+// 
+// Markup:
+// <p class="{$modifiers}">Font</p>
+//
+// Styleguide 2.4
+
+// Text Colors
+//
+// `.txt--[$colorName]` - There are many colour names to choose 
+// from besides what is currently documented. See src for details.
+// 
+// .txt--black - Black text
+// .txt--dark-grey - Dark Grey text
+// .txt--white.bg--black - White text
+// .txt--primary-yellow - Primary yellow text
+// 
+// Markup:
+// <p class="{$modifiers}">Text color</p>
+//
+// Styleguide 2.5
+
+   
+html
+  font-family $font-family
+  
+for $color, $color-index in colors()
+  .txt--{$color-names[$color-index]}
+    color $color !important
+  
+.txt--bold
+  font-weight bold !important
+  
+.txt--normal
+  font-weight normal !important
+  
+.txt--italic
+  font-style italic !important
+  
+.txt--nodecoration
+  text-decoration none !important
+  
+.txt--underline
+  text-decoration underline !important
+  
+.txt--ellipsis
+  text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+  
+$positions = "r", "l", "c", "j"
+for $dir, $index in right left center justify
+  .txt--{$positions[$index]}
+    text-align $dir !important
+  
+  .txt--{$positions[$index]}-mobi
+    @media $small
+      text-align $dir !important
+    
+  .txt--{$positions[$index]}-tabt
+    @media $medium
+      text-align $dir !important
+    
+  .txt--{$positions[$index]}-desk
+    @media $large
+      text-align $dir !important
+
+  

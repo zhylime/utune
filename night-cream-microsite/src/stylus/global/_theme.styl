@@ -1,0 +1,59 @@
+// Theme Flexible
+//
+// `.theme__[txt|bg]` Control what elements take on the text/background colour of the theme by manually setting appropriate class on the desired child element.
+// In this way the developer can individually set the class on a per element basis.
+//
+// .theme__txt - Translates text colour of children elements to that of the theme
+// .theme__bg - Translates background colour of children elements to that of the theme
+// 
+// Markup:
+// <div class="theme--primary-yellow">
+//   <h1>Hello World</h1>
+//   <p class="{$modifiers}">My property colour is based on the colour of the theme set directly on me</p>
+// </div>
+//
+// Styleguide 5.2
+
+// Theme Automatic
+//
+// `.theme--colored-[txt|bg]` Automatically use the selected theme colour as a text or background colour for the element and all its children.
+// In this way all children will take on the colour of the theme. 
+//
+// .theme--colored-txt - Text colour of element and children is based on the colour of the theme
+// .theme--colored-bg - Background colour of element and children is based on the colour of the theme  
+// 
+// Markup:
+// <div class="theme--primary-yellow {$modifiers}">
+//   <h1>Hello World</h1>
+//   <p>My property colour is based on the colour of the theme set on <code>$(this).parents('.theme--$color')</code></p>
+// </div>
+//
+// Styleguide 5.3
+ 
+ 
+
+for $color, $colorIndex in colors()
+  .theme
+
+    &--{$color-names[$colorIndex]}
+
+      &.theme
+        &--colored-txt
+          color $color
+            
+        &--colored-bg
+          background-color $color
+  
+      .theme__txt
+        color $color
+        
+      .theme__bg
+        background-color $color
+        
+      .theme__link
+        color white
+        &.is-active
+          color $color
+        &.has-hover
+          &:hover 
+            color $color

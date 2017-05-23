@@ -1,0 +1,36 @@
+// Typography
+//
+// Styleguide 2
+ 
+// Fonts
+//
+// `.font--[modifier]`
+// 
+// .font--modifier - Font modifier
+// 
+// Markup:
+// <h1 class="{$modifiers}">Font</h1>
+//
+// Styleguide 2.1
+
+   
+// @import 'fonts/_*.styl'
+
+font($name, $important = false)
+  $style = "Avenir"
+  if $important 
+    $style = $style !important  
+
+  font-family $name, "Verdana", $style
+  
+
+font-fa()
+  font-family 'FontAwesome'
+  
+
+$font-names = "Font name", "Font name 2" 
+$class-names = "font-name", "font-name2"
+
+for $name, $i in $font-names
+  .font--{$class-names[$i]}
+    font($name, true)

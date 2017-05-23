@@ -1,0 +1,85 @@
+// Links
+//
+// `.lnk`
+// 
+// .lnk--default - Default link
+// .lnk--default.lnk--underline - Underlined link
+// .lnk--default.lnk--primary-yellow - Primary yellow link
+// .lnk--animated.lnk--dark-grey - Animated link
+// 
+// Markup:
+// <a class="{$modifiers}">Link</a>
+//
+// Styleguide 2.3
+
+lnk-default-base($color = null)
+  if $color
+    color $color
+  text-decoration none 
+  cursor pointer
+  &:hover
+    text-decoration underline
+  
+.lnk--default 
+  lnk-default($col-profero-yellow)
+  
+  &.lnk--underline
+    a, a&
+      text-decoration underline
+     
+  a, a& 
+    &:hover, &:focus
+      text-decoration underline
+  
+  for $color, $key in colors()
+    &.lnk--{$color-names[$key]}
+      a, a&
+        color $color 
+        
+
+lnk-default(color)
+  a, a& 
+    lnk-default-base(color)
+  
+
+lnk-animated-base(color, color2)  
+  color color
+  text-decoration none
+  padding-bottom 2px 
+  transition .5s
+  border-bottom 1px color2 solid
+  cursor pointer
+  &:hover, &:focus
+    border-bottom solid 1px color
+  &.lnk--no-style
+    border-bottom none
+
+.lnk--animated
+  a, a&
+    text-decoration none
+    padding-bottom 2px 
+    transition .5s
+    border-bottom solid 1px transparent
+    cursor pointer
+  for $color, $key in colors()
+    &.lnk--{$color-names[$key]}
+      a, a&
+        color $color 
+        &:hover, &:focus, &.lnk--underline
+          border-bottom solid 1px $color
+          
+    &.lnk--underline
+      a, a&
+        border-bottom solid 1px $color
+
+lnk-animated(color, color2)
+  a, a& 
+    lnk-animated-base(color, color2)
+    
+.lnk--phone
+  a&
+    @media $large
+      color black 
+      &:hover
+        text-decoration none
+        cursor default

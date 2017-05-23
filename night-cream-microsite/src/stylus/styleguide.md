@@ -1,0 +1,3 @@
+# Overview
+
+The purpose of this document is to help both, designers and developers, facilitating consistency and consolidation, standardizing our foundations – the grid, the typography and iconography – as well as many of our shared interaction patterns such as cards, promos, carousels etc. But like any language, this guideline vocabulary need to expand over time. Our teams will work tirelessly to increase its flexibility whilst focusing on ease-of-use.

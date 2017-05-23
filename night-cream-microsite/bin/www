@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+// http://www.akadia.com/services/ssh_test_certificate.html
+var path = require('path')
+, app = require('../gulpfile')
+, fs = require('fs')
+, http = require('http')
+, https = require('https')
+, port = process.env.PORT || app.config.port
+, open = require('open')
+, args = {};
+
+process.argv.forEach(function (val, index, array) {
+  args[val] = val;
+});
+
+app.init(args);
+
+var credentials = {
+    key: fs.readFileSync(path.join(__dirname, 'server.key'), 'utf8'),
+    cert: fs.readFileSync(path.join(__dirname, 'server.crt'), 'utf8'),
+    requestCert: false,
+    rejectUnauthorized: false
+};
+
+app.set('port', port);
+
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(app.get('port'));
+if (app.get('port') == 80)
+  httpsServer.listen(443);
+
+return setTimeout(function() {
+  return open("http://localhost:" + port + "/");
+}, 3000);
