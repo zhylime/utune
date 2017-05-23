@@ -33,13 +33,17 @@ class Validate extends MLP.apps.MLPModule {
           $(_this.el._alert).text("Sending...");
         },
         success: function (html) {
+          var cc = html.length;
           switch(html) {
             case "success":
               $(_this.el.successMsg).show();
               $(_this.el._form).hide();
               break;
             default:
-              $(_this.el._alert).html(html);
+              if(cc>200)
+                $(_this.el._alert).html("Could not connect to server");
+              else
+                $(_this.el._alert).html(html);
               break;
           }
         }
