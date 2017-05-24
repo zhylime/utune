@@ -65,112 +65,98 @@
     {
       "href":"#",
       "img":"ourwork-transfomers.jpg",
-      "widthClass":"w1",
-      "floatClass":"l-flt--l",
+      "class":"w1 l-flt--l",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-jld.jpg",
-      "widthClass":"w2",
-      "floatClass":"l-flt--r",
+      "class":"w2 l-flt--r",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-tes.jpg",
-      "widthClass":"w1",
-      "floatClass":"l-flt--l",
+      "class":"w1 l-flt--l",
       "isEnd":"true",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-hongguo.jpg",
-      "widthClass":"w3",
-      "floatClass":"l-flt--l",
+      "widthClass":"w3 l-flt--l",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-midot.jpg",
-      "widthClass":"w4",
-      "floatClass":"l-flt--r",
+      "widthClass":"w4 l-flt--r",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-lijian.jpg",
-      "widthClass":"w4",
-      "floatClass":"l-flt--r",
+      "widthClass":"w4 l-flt--r",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-food-truck.jpg",
-      "widthClass":"w3",
-      "floatClass":"l-flt--l",
+      "class":"w3 l-flt--l",
       "isEnd":"true",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-mm.jpg",
-      "widthClass":"",
-      "floatClass":"l-flt--l",
+      "class":"l-flt--l",
       "isEnd":"true",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-think.jpg",
-      "widthClass":"w5",
-      "floatClass":"l-flt--l",
+      "class":"w5 l-flt--l",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-tea-time.jpg",
-      "widthClass":"w5",
-      "floatClass":"l-flt--r",
+      "class":"w5 l-flt--r",
       "isEnd":"true",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-lijian-cup.jpg",
-      "widthClass":"w6",
-      "floatClass":"l-flt--l",
+      "class":"w6 l-flt--l",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-cat-bowl.jpg",
-      "widthClass":"w7",
-      "floatClass":"l-flt--r",
+      "class":"w7 l-flt--r",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-run.jpg",
-      "widthClass":"w7",
-      "floatClass":"l-flt--r",
+      "class":"w7 l-flt--r",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-dove.jpg",
-      "widthClass":"w6",
-      "floatClass":"l-flt--l",
+      "class":"w6 l-flt--l",
       "isEnd":"true",
       "alt":""
     }

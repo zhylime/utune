@@ -60,7 +60,7 @@ block content
     .section.c-homepage__3
       .c-homepage__3--main
         each item in ourwork
-          a.c-gallery__item.draw(href=item.href alt=item.alt class=item.widthClass+" "+item.floatClass)
+          a.c-gallery__item.draw(href=paths.img + item.img data-fancybox="group" alt=item.alt class=item.class)
             img.l-full-width(src=paths.img + item.img)
           if item.isEnd=="true"
             .clear

@@ -15,7 +15,9 @@ $(document).ready(function() {
   setTimeout(function(){
     $('[data-js-fullpage]').FullPage();
   }, 0);
-  
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
   
 
 });
