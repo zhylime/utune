@@ -86,21 +86,21 @@
     {
       "href":"#",
       "img":"ourwork-hongguo.jpg",
-      "widthClass":"w3 l-flt--l",
+      "class":"w3 l-flt--l",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-midot.jpg",
-      "widthClass":"w4 l-flt--r",
+      "class":"w4 l-flt--r",
       "isEnd":"false",
       "alt":""
     },
     {
       "href":"#",
       "img":"ourwork-lijian.jpg",
-      "widthClass":"w4 l-flt--r",
+      "class":"w4 l-flt--r",
       "isEnd":"false",
       "alt":""
     },
