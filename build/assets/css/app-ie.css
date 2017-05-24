@@ -3250,6 +3250,7 @@ html {
 .c-err-msg {
   color: #fff;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .c-content {
   width: 100%;

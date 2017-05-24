@@ -80,27 +80,26 @@ block content
       .c-homepage__5__main
         .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1(data-js-validate)
           .c-contact-msg.font--roboto-light!=contactMsg
-          form(name="contact-form" id="contact-form" target="contact_mail" required)
+          form(name="contact-form" id="contact-form")
             .text-input.l-grid__col.l-col-10-5.l-pad--r-1
-              input#name(type="text", name="your-name", required)
+              input#name(type="text", name="your-name", aria-required="true")
               label Your Name
               span
             .text-input.l-grid__col.l-col-10-5.l-pad--l-1
-              input#email( name="your-email",type="email" required)
+              input#email( name="your-email",type="email" aria-required="true")
               label Your Email
               span
             .clear
             .text-input
-              input#mySubject(type="text", name="your-subject", required)
+              input#mySubject(type="text", name="your-subject", aria-required="true")
               label Your Subject
               span
             .text-input
-              textarea#myMessage(name="your-message", required)
+              textarea#myMessage(name="your-message", aria-required="true")
               label Your Message
               span
             button.txt--uppercase.l-flt--r send your message
             .c-err-msg.font--roboto-regular
-            iframe(name="contact_mail" style="display:none!important")
             .clear
         .l-grid__col.l-col-10-5
           .l-grid__col.l-col-10-5
