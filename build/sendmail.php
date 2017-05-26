@@ -54,13 +54,14 @@
         $mail->IsSMTP();
         $mail->CharSet='UTF-8'; //设置邮件的字符编码，这很重要，不然中文乱码
         $mail->SMTPAuth   = true;                  //开启认证
+        $mail->SMTPSecure = 'ssl';
         //第三方邮箱
-        $mail->Port       = 25;  //非ssl端口
+        $mail->Port       = 465;  //ssl端口
         $mail->Host       = "smtp.126.com";   //smtp服务器
         $mail->Username   = "qirain@126.com"; //账号
         $mail->Password   = "Qaz2017";//第三方邮箱授权码
         $mail->From       = "qirain@126.com";   //显示的邮箱名称
-        $mail->FromName   = "qirain";  //显示的名称
+        $mail->FromName   = "cutune";  //显示的名称
 
         $to = "176872637@qq.com"; //接收方，可任意修改
         $mail->AddAddress($to);
