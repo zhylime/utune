@@ -727,11 +727,11 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   25% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(3%);
   }
   75% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(-3%);
   }
 }
@@ -741,11 +741,11 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   25% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(3%);
   }
   75% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(-3%);
   }
 }
@@ -755,11 +755,11 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   25% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(3%);
   }
   75% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(-3%);
   }
 }
@@ -769,17 +769,17 @@ html.fp-enabled,
     transform: translateX(0%);
   }
   25% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(3%);
   }
   75% {
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(-3%);
   }
 }
 @-moz-keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.6;
+    opacity: 0.8;
     transform: translateX(2%);
   }
   50% {
@@ -789,7 +789,7 @@ html.fp-enabled,
 }
 @-webkit-keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.6;
+    opacity: 0.8;
     transform: translateX(2%);
   }
   50% {
@@ -799,7 +799,7 @@ html.fp-enabled,
 }
 @-o-keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.6;
+    opacity: 0.8;
     transform: translateX(2%);
   }
   50% {
@@ -809,7 +809,7 @@ html.fp-enabled,
 }
 @keyframes jiguang-2 {
   0%, 100% {
-    opacity: 0.6;
+    opacity: 0.8;
     transform: translateX(2%);
   }
   50% {
