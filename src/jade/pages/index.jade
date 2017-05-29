@@ -13,15 +13,14 @@ block content
           path#creative_t(stroke-width="5" style="fill-rule: evenodd; clip-rule: evenodd; fill: none; stroke: rgb(255, 255, 255); stroke-miterlimit: 5;", d="M251.633,44.547c9.061-0.787,31.036-7.119,48.367-18.734")
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
     .section.c-homepage__2(data-js-switch-tab)
-      .c-homepage__tab-1
+      .c-homepage__tab-1(data-js-stars)
+        canvas#stars1 该浏览器不支持canvas
         img.jiguang.jiguang1(src=paths.img + "wedo-jiguang.png")
         img.jiguang.jiguang3(src=paths.img + "wedo-jiguang.png")
         img.jiguang.jiguang2(src=paths.img + "wedo-jiguang2.png")
-        img.star(src=paths.img + "wedo-hill-star.png")
         img.jiguang(src=paths.img + "wedo-triple-prism.png")
-      .c-homepage__tab-2
-       
-        canvas#stars 该浏览器不支持canvas  
+      .c-homepage__tab-2(data-js-stars)
+        canvas#stars 该浏览器不支持canvas
         img.mirrors(src=paths.img + "wedo-mirrors.png")
       .c-homepage__tab-3(data-js-skewing)
         img.lake(src=paths.img + "wedo-lake-light.png")
@@ -34,21 +33,10 @@ block content
         img.lake.chuan(src=paths.img + "wedo-lake-fan.png")
         img.lake.chuan2(src=paths.img + "wedo-lake-fan2.png")
       .c-homepage__tab-4
-        img.star.star1(src=paths.img + "star.svg")
-        img.star.star2(src=paths.img + "star.svg")
-        img.star.star3(src=paths.img + "star.svg")
-        img.star.star4(src=paths.img + "star.svg")
-        img.star.star5(src=paths.img + "star.svg")
-        img.star.star6(src=paths.img + "star.svg")
-        img.star.star7(src=paths.img + "star.svg")
-        img.star.star8(src=paths.img + "star.svg")
-        img.tree.tree1(src=paths.img + "wedo-tree-1.png")
-        img.tree.tree2(src=paths.img + "wedo-tree-2.png")
-        img.tree.tree3(src=paths.img + "wedo-tree-3.png")
-        img.tree.tree4(src=paths.img + "wedo-tree-4.png")
-        img.tree.tree5(src=paths.img + "wedo-tree-5.png")
-        img.tree.tree6(src=paths.img + "wedo-tree-6.png")
-        img.tree.tree7(src=paths.img + "wedo-tree-7.png")
+        each index in [1,2,3,4,5,6,7,8]
+          img.star(src=paths.img + "star.svg" class="star#{index}")
+        each item in [1,2,3,4,5,6,7]
+          img.tree(src=paths.img + "wedo-tree-#{item}.png" class="treer#{item}")
       .c-homepage__tab-panel
         ul
           each item in weDoTabPanel

@@ -33,7 +33,7 @@ class Validate extends MLP.apps.MLPModule {
             $(_this.el._alert).text("Could not connect to server");
             $(_this.el._submit).attr("disabled",false);
           },
-          beforeSend:function(XHR){
+          beforeSend:function(){
             $(_this.el._alert).text("Sending...");
             $(_this.el._submit).attr("disabled",true);
           },

@@ -10,14 +10,14 @@ $(document).ready(function() {
   $('[data-js-skewing]').Skewing();
   $('[data-js-masonry]').MasonryGallery();
   $('[data-js-validate]').Validate();
+  $('[data-js-stars]').Stars();
   
 
   setTimeout(function(){
     $('[data-js-fullpage]').FullPage();
   }, 0);
-  $(document).ready(function() {
+
+  if($(".fancybox"))
     $(".fancybox").fancybox();
-  });
-  
 
 });
