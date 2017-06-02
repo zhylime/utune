@@ -48,8 +48,8 @@ block content
     .section.c-homepage__3
       .c-homepage__3--main
         each item in ourwork
-          a.c-gallery__item.draw(href=paths.img + item.img data-fancybox="group" alt=item.alt class=item.class)
-            img.l-full-width(src=paths.img + item.img)
+          a.c-gallery__item.draw(href=paths.img + item.img+"-large.jpg" data-fancybox="group" alt=item.alt class=item.class)
+            img.l-full-width(src=paths.img + item.img+".jpg")
           if item.isEnd=="true"
             .clear
     .section.c-homepage__4
