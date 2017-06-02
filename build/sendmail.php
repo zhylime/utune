@@ -57,16 +57,16 @@
         $mail->SMTPSecure = 'ssl';
         //第三方邮箱
         $mail->Port       = 465;  //ssl端口
-        $mail->Host       = "smtp.126.com";   //smtp服务器
-        $mail->Username   = "qirain@126.com"; //账号
-        $mail->Password   = "Qaz2017";//第三方邮箱授权码
-        $mail->From       = "qirain@126.com";   //显示的邮箱名称
+        $mail->Host       = "smtp.sina.com";   //smtp服务器
+        $mail->Username   = "cutune2017@sina.com"; //账号
+        $mail->Password   = "Abcd@2017";//第三方邮箱授权码
+        $mail->From       = "cutune2017@sina.com";   //显示的邮箱名称
         $mail->FromName   = "cutune";  //显示的名称
 
         $to = "176872637@qq.com"; //接收方，可任意修改
         $mail->AddAddress($to);
-        $mail->Subject  = "联系我们";
-        $mail->Body = "<p>姓名： ".$name."<br>邮箱： ".$email."<br>主题： ".$subject."<br>内容： ".$message."</p>"; //邮件格式
+        $mail->Subject  = "Contact Us -- from web site";
+        $mail->Body = "<p>NAME： ".$name."<br>EMAIL： ".$email."<br>SUBJECT： ".$subject."<br>MESSAGE： ".$message."</p>"; //邮件格式
         $mail->AltBody    = "To view the message, please use an HTML compatible email viewer!"; //当邮件不支持html时备用显示，可以省略
         $mail->WordWrap   = 80; // 设置每行字符串的长度
         //$mail->AddAttachment("f:/test.png");  //可以添加附件
