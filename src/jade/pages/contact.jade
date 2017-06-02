@@ -1,0 +1,10 @@
+extends ../_partials/_template
+//- include ../_mixins/_nav
+include ../_mixins/_contactForm
+block content
+  //- +nav(0)
+  .c-content.c-contact
+    .l-display-middle(data-js-white-box)
+      canvas
+      h1 contact us
+      +contactForm("js-white-box-content")

@@ -1,0 +1,58 @@
+mixin contactForm(opt)
+  - var className
+  - if(opt) className = opt
+  - else className = ""
+  .c-contact__form(class="#{className}")
+    .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1(data-js-validate)
+      .c-contact-msg.font--roboto-light!=contactMsg
+      form(name="contact-form" id="contact-form")
+        .text-input.l-grid__col.l-col-10-5.l-pad--r-1
+          input#name(type="text", name="your-name", required)
+          label Your Name
+          span
+        .text-input.l-grid__col.l-col-10-5.l-pad--l-1
+          input#email( name="your-email",type="email", required)
+          label Your Email
+          span
+        .clear
+        .text-input
+          input#mySubject(type="text", name="your-subject", required)
+          label Your Subject
+          span
+        .text-input
+          textarea#myMessage(name="your-message", required)
+          label Your Message
+          span
+        button.txt--uppercase.l-flt--r send your message
+        .c-err-msg.font--roboto-regular
+        .clear
+    .l-grid__col.l-col-10-5
+      .l-grid__col.l-col-10-5
+        .font-icon-mail
+        .c-homepage__5__email
+          each item in contactEmail
+            p!= item.name
+              br
+              a(href="mailto:#{item.email}")!= item.email
+            br
+            
+      .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1
+        div
+          .font-icon-address
+          .c-homepage__5__location
+            p!= contactAddress.add
+            br
+            
+            p!= contactAddress.postcode
+            br
+            
+            p!= contactAddress.chineseAdd
+        .clear
+        div
+          .font-icon-phone
+          .c-homepage__5__phone
+            p.
+              #{contactPhone.name}
+              <br>
+              #{contactPhone.number}
+    .clear

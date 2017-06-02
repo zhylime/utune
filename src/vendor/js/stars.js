@@ -4,55 +4,57 @@ var context;
 var screenH;
 var screenW;
 var stars = [];
-var fps = 50;
-var numStars = 500;
+var fps = 100;
+var numStars = 3000;
 
 var scale = 0.3;
 var direction = 0.2;
 
 $(document).ready(function() {
-  
-  
-  // Calculate the screen size
-  screenH = $(window).height();
-  screenW = $(window).width();
-  
-  // Get the canvas
-  canvas = $('#stars');
-  
-  // Fill out the canvas
-  canvas.attr('height', screenH);
-  canvas.attr('width', screenW);
-  context = canvas[0].getContext('2d');
-  
-  // Create all the stars
-  for(var i = 0; i < numStars; i++) {
-    var x = Math.round(Math.random() * screenW);
-    var y = Math.round(Math.random() * screenH);
-    var length = 1 + Math.random() * 2;
-    var opacity = Math.random();
+  // only run if homepage
+  if($('#stars').length >= 1){
+    // Calculate the screen size
+    screenH = $(window).height();
+    screenW = $(window).width();
     
-    // Create a new star and draw
-    var star = new Star(x, y, length, opacity);
+    // Get the canvas
+    canvas = $('#stars');
     
-    // Add the the stars array
-    stars.push(star);
+    // Fill out the canvas
+    canvas.attr('height', screenH);
+    canvas.attr('width', screenW);
+    context = canvas[0].getContext('2d');
+    
+    // Create all the stars
+    for(var i = 0; i < numStars; i++) {
+      var x = Math.round(Math.random() * screenW);
+      var y = Math.round(Math.random() * screenH);
+      var length = Math.random() * 2;
+      var opacity = Math.random();
+      
+      // Create a new star and draw
+      var star = new Star(x, y, length, opacity);
+      
+      // Add the the stars array
+      stars.push(star);
+    }
+    
+    setInterval(animate, 1000 / fps);
+
+
+
+
+
+    $(document).mousemove(function(e){
+      var moveLeftRight = (window.pageXOffset - e.clientX)*scale*direction,
+      moveUpDown = (window.pageYOffset - e.clientY)*scale*direction;
+      // console.log(moveLeftRight);
+      //  _this.el.x = -(evt.pageX-_this.el.windowX)*_this.el.scale*_this.el.direction*(index-1.8);
+      //     $(item).css({"transform":"translateX("+_this.el.x+"px)"});
+      $("canvas").css({"transform":"translate("+moveLeftRight+"px, " + moveUpDown +"px)"});
+    });
   }
   
-  setInterval(animate, 1000 / fps);
-
-
-
-
-
-  $(document).mousemove(function(e){
-    var moveLeftRight = (window.pageXOffset - e.clientX)*scale*direction,
-    moveUpDown = (window.pageYOffset - e.clientY)*scale*direction;
-    // console.log(moveLeftRight);
-    //  _this.el.x = -(evt.pageX-_this.el.windowX)*_this.el.scale*_this.el.direction*(index-1.8);
-    //     $(item).css({"transform":"translateX("+_this.el.x+"px)"});
-    $("canvas").css({"transform":"translate("+moveLeftRight+"px, " + moveUpDown +"px)"});
-  });
 });
 
 /**
@@ -129,7 +131,7 @@ Star.prototype.draw = function() {
   context.stroke();
   context.fillStyle = "rgba(255, 255, 255, " + this.opacity + ")";
   context.shadowBlur = 5;
-  context.shadowColor = '#ffff33';
+  context.shadowColor = '#ffffff';
   context.fill();
   
   context.restore();

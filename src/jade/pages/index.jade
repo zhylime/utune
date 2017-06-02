@@ -1,5 +1,6 @@
 extends ../_partials/_template
 include ../_mixins/_nav
+include ../_mixins/_contactForm
 block content
   +nav(0)
   .c-content.c-homepage(data-js-fullpage)
@@ -66,58 +67,7 @@ block content
     .section.c-homepage__5
       h2 contact us
       .c-homepage__5__main
-        .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1(data-js-validate)
-          .c-contact-msg.font--roboto-light!=contactMsg
-          form(name="contact-form" id="contact-form")
-            .text-input.l-grid__col.l-col-10-5.l-pad--r-1
-              input#name(type="text", name="your-name", aria-required="true")
-              label Your Name
-              span
-            .text-input.l-grid__col.l-col-10-5.l-pad--l-1
-              input#email( name="your-email",type="email" aria-required="true")
-              label Your Email
-              span
-            .clear
-            .text-input
-              input#mySubject(type="text", name="your-subject", aria-required="true")
-              label Your Subject
-              span
-            .text-input
-              textarea#myMessage(name="your-message", aria-required="true")
-              label Your Message
-              span
-            button.txt--uppercase.l-flt--r send your message
-            .c-err-msg.font--roboto-regular
-            .clear
-        .l-grid__col.l-col-10-5
-          .l-grid__col.l-col-10-5
-            .font-icon-mail
-            .c-homepage__5__email
-              each item in contactEmail
-                p!= item.name
-                  br
-                  a(href="mailto:#{item.email}")!= item.email
-                br
-                
-          .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1
-            div
-              .font-icon-address
-              .c-homepage__5__location
-                p!= contactAddress.add
-                br
-                
-                p!= contactAddress.postcode
-                br
-                
-                p!= contactAddress.chineseAdd
-            .clear
-            div
-              .font-icon-phone
-              .c-homepage__5__phone
-                p.
-                  #{contactPhone.name}
-                  <br>
-                  #{contactPhone.number}
+        +contactForm()
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
     .section.c-homepage__6
       .c-homepage__6--logo
