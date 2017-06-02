@@ -3609,12 +3609,15 @@ form .text-input textarea {
   width: 100%;
   height: 100%;
   opacity: 0.5;
+  z-index: 0;
 }
 .c-homepage__tab-2 canvas {
   width: 100%;
   height: 100%;
   transform: 1s;
   opacity: 0.6;
+  position: relative;
+  z-index: 1;
 }
 .c-homepage__tab-3 {
   background-image: url("../img/background-wedo-water.jpg");
@@ -3643,6 +3646,8 @@ form .text-input textarea {
 .c-homepage__tab-4 {
   background-image: url("../img/background-wedo-hill.jpg");
   background-size: 100% 100%;
+  min-width: 1024px;
+  min-height: 768px;
 }
 .c-homepage__tab-4 .star {
   position: absolute;
@@ -3706,38 +3711,39 @@ form .text-input textarea {
 }
 .c-homepage__tab-4 .tree1 {
   left: -7%;
-  height: 420px;
+  height: 49%;
   animation-name: shake-leftright-2;
 }
 .c-homepage__tab-4 .tree2 {
-  left: 2%;
-  height: 550px;
+  left: 0%;
+  height: 56%;
 }
 .c-homepage__tab-4 .tree3 {
-  left: 16%;
-  height: 360px;
+  left: 14%;
+  height: 42%;
 }
 .c-homepage__tab-4 .tree4 {
-  left: 35%;
-  height: 220px;
+  left: 30%;
+  height: 24%;
   animation-name: shake-leftright-2;
 }
 .c-homepage__tab-4 .tree5 {
-  left: 60%;
-  height: 350px;
+  left: 56%;
+  height: 38%;
 }
 .c-homepage__tab-4 .tree6 {
-  left: 73%;
-  height: 390px;
+  left: 69%;
+  height: 42%;
 }
 .c-homepage__tab-4 .tree7 {
-  left: 80%;
-  height: 550px;
+  left: 79%;
+  height: 56%;
   animation-name: shake-leftright-2;
 }
 .c-homepage__tab-panel {
   position: relative;
   cursor: pointer;
+  z-index: 2;
 }
 .c-homepage__tab-panel ul {
   width: 984px;
