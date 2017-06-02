@@ -22,7 +22,7 @@ class WhiteBox extends MLP.apps.MLPModule {
 
     $(window).resize(function(){
       _this.drawWhiteBox();
-    })
+    });
 
 
   }
