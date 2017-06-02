@@ -3956,7 +3956,6 @@ form .text-input textarea {
 }
 .c-nav__menu ul li:nth-last-of-type(1) a.active {
   border: 0;
-  outline: none;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -3971,12 +3970,20 @@ form .text-input textarea {
   margin: 0;
   background: #fff;
 }
+#fp-nav ul li a:focus,
+.fp-slidesNav ul li a:focus {
+  outline: none;
+}
 #fp-nav.right {
   right: 45px;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
   margin: 4px;
+}
+#fp-nav ul li:focus,
+.fp-slidesNav ul li:focus {
+  outline: none;
 }
 .c-parallax {
   position: relative;
