@@ -47,6 +47,10 @@
         }
 
     }
+    if($name==""|| $email == "" || $subject == "" ||$message==""){
+       echo "fail";
+       return false;
+    }
 
     //邮件发送部分
     try {
