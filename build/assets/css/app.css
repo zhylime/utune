@@ -956,29 +956,35 @@ html.fp-enabled,
   text-transform: none;
   line-height: 1;
 }
-.font-icon-address:before {
+.font-icon-btn:before {
   content: "\e900";
 }
-.font-icon-brand:before {
+.font-icon-arrow:before {
   content: "\e901";
 }
-.font-icon-btn-next:before {
+.font-icon-address:before {
   content: "\e902";
 }
-.font-icon-mail:before {
+.font-icon-brand:before {
   content: "\e903";
 }
-.font-icon-phone:before {
+.font-icon-btn-next:before {
   content: "\e904";
 }
-.font-icon-product:before {
+.font-icon-mail:before {
   content: "\e905";
+}
+.font-icon-phone:before {
+  content: "\e906";
+}
+.font-icon-product:before {
+  content: "\e907";
 }
 .font-icon-space:before {
   content: "\e906";
 }
 .font-icon-supply-chain:before {
-  content: "\e907";
+  content: "\e908";
 }
 @font-face {
   font-family: 'Bomb';
