@@ -1,0 +1,27 @@
+extends ../_partials/_template
+//- include ../_mixins/_nav
+
+block content
+  //- +nav(0)
+  .c-content.c-about-us
+    .owl-carousel(data-js-owl-carousel)
+      .c-about-us__slider
+        .c-about-us__title
+          h1 We Do
+      each item, index in aboutUsSlider
+        - var num = index + 1
+        .c-about-us__slider(class="c-about-us__slider-#{num}")
+          .c-about-us__thumb-wrap
+            a.c-about-us__thumb-wrap__thumb(style="background-image:url('" + paths.img + item.image + "')", href=item.link)
+          //- img(src=paths.img + item.image, alt="")
+          .c-about-us__brief(class="c-about-us__brief-#{num}")
+            .l-absolute.c-about-us__overlay
+              .c-about-us__brief__title!= item.title
+              .c-about-us__brief__content!= item.content
+              a.font-icon-arrow(href=item.link) More Details
+    .c-about-us__carousel-nav
+      .c-about-us__carousel-nav__btn.c-about-us__carousel-nav__prev.js-carousel-prev
+        i.font-icon-btn
+      .c-about-us__carousel-nav__btn.c-about-us__carousel-nav__next.js-carousel-next
+        i.font-icon-btn
+

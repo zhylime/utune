@@ -15,6 +15,8 @@ $(document).ready(function() {
   // white box on contact page
   $('[data-js-white-box]').WhiteBox();
   
+  // carousel on about-us page
+  $('[data-js-owl-carousel]').OwlCarousel();
 
   setTimeout(function(){
     $('[data-js-fullpage]').FullPage();

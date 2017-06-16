@@ -333,5 +333,31 @@
   "aboutUtune":{
     "text":"This is <span>UTUNE</span><br>We insist on <span>Transboundary Insight</span><br>And <span>Original</span> design<br>With <span>Innovative</span> spirit<br>Creating business opportunities by<br><span>Ensouling</span> the products.",
     "footer_text":"We do  branding strategy, products creative. production and logistics operation or management, space design<br>We make brands stand out and stand for something."
-  }
+  },
+  "aboutUsSlider":[
+    {
+      "image":"about-us-img-1.jpg",
+      "title":"品牌沟通",
+      "content":"塑造品牌就是塑造一种气质。<br/>我们希望通过我们的设计，可以让品牌与客户之间用简洁、清晰、直观的沟通方式，达成有效的视觉沟通和传播。力图从品牌角度启迪客户以崭新的方式思考和行动，使他们逐步成为品牌的倡导者。",
+      "link":"#"
+    },
+    {
+      "image":"about-us-img-2.jpg",
+      "title":"产品策划",
+      "content":"优秀的产品扮演着商业路径中每一次跳跃的起点，我们凭借多年的经验，赋予产品无形的技术，利用符号学、语言学的表达方式，以优美的造型，提升产品价值感与竞争力。",
+      "link":"#"
+    },
+    {
+      "image":"about-us-img-3.jpg",
+      "title":"供应链管理",
+      "content":"塑造品牌就是塑造一种气质。<br/>我们希望通过我们的设计，可以让品牌与客户之间用简洁、清晰、直观的沟通方式，达成有效的视觉沟通和传播。力图从品牌角度启迪客户以崭新的方式思考和行动，使他们逐步成为品牌的倡导者。",
+      "link":"#"
+    },
+    {
+      "image":"about-us-img-4.jpg",
+      "title":"空间设计",
+      "content":"塑造品牌就是塑造一种气质。<br/>我们希望通过我们的设计，可以让品牌与客户之间用简洁、清晰、直观的沟通方式，达成有效的视觉沟通和传播。力图从品牌角度启迪客户以崭新的方式思考和行动，使他们逐步成为品牌的倡导者。",
+      "link":"#"
+    }
+  ]
 }
