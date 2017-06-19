@@ -11,6 +11,8 @@ class OwlCarousel extends MLP.apps.MLPModule {
 
     this.el = {
       container: this.el.target,
+      prevBtn: $('.js-carousel-prev'),
+      nextBtn: $('.js-carousel-next')
     };
 
     this.event();
@@ -44,7 +46,14 @@ class OwlCarousel extends MLP.apps.MLPModule {
 
     $('.owl-item').css('height',_screenHeight);
 
+    // nav arrows
+    this.el.prevBtn.on('click', function(){
+      $(_this.el.container).trigger('prev.owl.carousel');
+    });
 
+    this.el.nextBtn.on('click', function(){
+      $(_this.el.container).trigger('next.owl.carousel');
+    });
 
 
   }
