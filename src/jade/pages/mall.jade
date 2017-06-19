@@ -1,6 +1,8 @@
 extends ../_partials/_template
-include ../_mixins/_nav
+include ../_mixins/_side-nav
+
 block content
+  +side-nav(4)
   .c-content
     .c-content__mall
       .c-content__mall--tips

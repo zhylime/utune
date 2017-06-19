@@ -1,6 +1,8 @@
 extends ../_partials/_template
-include ../_mixins/_nav
+include ../_mixins/_side-nav
+
 block content
+  +side-nav(2)
   .c-chain
     .c-chain__header
       .c-chain__header--title.font--bomb
