@@ -11,7 +11,7 @@ block content
       .c-chain__managment(style=(item.bgImg==="")?item.bgStyle:"background-image:url("+paths.img+item.bgImg+");#{item.bgStyle}")
         if(key % 2 === 0)
           .c-chain__managment--content
-            img(src=paths.img + "chain-const-control.jpg")
+            img(src=paths.img + item.img)
           .c-chain__managment--content.txt--black
             h2=item.title
               h3=item.subTitle
@@ -25,7 +25,7 @@ block content
             p(style="font-family:'Microsoft YaHei'")!=item.zh
             p!=item.en
           .c-chain__managment--content
-            img(src=paths.img + "chain-quality-control.png")
+            img(src=paths.img + item.img)
           .clear
     .c-chain__footer.txt--black
       .c-chain__footer--title
