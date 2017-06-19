@@ -82,6 +82,9 @@ for $color, $color-index in colors()
 .txt--uppercase
   text-transform uppercase
 
+.txt-copy-grey
+  color $col-text-grey !important
+
 $positions = "r", "l", "c"
 for $dir, $index in right left center
   .txt--{$positions[$index]}

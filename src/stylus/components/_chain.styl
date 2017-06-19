@@ -1,0 +1,163 @@
+.c-chain
+  overflow hidden
+  overflow-y auto
+  min-width 1025px
+  width 100%
+  text-align center
+  color #fff
+  &__header
+    position relative
+    display table
+    width 100%
+    min-height 704px
+    text-align center
+    background-repeat no-repeat
+    background-size cover
+    background-position center center
+    background-attachment fixed
+    background-color rgb(33, 33, 33)
+    background-image url("../img/background-chain.jpg")
+    &--title
+      position relative
+      display table-cell
+      vertical-align middle
+      z-index 2
+      &-content
+        margin-right auto
+        margin-left auto
+        padding-left 15px
+        padding-right 15px
+        font-size 300%
+        line-height 1.5em
+        &:before
+          content " "
+          display table
+  &__managment
+    margin-bottom 0
+    background-position top center
+    background-repeat repeat-x
+    display table
+    min-height 800px
+    &--content
+      line-height 1.5em
+      width 50%
+      padding-top 100px
+      padding-bottom 100px
+      display table-cell
+      vertical-align middle
+      text-align left
+      &:nth-child(1)
+        padding-right 50px
+        @media (min-width:320px)
+          padding-left 50px
+        @media (min-width:1400px)
+          padding-left 100px
+        @media (min-width:1800px)
+          padding-left 200px
+      &:nth-child(2)
+        padding-left 50px
+        @media (min-width:320px)
+          padding-right 50px
+        @media (min-width:1400px)
+          padding-right 100px
+        @media (min-width:1800px)
+          padding-right 200px
+      h2
+        font-family 'Microsoft YaHei'
+        font-size 50px
+      h3
+        line-height 1.5em
+        opacity .5
+        font-size 30px
+      p
+        line-height 1.5em
+        margin-top 2em
+        font-size 14px
+      img
+        width 100%
+        display table-cell
+        vertical-align middle
+  &__footer
+    zoom 1
+    text-align center
+    height auto
+    @media (min-width:320px)
+      padding 2em 50px
+    @media (min-width:1400px)
+      padding 2em 100px
+    @media (min-width:1800px)
+      padding 2em 200px
+    ul
+      list-style none
+    li
+      display inline-block
+      vertical-align middle
+      position relative
+      width 25%
+      margin-left -6px
+      margin-bottom -6px
+      height 290px
+    a
+      position relative
+      color #fff
+      z-index 20
+      text-align center
+      cursor default
+    span
+      display block
+      padding-top 1.5em
+      color $col-purple
+      font-weight bold
+      text-transform uppercase
+      font-size 14px
+      width 180px
+      margin auto
+    img
+      height 170px
+    &--title
+      position relative
+      display table
+      width 100%
+      margin 48px 0px
+      overflow hidden
+      z-index 2
+      h2
+        width 360px
+        font-size 48px
+        font-weight bold
+    &--line-before
+    &--line-after
+      position relative
+      display table-cell
+      text-align center
+      width 40%
+      &:before
+      &:after
+        background-color $col-black
+        box-sizing border-box
+        position absolute
+        content ''
+        height 1px
+      &:before
+        width 100%
+        left 0
+        bottom 7px
+        opacity 0.4
+      &:after
+        width 50px
+        right 0
+        bottom 7px
+        height 2px
+    &--line-after
+      &:after
+        left 0
+    h3
+      margin 1.5em 0
+      color $col-purple
+      line-height 1.5em
+      font-size 36px
+
+
+
+
+

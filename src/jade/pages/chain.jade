@@ -1,0 +1,42 @@
+extends ../_partials/_template
+include ../_mixins/_nav
+block content
+  .c-chain
+    .c-chain__header
+      .c-chain__header--title.font--bomb
+        .c-chain__header--title-content Supply chain <br>management
+    each item,key in chain.management
+      .c-chain__managment(style=(item.bgImg==="")?item.bgStyle:"background-image:url("+paths.img+item.bgImg+");#{item.bgStyle}")
+        if(key % 2 === 0)
+          .c-chain__managment--content
+            img(src=paths.img + "chain-const-control.jpg")
+          .c-chain__managment--content.txt--black
+            h2=item.title
+              h3=item.subTitle
+              p!=item.zh
+              p.txt-copy-grey!=item.en
+          .clear
+        else
+          .c-chain__managment--content
+            h2=item.title
+            h3=item.subTitle
+            p(style="font-family:'Microsoft YaHei'")!=item.zh
+            p!=item.en
+          .c-chain__managment--content
+            img(src=paths.img + "chain-quality-control.png")
+          .clear
+    .c-chain__footer.txt--black
+      .c-chain__footer--title
+        .c-chain__footer--line-before
+        h2 WHY UTUNE
+        .c-chain__footer--line-after
+      h3 Team Vision Innovation Passion
+         br
+         | Standard Quality Profession System
+      .c-chain__footer--icon
+        ul
+          each item,key in chain.utune
+            li
+              a(href="#")
+                img(src=paths.img + item.img)
+                span=item.txt
