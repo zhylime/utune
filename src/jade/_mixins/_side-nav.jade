@@ -1,0 +1,15 @@
+mixin side-nav(activeClass)
+  .c-side-nav(data-js-side-nav)
+    .c-side-nav__btn.js-hamburger
+      .c-side-nav__btn__hamburger
+
+    .c-side-nav__panel.js-panel
+      .c-side-nav__panel__logo
+        a(href="./index.html")
+          img(src=paths.img + 'side-nav-logo.png')
+      .c-side-nav__panel__menu
+        ul
+          each item, index in navMenu
+            - var className = activeClass == index ? "active" : "" 
+            li(class=className)
+              a(href=item.link)!= item.name

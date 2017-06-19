@@ -1,0 +1,88 @@
+.c-side-nav
+  position fixed
+  z-index 10
+  left 0
+  top 0
+  &__btn
+    cursor pointer
+    height 28px
+    top 20px
+    left 20px
+    position absolute
+    z-index 11
+    &__hamburger
+      width 40px
+      height 4px
+      background-color white
+      transition .3s
+      position relative
+      display inline-block
+      &:before
+      &:after
+        width 40px
+        height 4px
+        background-color white
+        transition .3s
+        display inline-block
+        content ""
+        position absolute
+      &:before
+        top -10px
+      &:after 
+        top 10px
+      &.active
+        background-color transparent
+        &:before
+        &:after
+          width 30px
+          height 3px
+          background-color $col-sidenav-grey
+          top 0
+        &:before
+          transform rotate(45deg)
+        &:after 
+          transform rotate(-45deg)
+  &__panel
+    width 320px
+    height 100vh
+    position absolute
+    z-index 10
+    background-color $col-sidenav-panel-bg-grey
+    top 0
+    left -320px
+    &__logo
+      padding 80px 30px 48px
+      a
+        display block
+        width 194px
+        img
+          width 100%
+    &__menu
+      li
+        border-bottom 1px solid $col-sidenav-grey
+        position relative
+        &:after
+          width 0
+          top 0
+          bottom 0
+          right 0
+          background-color #404040
+          transition width .5s ease-in-out
+          content ""
+          position absolute
+          z-index -1
+        &:hover
+        &.active
+          a
+            color white
+          &:after
+            width 100%
+          
+        a
+          display block
+          color $col-sidenav-grey
+          text-transform uppercase
+          padding 0 30px
+          line-height 54px
+          transition color 0.65s ease-in-out
+        
