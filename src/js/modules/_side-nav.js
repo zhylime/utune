@@ -28,7 +28,7 @@ class SideNav extends MLP.apps.MLPModule {
 
 
     this.el.navBtn.on('click', function(){
-      toggleLeft = $(_this.el.menuPanel).css('left') == '-320px' ? '0' : '-320px';
+      toggleLeft = $(_this.el.menuPanel).css('left') == '-400px' ? '0' : '-400px';
       $(this).children('div').eq(0).toggleClass('active');
       $(_this.el.menuPanel).animate({
         left: toggleLeft
