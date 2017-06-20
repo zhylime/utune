@@ -13,7 +13,7 @@ $(document).ready(function() {
   $('[data-js-skewing]').Skewing();
   $('[data-js-masonry]').MasonryGallery();
   $('[data-js-validate]').Validate();
-  // $('[data-js-stars]').Stars();
+  $('[data-js-stars]').Stars();
 
   // white box on contact page
   $('[data-js-white-box]').WhiteBox();

@@ -14,7 +14,7 @@ class Stars extends MLP.apps.MLPModule {
       _canvas.height = window.innerHeight;
       var stars = [],
         FPS = 30,
-        x = _canvas.width;
+        x = 1000;
       for (var i = 0; i < x; i++) {
         stars.push({
           x: Math.random() * _canvas.width,

@@ -20,6 +20,11 @@ class SwitchTab extends MLP.apps.MLPModule {
       $(this).find(".c-homepage__tab-panel__button").addClass("active");
       $(".c-homepage__tab-"+_currnetIndex).addClass("inPanel");
       $(".c-homepage__tab-"+_currnetIndex).removeClass("outPanel");
+
+      // tab2 trigger mirror light
+      if($('.c-homepage__tab-2').hasClass('inPanel')){
+        $('.js-mirror-light').addClass('active');
+      }
     });
   }
 }
