@@ -15,7 +15,7 @@
   "navMenu":[
     {
       "name":"home",
-      "link":"/"
+      "link":"javascript:;"
     },
     {
       "name":"what we do",
@@ -24,6 +24,28 @@
     {
       "name":"about us",
       "link":"javascript:;"
+    },
+    {
+      "name":"contact",
+      "link":"/contact.html"
+    },
+    {
+      "name":"mall",
+      "link":"/mall.html"
+    }
+  ],
+  "sideMenu":[
+    {
+      "name":"home",
+      "link":"/"
+    },
+    {
+      "name":"what we do",
+      "link":"/wedo.html"
+    },
+    {
+      "name":"about us",
+      "link":"/#panel4"
     },
     {
       "name":"contact",

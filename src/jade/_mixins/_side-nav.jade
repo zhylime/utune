@@ -9,7 +9,7 @@ mixin side-nav(activeClass)
           img(src=paths.img + 'side-nav-logo.png')
       .c-side-nav__panel__menu
         ul
-          each item, index in navMenu
+          each item, index in sideMenu
             - var className = activeClass == index ? "active" : "" 
             li(class=className)
               a(href=item.link)!= item.name

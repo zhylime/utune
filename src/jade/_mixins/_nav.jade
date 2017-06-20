@@ -5,7 +5,7 @@ mixin nav(activeClass)
     .c-nav__menu(data-js-top-nav)
       ul
         each item, index in navMenu
-          - var className = activeClass == index ? "active" : "" 
+          - var className = activeClass == index ? "active" : ""
           li
-            a(href=item.link, class=className)!= item.name
+            a(href=item.link, class=className ,data-menuanchor="panel"+(index+1) data-menuanchor_idx=(index+1))!= item.name
 

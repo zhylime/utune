@@ -23,6 +23,7 @@ class FullPage extends MLP.apps.MLPModule {
     this.el.fullpageContainer.fullpage({
       'navigation': true,
       'scrollOverflow': true,
+      'lockAnchors':true,
       afterLoad: function(anchor, index){
         var _index = index - 1;
         var navLong = $(_this.el.navItems).length;

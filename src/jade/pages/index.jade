@@ -4,7 +4,7 @@ include ../_mixins/_contactForm
 block content
   +nav(0)
   .c-content.c-homepage(data-js-fullpage)
-    .section.c-homepage__1
+    .section.c-homepage__1(data-anchor="panel1")
       .c-homepage__1__content
         img(src=paths.img + 'logo-utune.png', alt="Utune Creative logo")
         br
@@ -13,7 +13,7 @@ block content
           path#creative_dot(stroke-width="5",style="fill-rule: evenodd; clip-rule: evenodd; fill: none; stroke: rgb(255, 255, 255); stroke-miterlimit: 5;", d="M313.758,15.036C312.312,3.438,334.172,0.902,337.71,1.003")
           path#creative_t(stroke-width="5" style="fill-rule: evenodd; clip-rule: evenodd; fill: none; stroke: rgb(255, 255, 255); stroke-miterlimit: 5;", d="M251.633,44.547c9.061-0.787,31.036-7.119,48.367-18.734")
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
-    .section.c-homepage__2(data-js-switch-tab)
+    .section.c-homepage__2(data-js-switch-tab data-anchor="panel2")
       .c-homepage__tab-1
         .c-svg-stars
         img.jiguang.jiguang1(src=paths.img + "wedo-jiguang.png")
@@ -46,14 +46,14 @@ block content
               span!= item.text
               a.c-homepage__tab-panel__button(class=item.buttonClass href=item.url) View
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
-    .section.c-homepage__3
+    .section.c-homepage__3(data-anchor="panel3")
       .c-homepage__3--main
         each item in ourwork
           a.c-gallery__item.draw(href=paths.img + item.img+"-large.jpg" data-fancybox="group" alt=item.alt class=item.class)
             img.l-full-width(src=paths.img + item.img+".jpg")
           if item.isEnd=="true"
             .clear
-    .section.c-homepage__4
+    .section.c-homepage__4(data-anchor="panel4")
       h2 our clients
       //- (data-js-masonry)
       .c-masonry
@@ -64,12 +64,12 @@ block content
 
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
 
-    .section.c-homepage__5
+    .section.c-homepage__5(data-anchor="panel5")
       h2 contact us
       .c-homepage__5__main
         +contactForm()
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
-    .section.c-homepage__6
+    .section.c-homepage__6(data-anchor="panel6")
       .c-homepage__6--logo
         img(src=paths.img + "logo-green.svg")
       .c-homepage__6--text.font--roboto-regular!=aboutUtune.text
