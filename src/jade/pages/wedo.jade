@@ -3,25 +3,25 @@ include ../_mixins/_side-nav
 
 block content
   +side-nav(1)
-  .c-content.c-about-us
+  .c-content.c-wedo
     .owl-carousel(data-js-owl-carousel)
-      .c-about-us__slider
-        .c-about-us__title
+      .c-wedo__slider
+        .c-wedo__title
           h1 We Do
-      each item, index in aboutUsSlider
+      each item, index in weDoSlider
         - var num = index + 1
-        .c-about-us__slider(class="c-about-us__slider-#{num}")
-          .c-about-us__thumb-wrap
-            a.c-about-us__thumb-wrap__thumb(style="background-image:url('" + paths.img + item.image + "')", href=item.link)
+        .c-wedo__slider(class="c-wedo__slider-#{num}")
+          .c-wedo__thumb-wrap
+            a.c-wedo__thumb-wrap__thumb(style="background-image:url('" + paths.img + item.image + "')", href=item.link)
           //- img(src=paths.img + item.image, alt="")
-          .c-about-us__brief(class="c-about-us__brief-#{num}")
-            .l-absolute.c-about-us__overlay
-              .c-about-us__brief__title!= item.title
-              .c-about-us__brief__content!= item.content
+          .c-wedo__brief(class="c-wedo__brief-#{num}")
+            .l-absolute.c-wedo__overlay
+              .c-wedo__brief__heading!= item.title
+              .c-wedo__brief__content!= item.content
               a.font-icon-arrow(href=item.link) More Details
-    .c-about-us__carousel-nav
-      .c-about-us__carousel-nav__btn.c-about-us__carousel-nav__prev.js-carousel-prev
+    .c-wedo__carousel-nav
+      .c-wedo__carousel-nav__btn.c-wedo__carousel-nav__prev.js-carousel-prev
         i.font-icon-btn
-      .c-about-us__carousel-nav__btn.c-about-us__carousel-nav__next.js-carousel-next
+      .c-wedo__carousel-nav__btn.c-wedo__carousel-nav__next.js-carousel-next
         i.font-icon-btn
 
