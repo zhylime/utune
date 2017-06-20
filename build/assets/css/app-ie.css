@@ -3475,145 +3475,6 @@ html {
 .l-absolute {
   position: absolute;
 }
-.c-about-us {
-  background-color: #464646;
-}
-.c-about-us__title {
-  background-image: url("../img/about-us-img-0.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  position: relative;
-}
-.c-about-us__title h1 {
-  background-image: url("../img/about-us-img-8.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  position: absolute;
-  text-align: left;
-  top: 8%;
-  right: 0;
-  width: 96%;
-  height: 400px;
-  padding: 44% 0 0 9%;
-  font-size: 60px !important;
-  font-weight: bold;
-  font-family: 'Helvetica';
-}
-.c-about-us__slider {
-  height: 100%;
-}
-.c-about-us__slider-1 {
-  background-color: #28b4cf;
-}
-.c-about-us__slider-2,
-.c-about-us__slider-4 {
-  background-color: #fff;
-}
-.c-about-us__slider-3 {
-  background-color: #333;
-}
-.c-about-us__thumb-wrap {
-  height: 440px;
-  overflow: hidden;
-}
-.c-about-us__thumb-wrap__thumb {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.2s ease-in-out;
-  display: block;
-  height: 100%;
-}
-.c-about-us__thumb-wrap__thumb:hover {
-  transform: scale(1.1);
-}
-.c-about-us__brief {
-  color: #000;
-  height: 100%;
-  position: relative;
-  text-align: left;
-  font-family: 'Microsoft YaHei';
-  margin-top: -155px;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-.c-about-us__brief-1 {
-  background-image: url("../img/about-us-img-5.png");
-}
-.c-about-us__brief-3 {
-  background-image: url("../img/about-us-img-6.png");
-}
-.c-about-us__brief-1,
-.c-about-us__brief-3 {
-  color: #fff;
-}
-.c-about-us__brief-2,
-.c-about-us__brief-4 {
-  background-image: url("../img/about-us-img-7.png");
-}
-.c-about-us__brief__heading {
-  font-size: 36px;
-  line-height: 36px;
-  border-bottom: 1px solid #e0e0e0;
-  position: relative;
-  padding-bottom: 17px;
-  margin-bottom: 20px;
-}
-.c-about-us__brief__heading:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-bottom: -1px;
-  width: 40px;
-  height: 1px;
-  background-color: #474747;
-}
-.c-about-us__brief__content {
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 30px;
-}
-.c-about-us__brief a.font-icon-arrow {
-  font-family: "Roboto Light";
-  color: inherit;
-  font-size: 16px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-right: 26px;
-  line-height: 16px;
-}
-.c-about-us__brief a.font-icon-arrow:before {
-  position: absolute;
-  right: 0;
-  font-size: 12px;
-}
-.c-about-us__overlay {
-  width: 80%;
-  left: 10%;
-  height: 230px;
-  top: 31%;
-}
-.c-about-us__carousel-nav {
-  position: absolute;
-  bottom: 10px;
-  width: 60px;
-  height: 30px;
-  z-index: 1;
-  color: #d6d6d6;
-  right: 10px;
-}
-.c-about-us__carousel-nav__btn {
-  font-size: 30px;
-  cursor: pointer;
-}
-.c-about-us__carousel-nav__prev {
-  transform: rotate(180deg);
-  float: left;
-  margin-right: 10px;
-}
 .c-btn {
   display: inline;
   display: inline-block;
@@ -4883,4 +4744,143 @@ form .text-input textarea {
   background-size: 240px;
   backface-visibility: visible;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==");
+}
+.c-wedo {
+  background-color: #464646;
+}
+.c-wedo__title {
+  background-image: url("../img/about-us-img-0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+}
+.c-wedo__title h1 {
+  background-image: url("../img/about-us-img-8.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  text-align: left;
+  top: 8%;
+  right: 0;
+  width: 96%;
+  height: 400px;
+  padding: 44% 0 0 9%;
+  font-size: 60px !important;
+  font-weight: bold;
+  font-family: 'Helvetica';
+}
+.c-wedo__slider {
+  height: 100%;
+}
+.c-wedo__slider-1 {
+  background-color: #28b4cf;
+}
+.c-wedo__slider-2,
+.c-wedo__slider-4 {
+  background-color: #fff;
+}
+.c-wedo__slider-3 {
+  background-color: #333;
+}
+.c-wedo__thumb-wrap {
+  height: 440px;
+  overflow: hidden;
+}
+.c-wedo__thumb-wrap__thumb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  height: 100%;
+}
+.c-wedo__thumb-wrap__thumb:hover {
+  transform: scale(1.1);
+}
+.c-wedo__brief {
+  color: #000;
+  height: 100%;
+  position: relative;
+  text-align: left;
+  font-family: 'Microsoft YaHei';
+  margin-top: -155px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.c-wedo__brief-1 {
+  background-image: url("../img/about-us-img-5.png");
+}
+.c-wedo__brief-3 {
+  background-image: url("../img/about-us-img-6.png");
+}
+.c-wedo__brief-1,
+.c-wedo__brief-3 {
+  color: #fff;
+}
+.c-wedo__brief-2,
+.c-wedo__brief-4 {
+  background-image: url("../img/about-us-img-7.png");
+}
+.c-wedo__brief__heading {
+  font-size: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+}
+.c-wedo__brief__heading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -1px;
+  width: 40px;
+  height: 1px;
+  background-color: #474747;
+}
+.c-wedo__brief__content {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.c-wedo__brief a.font-icon-arrow {
+  font-family: "Roboto Light";
+  color: inherit;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 26px;
+  line-height: 16px;
+}
+.c-wedo__brief a.font-icon-arrow:before {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+}
+.c-wedo__overlay {
+  width: 80%;
+  left: 10%;
+  height: 230px;
+  top: 31%;
+}
+.c-wedo__carousel-nav {
+  position: absolute;
+  bottom: 10px;
+  width: 60px;
+  height: 30px;
+  z-index: 1;
+  color: #d6d6d6;
+  right: 10px;
+}
+.c-wedo__carousel-nav__btn {
+  font-size: 30px;
+  cursor: pointer;
+}
+.c-wedo__carousel-nav__prev {
+  transform: rotate(180deg);
+  float: left;
+  margin-right: 10px;
 }
