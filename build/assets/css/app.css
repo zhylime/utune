@@ -1155,21 +1155,33 @@ html.fp-enabled,
   }
 }
 @-moz-keyframes mirrowLight {
+  0% {
+    left: 0%;
+  }
   100% {
     left: 100%;
   }
 }
 @-webkit-keyframes mirrowLight {
+  0% {
+    left: 0%;
+  }
   100% {
     left: 100%;
   }
 }
 @-o-keyframes mirrowLight {
+  0% {
+    left: 0%;
+  }
   100% {
     left: 100%;
   }
 }
 @keyframes mirrowLight {
+  0% {
+    left: 0%;
+  }
   100% {
     left: 100%;
   }
@@ -4120,15 +4132,15 @@ form .text-input textarea {
 .c-homepage__tab-2__mirror__cover.active:after {
   content: "";
   position: absolute;
-  width: 20%;
+  width: 124px;
   height: 1570px;
   left: 0;
   top: 0;
-  opacity: 0.5;
+  opacity: 0.4;
   overflow: hidden;
   background-image: url("../img/light.png");
   background-repeat: no-repeat;
-  transform: rotate(45deg);
+  transform: rotate(30deg);
   animation: mirrowLight 10s linear 0s infinite;
 }
 .c-homepage__tab-3 {
