@@ -1286,10 +1286,10 @@ html.fp-enabled,
   content: "\e907";
 }
 .font-icon-space:before {
-  content: "\e906";
+  content: "\e908";
 }
 .font-icon-supply-chain:before {
-  content: "\e908";
+  content: "\e909";
 }
 @font-face {
   font-family: 'Bomb';
@@ -4117,8 +4117,10 @@ form .text-input textarea {
   position: relative;
   z-index: 1;
 }
-.c-homepage__tab-2__mirror__cover {
-  -webkit-mask-image: url("../img/homepage-mirror-cover.png");
+.c-homepage__tab-2__mirror__cover,
+.c-homepage__tab-2__mirror__cover-2,
+.c-homepage__tab-2__mirror__cover-3 {
+  -webkit-mask-image: url("../img/homepage-mirror-cover-1.png");
   background-color: transparent;
   width: 100%;
   height: 100%;
@@ -4129,7 +4131,9 @@ form .text-input textarea {
   left: 0;
   overflow: hidden;
 }
-.c-homepage__tab-2__mirror__cover.active:after {
+.c-homepage__tab-2__mirror__cover.active:after,
+.c-homepage__tab-2__mirror__cover-2.active:after,
+.c-homepage__tab-2__mirror__cover-3.active:after {
   content: "";
   position: absolute;
   width: 124px;
@@ -4140,8 +4144,22 @@ form .text-input textarea {
   overflow: hidden;
   background-image: url("../img/light.png");
   background-repeat: no-repeat;
-  transform: rotate(30deg);
+  transform: rotate(8deg);
   animation: mirrowLight 10s linear 0s infinite;
+}
+.c-homepage__tab-2__mirror__cover-2 {
+  -webkit-mask-image: url("../img/homepage-mirror-cover-2.png");
+}
+.c-homepage__tab-2__mirror__cover-2.active:after {
+  transform: rotate(45deg);
+  animation: mirrowLight 10s linear 2s infinite;
+}
+.c-homepage__tab-2__mirror__cover-3 {
+  -webkit-mask-image: url("../img/homepage-mirror-cover-3.png");
+}
+.c-homepage__tab-2__mirror__cover-3.active:after {
+  transform: rotate(45deg);
+  animation: mirrowLight 10s linear 4.6s infinite;
 }
 .c-homepage__tab-3 {
   background-image: url("../img/background-wedo-water.jpg");
@@ -4350,7 +4368,10 @@ form .text-input textarea {
   font-family: "Roboto Regular";
 }
 .c-homepage__5__location {
-  padding-bottom: 30px;
+  padding-bottom: 0.4em;
+}
+.c-homepage__5__location p {
+  margin-bottom: 2em;
 }
 .c-homepage__5__email a {
   text-decoration: none;
@@ -4358,6 +4379,14 @@ form .text-input textarea {
 }
 .c-homepage__5__email a:hover {
   text-decoration: underline;
+}
+.c-homepage__5__email p {
+  white-space: nowrap;
+  margin-bottom: 2em;
+  line-height: 1.4em;
+}
+.c-homepage__5__email p:last-child {
+  margin-bottom: 0px;
 }
 .c-homepage__6 {
   background-color: #292b2e;
@@ -4839,6 +4868,10 @@ form .text-input textarea {
 .c-wedo__slider-4 {
   background-color: #fff;
 }
+.c-wedo__slider-2 .c-wedo__thumb-wrap,
+.c-wedo__slider-4 .c-wedo__thumb-wrap {
+  height: 600px;
+}
 .c-wedo__slider-3 {
   background-color: #333;
 }
@@ -4849,7 +4882,7 @@ form .text-input textarea {
 .c-wedo__thumb-wrap__thumb {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   transition: all 0.2s ease-in-out;
   display: block;
   height: 100%;
@@ -4860,18 +4893,45 @@ form .text-input textarea {
 .c-wedo__brief {
   color: #000;
   height: 100%;
-  position: relative;
+  position: absolute;
   text-align: left;
   font-family: 'Microsoft YaHei';
-  margin-top: -155px;
+  top: 265px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .c-wedo__brief-1 {
   background-image: url("../img/about-us-img-5.png");
 }
+.c-wedo__brief-1 .c-wedo__brief__heading {
+  border-color: rgba(255,255,255,0.4);
+}
+.c-wedo__brief-1 .c-wedo__brief__heading:after {
+  background-color: rgba(255,255,255,0.4);
+}
+.c-wedo__brief-2 .c-wedo__brief__heading {
+  border-color: #e0e0e0;
+}
+.c-wedo__brief-2 .c-wedo__brief__heading:after {
+  background-color: #e0e0e0;
+}
 .c-wedo__brief-3 {
   background-image: url("../img/about-us-img-6.png");
+}
+.c-wedo__brief-3 .c-wedo__brief__heading {
+  border-color: #858585;
+}
+.c-wedo__brief-3 .c-wedo__brief__heading:after {
+  background-color: #858585;
+}
+.c-wedo__brief-4 .c-wedo__brief__heading {
+  border-color: #e0e0e0;
+}
+.c-wedo__brief-4 .c-wedo__brief__heading:after {
+  background-color: #e0e0e0;
 }
 .c-wedo__brief-1,
 .c-wedo__brief-3 {
@@ -4884,7 +4944,7 @@ form .text-input textarea {
 .c-wedo__brief__heading {
   font-size: 36px;
   line-height: 36px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid;
   position: relative;
   padding-bottom: 17px;
   margin-bottom: 20px;
@@ -4896,8 +4956,7 @@ form .text-input textarea {
   bottom: 0;
   margin-bottom: -1px;
   width: 40px;
-  height: 1px;
-  background-color: #474747;
+  height: 2px;
 }
 .c-wedo__brief__content {
   font-size: 14px;

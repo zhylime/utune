@@ -306,13 +306,21 @@
       word-break break-all
       font-family $font-roboto-regular
     &__location
-      padding-bottom 30px
+      padding-bottom 0.4em
+      p
+        margin-bottom 2em
     &__email
       a
         text-decoration none
         color white
         &:hover
           text-decoration underline
+      p
+        white-space nowrap
+        margin-bottom 2em
+        line-height 1.4em
+        &:last-child
+          margin-bottom 0px
     
   &__6
     background-color $col-primary-grey

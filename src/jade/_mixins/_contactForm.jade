@@ -34,17 +34,14 @@ mixin contactForm(opt)
             p!= item.name
               br
               a(href="mailto:#{item.email}")!= item.email
-            br
             
-      .l-grid__col.l-col-10-5.l-pad--l-1.l-pad--r-1
+      .l-grid__col.l-col-10-5.l-pad--l-2
         div
           .font-icon-address
           .c-homepage__5__location
             p!= contactAddress.add
-            br
             
             p!= contactAddress.postcode
-            br
             
             p!= contactAddress.chineseAdd
         .clear
