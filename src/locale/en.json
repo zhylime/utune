@@ -67,7 +67,7 @@
     {
       "icon":"font-icon-product",
       "text":"Product<br/>planning",
-      "url":"javascript:",
+      "url":"/wedo/plan.html",
       "buttonClass":""
     },
     {
@@ -367,7 +367,7 @@
       "image":"about-us-img-2.jpg",
       "title":"产品策划",
       "content":"优秀的产品扮演着商业路径中每一次跳跃的起点，我们凭借多年的经验，赋予产品无形的技术，利用符号学、语言学的表达方式，以优美的造型，提升产品价值感与竞争力。",
-      "link":"#"
+      "link":"/wedo/plan.html"
     },
     {
       "image":"about-us-img-3.jpg",

@@ -1,16 +1,30 @@
 .c-plan
   &__header
     background-image url("../img/background-plan.jpg")
+    .c-chain__header--title-content
+      animation rotatetxt 3s
   &__main
     background-color #fff
     margin 10px auto
     color #737373
-    &--design
+    &-design
       display table
-    &--content
-      display table-cell
-      width 50%
-      vertical-align middle
+      img
+        width 100%
+        display table-cell
+      &--text
+        font-family 'Microsoft YaHei'
+        font-size 20px
+        line-height 2em
+        text-align right
+        vertical-align top!important
+      &:nth-child(1)
+        padding-top 100px
+      &--content
+        display table-cell
+        min-height 500px
+        width 50%
+        vertical-align bottom
   &__footer
     background-color $col-bg-grey
     .c-chain__footer--line-before
