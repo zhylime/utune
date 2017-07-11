@@ -422,14 +422,14 @@
       }
     ],
     "utune":[
-      {"img":"team.svg","txt":"Experienced Team"},
-      {"img":"vision.svg","txt":"Great Vision"},
-      {"img":"spirit.svg","txt":"Innovative Spirit"},
-      {"img":"passion.svg","txt":"Real Passion"},
-      {"img":"standard.svg","txt":"International Standard"},
-      {"img":"control.svg","txt":"Strict Quality Control"},
-      {"img":"procedure.svg","txt":"Professional Insight & Procedure"},
-      {"img":"system.svg","txt":"Sound Management System"}
+      {"img":"team","txt":"Experienced Team"},
+      {"img":"vision","txt":"Great Vision"},
+      {"img":"spirit","txt":"Innovative Spirit"},
+      {"img":"passion","txt":"Real Passion"},
+      {"img":"standard","txt":"International Standard"},
+      {"img":"control","txt":"Strict Quality Control"},
+      {"img":"procedure","txt":"Professional Insight & Procedure"},
+      {"img":"system","txt":"Sound Management System"}
     ]
   }
 }

@@ -1,0 +1,38 @@
+extends ../../_partials/_template
+include ../../_mixins/_side-nav
+
+block content
+  +side-nav(1)
+  .c-chain
+    .c-chain__header.c-plan__header
+      .c-chain__header--title.font--bomb
+        .c-chain__header--title-content Product planning
+    .c-plan__main
+      .c-plan__main-design
+        .c-plan__main--content
+          p 设计是一场与想象力的约会，拒绝套路，没有技巧，
+            br
+            | 善于赋予产品无形的技术，利用符号学、语义学的表达方式，
+            br
+            | 来创造优雅， 善于深入各种材料研究，
+            br
+            | 利用丰富的行业知识与产品经验，
+            br
+            | 打造出与众不同优秀的落地产品。
+        .c-plan__main--content
+          img(src=paths.img + "plan-premium.png")
+    .c-chain__footer.txt--white.c-plan__footer
+      .c-chain__footer--title
+        .c-chain__footer--line-before
+        h2 WHY UTUNE
+        .c-chain__footer--line-after
+      h3 Team Vision Innovation Passion
+         br
+         | Standard Quality Profession System
+      .c-chain__footer--icon
+        ul
+          each item,key in chain.utune
+            li
+              a(href="#")
+                img(src=paths.img + item.img +"-plan.svg")
+                span=item.txt
