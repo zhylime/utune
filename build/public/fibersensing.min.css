@@ -1,0 +1,150 @@
+
+body, html {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    color: #89919a;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+.mainPage {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    top: auto;
+    left: 0;
+    font: 500 normal 18px/18px 'Foundry Sterling W02', Helvetica, Arial, sans-serif;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden
+}
+
+.currentPage {
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.slide-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.slide-wrapper.fixed {
+    position: fixed
+}
+
+.home #webgl-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+
+.home .header-gradient-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: #6b13d3;
+    background: -moz-linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%);
+    background: -webkit-linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%);
+    background: -ms-linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%);
+    background: linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%)
+}
+.vhcentered-inside {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pageHeader .vhcentered-inside {
+    width: 662px;
+    margin: 0 20px 0 70px;
+    text-align: left;
+    top:40%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width:599px) {
+    .vhcentered-inside h2 {
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 1;
+    }
+}
+
+.home #ourintro {
+    background: #8a3bde;
+    font: 400 90px/81px 'Foundry Sterling W02b',Helvetica,Arial,sans-serif;
+    letter-spacing: -5px;
+    color: #fff;
+}
+.slides.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+.slides {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.vhcentered {
+    text-align: center;
+}
+.pageHeader h2 {
+    display: block;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+*, :after, :before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.currentPage .forRefresh {
+    opacity: 0;
+}
+.pageHeader .iconCase {
+    position: absolute;
+    left: -43px;
+    top: 28px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-indent: 46px;
+    display: block;
+}
