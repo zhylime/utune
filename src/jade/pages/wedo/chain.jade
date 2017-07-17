@@ -1,10 +1,14 @@
 extends ../../_partials/_template
 include ../../_mixins/_side-nav
 
+block js
+  script(src=paths.js + 'vendor/three.js')
+  script(src=paths.js + 'bg-chain.js')
 block content
   +side-nav(1)
   .c-chain
     .c-chain__header
+      .webgl
       .c-chain__header--title.font--bomb
         .c-chain__header--title-content Supply chain <br>management
     each item,key in chain.management

@@ -3736,8 +3736,16 @@ html {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-color: #212121;
-  background-image: url("../img/background-chain.jpg");
+  background: #6b13d3;
+  background: -moz-linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%);
+  background: -webkit-linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%);
+  background: -ms-linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%);
+  background: linear-gradient(45deg, #6b13d3 0, #7a25e1 25%, #4962dc 60%);
+}
+.c-chain__header .webgl {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
 }
 .c-chain__header--title {
   position: relative;
@@ -3753,7 +3761,6 @@ html {
   font-size: 300%;
   line-height: 1.5em;
   position: relative;
-  animation: easeIn 3s;
 }
 .c-chain__header--title-content:before {
   content: " ";
