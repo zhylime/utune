@@ -1226,44 +1226,36 @@ html.fp-enabled,
     opacity: 1;
   }
 }
-@-moz-keyframes rotatetxt {
+@-moz-keyframes rotateBg {
   0% {
     transform: rotate(0deg);
-    opacity: 0.2;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
   }
 }
-@-webkit-keyframes rotatetxt {
+@-webkit-keyframes rotateBg {
   0% {
     transform: rotate(0deg);
-    opacity: 0.2;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
   }
 }
-@-o-keyframes rotatetxt {
+@-o-keyframes rotateBg {
   0% {
     transform: rotate(0deg);
-    opacity: 0.2;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
   }
 }
-@keyframes rotatetxt {
+@keyframes rotateBg {
   0% {
     transform: rotate(0deg);
-    opacity: 0.2;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
   }
 }
 .bg--cover {
@@ -4848,11 +4840,24 @@ form .text-input textarea {
   font-size: 270%;
   margin-bottom: 20px;
 }
-.c-plan__header {
-  background-image: url("../img/background-plan.jpg");
+.c-plan__header-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
-.c-plan__header .c-chain__header--title-content {
-  animation: rotatetxt 3s;
+.c-plan__header-bg img {
+  display: block;
+  top: -100%;
+  left: -30%;
+  position: relative;
+  width: 140%;
+  animation: rotateBg 20s linear 0s infinite;
+}
+@media (max-width: 1399px) {
+  .c-plan__header-bg img {
+    top: -60%;
+  }
 }
 .c-plan__main {
   background-color: #fff;

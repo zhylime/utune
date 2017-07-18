@@ -1,8 +1,18 @@
 .c-plan
-  &__header
-    background-image url("../img/background-plan.jpg")
-    .c-chain__header--title-content
-      animation rotatetxt 3s
+  &__header-bg
+    position absolute
+    height 100%
+    width 100%
+    overflow hidden
+    img
+      display block
+      top -100%
+      left -30%
+      position relative
+      width 140%
+      animation rotateBg 20s linear 0s infinite
+      @media (max-width:1399px)
+        top -60%
   &__main
     background-color #fff
     margin 10px auto
