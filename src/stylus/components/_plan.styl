@@ -1,4 +1,8 @@
 .c-plan
+  &__header
+    @media (max-width:1024px)
+      height 600px
+      min-height 600px
   &__header-bg
     position absolute
     height 100%
@@ -6,13 +10,21 @@
     overflow hidden
     img
       display block
-      top -100%
-      left -30%
+      top -140%
+      left -20%
       position relative
       width 140%
       animation rotateBg 20s linear 0s infinite
-      @media (max-width:1399px)
+      @media (max-width:1700px)
+        top -110%
+        left -20%
+      @media (max-width:1440px)
+        top -80%
+        left -20%
+      @media (max-width:1200px)
         top -60%
+      @media (max-width:1024px)
+        top -70%
   &__main
     background-color #fff
     margin 10px auto

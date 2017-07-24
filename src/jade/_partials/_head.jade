@@ -8,7 +8,7 @@ head
   meta(charset='utf-8')
   meta(name='description', content=app.description)
   meta(name='keywords', content=app.keywords)
-  script(src=paths.js + 'loading.js')
+  block headJs
   <!--[if (gt IE 8)]><!-->
   link(rel='stylesheet', href=paths.css + 'app.css')
   <!--<![endif]-->

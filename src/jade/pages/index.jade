@@ -1,6 +1,8 @@
 extends ../_partials/_template
 include ../_mixins/_nav
 include ../_mixins/_contactForm
+block headJs
+  script(src=paths.js + 'loading.js')
 block content
   +nav(0)
   .c-content.c-homepage(data-js-fullpage)

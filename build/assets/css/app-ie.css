@@ -3712,7 +3712,7 @@ html {
 .c-chain {
   overflow: hidden;
   overflow-y: auto;
-  min-width: 1025px;
+  min-width: 1024px;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -4601,6 +4601,11 @@ form .text-input textarea {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+@media (max-width: 1025px) {
+  .loadingDiv img {
+    width: 150px !important;
+  }
+}
 .c-content__mall {
   background-color: #292b2e;
   background-image: url("../img/background-mall-hero.jpg");
@@ -4839,6 +4844,12 @@ form .text-input textarea {
   font-size: 270%;
   margin-bottom: 20px;
 }
+@media (max-width: 1024px) {
+  .c-plan__header {
+    height: 600px;
+    min-height: 600px;
+  }
+}
 .c-plan__header-bg {
   position: absolute;
   height: 100%;
@@ -4847,15 +4858,32 @@ form .text-input textarea {
 }
 .c-plan__header-bg img {
   display: block;
-  top: -100%;
-  left: -30%;
+  top: -140%;
+  left: -20%;
   position: relative;
   width: 140%;
   animation: rotateBg 20s linear 0s infinite;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1700px) {
+  .c-plan__header-bg img {
+    top: -110%;
+    left: -20%;
+  }
+}
+@media (max-width: 1440px) {
+  .c-plan__header-bg img {
+    top: -80%;
+    left: -20%;
+  }
+}
+@media (max-width: 1200px) {
   .c-plan__header-bg img {
     top: -60%;
+  }
+}
+@media (max-width: 1024px) {
+  .c-plan__header-bg img {
+    top: -70%;
   }
 }
 .c-plan__main {

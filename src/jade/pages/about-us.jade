@@ -1,6 +1,8 @@
 extends ../_partials/_template
+include ../_mixins/_side-nav
 
 block content
+  +side-nav(2)
   .c-content.c-about-us
     .c-about-us__img
       img(src=paths.img + "logo-nav.svg", alt="Utune logo")
