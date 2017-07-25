@@ -4869,14 +4869,18 @@ form .text-input textarea {
 }
 @media (max-width: 1700px) {
   .c-plan__header-bg img {
-    top: -110%;
+    top: -115%;
     left: -20%;
+  }
+}
+@media (max-width: 1700px) {
+  .c-plan__header-bg img {
+    top: -105%;
   }
 }
 @media (max-width: 1440px) {
   .c-plan__header-bg img {
     top: -80%;
-    left: -20%;
   }
 }
 @media (max-width: 1200px) {
