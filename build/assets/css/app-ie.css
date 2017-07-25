@@ -4855,9 +4855,12 @@ form .text-input textarea {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: #000;
+  opacity: 0.9;
 }
 .c-plan__header-bg img {
   display: block;
+  opacity: 0.6;
   top: -140%;
   left: -20%;
   position: relative;
