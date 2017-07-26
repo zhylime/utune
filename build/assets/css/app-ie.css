@@ -3711,7 +3711,6 @@ html {
 }
 .c-chain {
   overflow: hidden;
-  overflow-y: auto;
   min-width: 1024px;
   width: 100%;
   text-align: center;
