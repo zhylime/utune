@@ -3934,6 +3934,7 @@ html {
   color: #7019d7;
   line-height: 1.5em;
   font-size: 36px;
+  font-weight: 700;
 }
 .c-masonry {
   margin: 60px auto 150px;
@@ -5022,6 +5023,31 @@ form .text-input textarea {
   padding: 0 45px;
   line-height: 54px;
   transition: color 0.65s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .c-space__header {
+    height: 600px;
+    min-height: 600px;
+  }
+}
+.c-space__footer {
+  background-color: #fff;
+}
+.c-space__footer .c-chain__footer--line-before:before,
+.c-space__footer .c-chain__footer--line-after:before,
+.c-space__footer .c-chain__footer--line-before:after,
+.c-space__footer .c-chain__footer--line-after:after {
+  background-color: #000;
+}
+.c-space__footer--line-after,
+.c-space__footer h2 {
+  color: #363f40;
+}
+.c-space__footer h3 {
+  color: #0078ff;
+}
+.c-space__footer .c-chain__footer--icon span {
+  color: #0078ff;
 }
 .section.c-homepage__1.in svg {
   opacity: 1;

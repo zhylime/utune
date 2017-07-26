@@ -7,38 +7,19 @@ block headJs
 block js
   script(src="/public/jquery-migrate-1.2.1.min.js")
   script(src="/public/three.js")
-  script(src="/public/utune-wave.min.js")
+  script(src="/public/utune-globe.min.js")
   script(src="/public/utune.min.js")
 block content
   +side-nav(1)
-  .c-chain
+  .c-chain.c-space
     .c-chain__header.toload.home
       #ourintro
         .header-gradient-bg
         #webgl-canvas
       .c-chain__header--title.font--bomb
-        .c-chain__header--title-content Supply chain <br>management
-    each item,key in chain.management
-      .c-chain__managment(style=(item.bgImg==="")?item.bgStyle:"background-image:url("+paths.img+item.bgImg+");#{item.bgStyle}")
-        if(key % 2 === 0)
-          .c-chain__managment--content
-            img(src=paths.img + item.img)
-          .c-chain__managment--content.txt--black
-            h2=item.title
-              h3=item.subTitle
-              p!=item.zh
-              p.txt-copy-grey!=item.en
-          .clear
-        else
-          .c-chain__managment--content
-            h2=item.title
-            h3=item.subTitle
-            p(style="font-family:'Microsoft YaHei'")!=item.zh
-            p!=item.en
-          .c-chain__managment--content
-            img(src=paths.img + item.img)
-          .clear
-    .c-chain__footer.txt--black
+        .c-chain__header--title-content Space Design
+
+    .c-chain__footer.c-space__footer
       .c-chain__footer--title
         .c-chain__footer--line-before
         h2 WHY UTUNE

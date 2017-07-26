@@ -79,7 +79,7 @@
     {
       "icon":"font-icon-space",
       "text":"Space<br/>design",
-      "url":"javascript:",
+      "url":"/wedo/space.html:",
       "buttonClass":""
     }
   ],
@@ -379,7 +379,7 @@
       "image":"about-us-img-4.jpg",
       "title":"空间设计",
       "content":"塑造品牌就是塑造一种气质。<br/>我们希望通过我们的设计，可以让品牌与客户之间用简洁、清晰、直观的沟通方式，达成有效的视觉沟通和传播。力图从品牌角度启迪客户以崭新的方式思考和行动，使他们逐步成为品牌的倡导者。",
-      "link":"#"
+      "link":"/wedo/space.html"
     }
   ],
   "chain": {

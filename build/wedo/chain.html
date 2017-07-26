@@ -5,7 +5,9 @@
     <!--meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')-->
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="keywords" content=""><!--[if (gt IE 8)]><!-->
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/public/utune.min.css">
+    <script src="/public/utune-detectors.min.js"></script><!--[if (gt IE 8)]><!-->
     <link rel="stylesheet" href="/assets/css/app.css"><!--<![endif]-->
     <!--[if (lte IE 8)]>
     <link rel="stylesheet" href="/assets/css/app-ie.css"><![endif]--> 
@@ -31,8 +33,11 @@
       </div>
     </div>
     <div class="c-chain">
-      <div class="c-chain__header">
-        <div class="webgl"></div>
+      <div class="c-chain__header toload home">
+        <div id="ourintro">
+          <div class="header-gradient-bg"></div>
+          <div id="webgl-canvas"></div>
+        </div>
         <div class="c-chain__header--title font--bomb">
           <div class="c-chain__header--title-content">Supply chain <br>management</div>
         </div>
@@ -106,8 +111,10 @@
     <script src="/assets/js/vendor/old-ie/jquery-1.9.0.js"></script>
     <script src="/assets/js/vendor/old-ie/html5shiv.js"></script>
     <script src="/assets/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
-    <script src="/assets/js/vendor/three.js"></script>
-    <script src="/assets/js/bg-chain.js"></script>
+    <script src="/public/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/public/three.js"></script>
+    <script src="/public/utune-wave.min.js"></script>
+    <script src="/public/utune.min.js"></script>
     <script src="/assets/js/vendor/jquery.fancybox.min.js"></script>
     <script src="/assets/js/app.min.js"></script>
   </body>
