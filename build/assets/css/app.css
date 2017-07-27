@@ -5050,6 +5050,80 @@ form .text-input textarea {
 .c-space__footer .c-chain__footer--icon span {
   color: #0078ff;
 }
+.c-space__design {
+  color: #fff;
+  margin: 1em auto;
+}
+.c-space__design-p-r {
+  padding-right: 0.5em;
+}
+.c-space__design-p-l {
+  padding-left: 0.5em;
+}
+.c-space__design-row {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.c-space__design-col {
+  display: table-cell;
+  vertical-align: top;
+  padding-bottom: 0.6em;
+}
+.c-space__design--item {
+  position: relative;
+}
+.c-space__design--item> img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.c-space__design--item:hover .c-space__design--item-mask {
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+.c-space__design--item-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.c-space__design--item-mask-bg {
+  background-color: #2d9eff;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+}
+.c-space__design--item-mask-txt {
+  position: relative;
+  margin: 0 auto;
+  top: 35%;
+}
+.c-space__design--item-mask-txt img {
+  width: 60px;
+  height: 60px;
+}
+.c-space__design--item-mask-txt p {
+  min-width: 300px;
+  margin: 0 auto 1em auto;
+  line-height: 1.5em;
+}
+.c-space__design-btn {
+  padding: 0.5em 3em;
+  border: 1px solid #000;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  max-width: 350px;
+  cursor: pointer;
+  margin: 0 auto;
+  outline: none;
+}
 .section.c-homepage__1.in svg {
   opacity: 1;
 }
