@@ -4,10 +4,14 @@ include ../_mixins/_side-nav
 block content
   +side-nav(1)
   .c-content.c-wedo
-    .owl-carousel(data-js-owl-carousel)
+    .l-flt--l.js-wedo-title(style="width:25%")
       .c-wedo__slider
-        .c-wedo__title
-          h1 We Do
+          .c-wedo__title
+            h1 We Do
+    .owl-carousel(data-js-owl-carousel)(style="width:75%;margin-left:25%")
+      //- .c-wedo__slider
+      //-   .c-wedo__title
+      //-     h1 We Do
       each item, index in weDoSlider
         - var num = index + 1
         .c-wedo__slider(class="c-wedo__slider-#{num}")

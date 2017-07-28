@@ -33,7 +33,7 @@ class OwlCarousel extends MLP.apps.MLPModule {
           items:2
         },
         768:{
-          items:4
+          items:3
         }
       }
     });
@@ -48,6 +48,12 @@ class OwlCarousel extends MLP.apps.MLPModule {
     this.el.nextBtn.on('click', function(){
       $(_this.el.container).trigger('next.owl.carousel');
     });
+
+    var _itemHeight = $('.owl-item').height();
+    $('.js-wedo-title').css({
+      height: _itemHeight
+    });
+
 
 
   }
