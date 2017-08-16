@@ -1,0 +1,102 @@
+extends ../../_partials/_template
+include ../../_mixins/_side-nav
+
+block content
+  +side-nav(1)
+  .c-chain.c-plan
+    .c-chain__header.c-plan__header
+      .c-plan__header-bg
+        img(src=paths.img + "luowen.svg")
+      .c-chain__header--title.font--bomb
+        .c-chain__header--title-content Works
+    .c-work__main
+      section
+        .c-work__main__section--1
+          img(src=paths.img + 'work-img-1.png')
+          .c-work__main__heading.english We
+          .c-work__main__heading.chinese 我们
+          p.txt--r.
+            专注于产品策略+设计，<br/>专注于品牌核心商业逻辑的视觉表现，<br/>专注于用简洁、清晰、直观的方式，<br/>达成有效的视觉沟通和传播。
+        br.clear
+        .c-work__main__section--2
+          img(src=paths.img + 'work-img-2.png')
+          .c-work__main__section__overlay
+            .c-work__main__heading.english.right Wisdom
+            .c-work__main__heading.chinese.right 智慧
+            p.
+              大道至简的智慧，自然、简约、质朴，<br/>邂逅新鲜，但绝不娇娆造作。
+        br.clear
+      
+      section
+        .c-work__main__section--3
+          .c-work__main__section__img
+            img(src=paths.img + 'work-img-3.png')
+            a(href="#")
+              img(src=paths.img + 'work-cta.png')
+          .c-work__main__section__text
+            .c-work__main__heading.english understand
+            .c-work__main__heading.chinese 理解
+        .c-work__main__section--4
+          .c-work__main__section__img
+            img(src=paths.img + 'work-img-4.png')
+            a(href="#")
+              img(src=paths.img + 'work-cta.png')
+          .c-work__main__section__text
+            .c-work__main__heading.english search
+            .c-work__main__heading.chinese 研究
+
+        .c-work__main__section--5
+          .c-work__main__section__img
+            img(src=paths.img + 'work-img-5.jpg')
+            a(href="#")
+              img(src=paths.img + 'work-cta.png')
+          .c-work__main__section__text
+            .c-work__main__heading.english EXPLORE 
+            .c-work__main__heading.chinese 探索
+
+        .c-work__main__section--6
+          .c-work__main__section__img
+            img(src=paths.img + 'work-img-6.png')
+            a(href="#")
+              img(src=paths.img + 'work-cta.png')
+          .c-work__main__section__text
+            .c-work__main__heading.english concept 
+            .c-work__main__heading.chinese 概念
+
+        .c-work__main__section--7
+          .c-work__main__section__img
+            img(src=paths.img + 'work-img-7.jpg')
+            a(href="#")
+              img(src=paths.img + 'work-cta.png')
+          .c-work__main__section__text
+            .c-work__main__heading.english solution 
+            .c-work__main__heading.chinese 方案
+
+        .c-work__main__section--8
+          .c-work__main__section__img
+            img(src=paths.img + 'work-img-8.png')
+            a(href="#")
+              img(src=paths.img + 'work-cta.png')
+          .c-work__main__section__text
+            .c-work__main__heading.english implementation 
+            .c-work__main__heading.chinese 执行
+
+        .c-chain__footer.c-plan__footer(style="background:none")
+          .c-chain__footer--title
+            .c-chain__footer--line-before
+            h2.txt-space-grey WHY UTUNE
+            .c-chain__footer--line-after
+          h3.txt-space-grey Team Vision Innovation Passion
+             br
+             | Standard Quality Profession System
+          .c-chain__footer--icon
+            ul
+              each item,key in chain.utune
+                li
+                  a(href="#")
+                    img(src=paths.img + item.img +"-plan.svg")
+                    span.txt-space-grey=item.txt
+
+
+
+   
