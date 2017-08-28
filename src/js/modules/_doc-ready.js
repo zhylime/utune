@@ -24,9 +24,13 @@ $(document).ready(function() {
   // side bar
   $('[data-js-side-nav]').SideNav();
 
+  // wedo-work popup gallery
+  $.GalleryPopup();
+
   setTimeout(function(){
     $('[data-js-fullpage]').FullPage();
   }, 0);
+
 
   if($(".fancybox"))
     $(".fancybox").fancybox();

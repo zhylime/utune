@@ -31,7 +31,7 @@ block content
         .c-work__main__section--3
           .c-work__main__section__img
             img(src=paths.img + 'work-img-3.png')
-            a(href="#")
+            a.js-popup-btn(href="#")
               img(src=paths.img + 'work-cta.png')
           .c-work__main__section__text
             .c-work__main__heading.english understand
@@ -39,7 +39,7 @@ block content
         .c-work__main__section--4
           .c-work__main__section__img
             img(src=paths.img + 'work-img-4.png')
-            a(href="#")
+            a.js-popup-btn(href="#")
               img(src=paths.img + 'work-cta-red.png')
           .c-work__main__section__text
             .c-work__main__heading.english search
@@ -48,7 +48,7 @@ block content
         .c-work__main__section--5
           .c-work__main__section__img
             img(src=paths.img + 'work-img-5.jpg')
-            a(href="#")
+            a.js-popup-btn(href="#")
               img(src=paths.img + 'work-cta-purple.png')
           .c-work__main__section__text
             .c-work__main__heading.english EXPLORE 
@@ -57,7 +57,7 @@ block content
         .c-work__main__section--6
           .c-work__main__section__img
             img(src=paths.img + 'work-img-6.png')
-            a(href="#")
+            a.js-popup-btn(href="#")
               img(src=paths.img + 'work-cta-red.png')
           .c-work__main__section__text
             .c-work__main__heading.english concept 
@@ -66,7 +66,7 @@ block content
         .c-work__main__section--7
           .c-work__main__section__img
             img(src=paths.img + 'work-img-7.jpg')
-            a(href="#")
+            a.js-popup-btn(href="#")
               img(src=paths.img + 'work-cta-red.png')
           .c-work__main__section__text
             .c-work__main__heading.english solution 
@@ -75,7 +75,7 @@ block content
         .c-work__main__section--8
           .c-work__main__section__img
             img(src=paths.img + 'work-img-8.png')
-            a(href="#")
+            a.js-popup-btn(href="#")
               img(src=paths.img + 'work-cta-pink.png')
           .c-work__main__section__text
             .c-work__main__heading.english implementation 
@@ -96,6 +96,21 @@ block content
                   a(href="#")
                     img(src=paths.img + item.img +"-plan.svg")
                     span.txt-space-grey=item.txt
+
+    .gallery-cover.js-gallery-cover
+      .gallery-popup-close.js-gallery-close
+      .gallery-carousel-control
+        .gallery-carousel-control-btn.gallery-carousel-control-prev.js-carousel-prev
+          span
+        .gallery-carousel-control-btn.gallery-carousel-control-next.js-carousel-next
+          span
+    .gallery-popup.js-gallery-images
+      
+      .gallery-carousel.owl-carousel
+        each item in galleryPopup
+          img(src=paths.img + item.img)
+
+
 
 
 

@@ -252,4 +252,73 @@
 					&:before
 					&:after
 						background-color $col-space-grey
+	
+.gallery-cover
+	width 100%
+	background black
+	position absolute
+	z-index 19
+.gallery-popup
+	position absolute
+	width 80%
+	left 10%
+	z-index 20
+	img
+		width 100%
+.gallery-popup-close
+	position absolute
+	top 10px
+	right 10px
+	width 30px
+	height 30px
+	border-radius 50%
+	background $color-close-dark-grey
+	cursor pointer
+	&:hover
+		background $color-close-hover-grey
+	&:before
+	&:after
+		content ""
+		width 15px
+		height 2px
+		background white
+		position absolute
+		transform-origin center center
+		top 14px
+		left 8px
+	&:before
+		transform rotate(45deg)
+	&:after
+		transform rotate(-45deg)
+
+.gallery-carousel-control-btn
+	width 60px
+	height 60px
+	background $color-close-dark-grey
+	cursor pointer
+	border-radius 50%
+	position absolute
+	top calc(50% - 30px)
+	
+	&:hover
+		background $color-close-hover-grey
+	span
+		display block
+		width 20px
+		height 20px
+		border-left 5px solid white
+		border-bottom 5px solid white
+		position relative
+		top 20px
+
+.gallery-carousel-control-prev
+	left 2%
+	span
+		transform rotate(45deg)
+		margin-left 40%
+.gallery-carousel-control-next
+	right 2%
+	span
+		transform rotate(-135deg)
+		margin-left 30%
 		

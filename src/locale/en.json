@@ -431,5 +431,13 @@
       {"img":"procedure","txt":"Professional Insight & Procedure"},
       {"img":"system","txt":"Sound Management System"}
     ]
-  }
+  },
+  "galleryPopup":[
+    {"img":"work-gallery-1.jpg"},
+    {"img":"work-gallery-2.jpg"},
+    {"img":"work-gallery-3.jpg"},
+    {"img":"work-gallery-4.jpg"},
+    {"img":"work-gallery-5.jpg"},
+    {"img":"work-gallery-6.jpg"}
+  ]
 }
