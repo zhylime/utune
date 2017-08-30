@@ -23,7 +23,8 @@ class GalleryPopup extends MLP.apps.MLPModule {
       dots: false,
       items: 1,
       smartSpeed: 0,
-      loop: true
+      loop: true,
+      autoHeight: true
     });
 
     this.el.gallery.hide();
@@ -32,7 +33,6 @@ class GalleryPopup extends MLP.apps.MLPModule {
       $(this).on('click', function(e){
         e.preventDefault();
         var num = index;
-        console.log(num);
         _this.openPopup(num);
       });
     });
@@ -59,19 +59,22 @@ class GalleryPopup extends MLP.apps.MLPModule {
 
   openPopup(num){
     var _this = this;
-    var _top = $(window).scrollTop();
-    var _height = $(window).height();
+    var _screenTop = $(window).scrollTop();
+    var _screenHeight = $(window).height();
+    var galleryWidth = $(this.el.gallery).width();
+    var _screenWidth = $(window).width();
     
 
     this.el.carousel.trigger('to.owl.carousel',num);
 
     this.el.cover.css({
-      top: _top,
-      height: _height
+      top: _screenTop,
+      height: _screenHeight
     });
     this.el.gallery.css({
-      top:_top+_height*0.1,
-      height: _height*0.8
+      top:_screenTop,
+      height: _screenHeight,
+      left: (_screenWidth - galleryWidth)/2
     });
 
     $('body').css({
@@ -96,12 +99,10 @@ class GalleryPopup extends MLP.apps.MLPModule {
   }
 
   goPrev(){
-    console.log('prev');
     this.el.carousel.trigger('prev.owl.carouse');
   }
 
   goNext(){
-    console.log('next');
     this.el.carousel.trigger('next.owl.carouse');
   }
 }
