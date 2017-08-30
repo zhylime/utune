@@ -13,11 +13,13 @@ class GalleryPopup extends MLP.apps.MLPModule {
     this.el.carouselNext = $('.js-carousel-next');
 
     this.event();
+    this.popupOpened = false;
 
   }
 
   event(){
     var _this = this;
+    var num;
 
     this.el.carousel.owlCarousel({
       dots: false,
@@ -32,7 +34,7 @@ class GalleryPopup extends MLP.apps.MLPModule {
     this.el.btns.each(function(index){
       $(this).on('click', function(e){
         e.preventDefault();
-        var num = index;
+        num = index;
         _this.openPopup(num);
       });
     });
@@ -42,7 +44,6 @@ class GalleryPopup extends MLP.apps.MLPModule {
     });
 
     this.el.carouselPrev.on('click', function(){
-      console.log('clicked');
       _this.el.carousel.trigger('prev.owl.carousel');
       // _this.goPrev();
     });
@@ -53,6 +54,14 @@ class GalleryPopup extends MLP.apps.MLPModule {
     })
 
 
+    $(window).resize(function(){
+      if(_this.popupOpened){
+        _this.openPopup(num);
+      }
+      
+    });
+
+
 
 
   }
@@ -61,15 +70,18 @@ class GalleryPopup extends MLP.apps.MLPModule {
     var _this = this;
     var _screenTop = $(window).scrollTop();
     var _screenHeight = $(window).height();
-    var galleryWidth = $(this.el.gallery).width();
     var _screenWidth = $(window).width();
+    var galleryWidth = $(this.el.gallery).width();
+
+    _this.popupOpened = true;
     
 
     this.el.carousel.trigger('to.owl.carousel',num);
 
     this.el.cover.css({
       top: _screenTop,
-      height: _screenHeight
+      height: _screenHeight,
+      width: _screenWidth
     });
     this.el.gallery.css({
       top:_screenTop,
@@ -78,11 +90,14 @@ class GalleryPopup extends MLP.apps.MLPModule {
     });
 
     $('body').css({
-      'overflow-y': 'hidden'
+      'overflow': 'hidden'
     });
 
     this.el.cover.show();
     this.el.gallery.show();
+
+
+    
 
 
 
@@ -91,14 +106,21 @@ class GalleryPopup extends MLP.apps.MLPModule {
 
   closePopup(){
     var _this = this;
+
+    this.popupOpened = false;
+    
     this.el.cover.hide();
     this.el.gallery.hide();
     $('body').css({
-      overflow: 'auto'
+      'overflow': ''
     });
+
+    n
+
   }
 
   goPrev(){
+ 
     this.el.carousel.trigger('prev.owl.carouse');
   }
 
