@@ -99,9 +99,16 @@ block content
 
     .gallery-cover.js-gallery-cover
       .gallery-popup-close.js-gallery-close
+      .gallery-carousel-control
+        .gallery-carousel-control-btn.gallery-carousel-control-prev.js-carousel-prev
+          span
+        .gallery-carousel-control-btn.gallery-carousel-control-next.js-carousel-next
+          span
     .gallery-popup.js-gallery-images
-      .gallery-popup-container
-        img(src=paths.img + 'work-gallery-1.jpg')
+      
+      .gallery-carousel.owl-carousel
+        each item in galleryPopup
+          img(src=paths.img + item.img)
 
 
 
