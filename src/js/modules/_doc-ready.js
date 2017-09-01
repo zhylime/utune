@@ -35,4 +35,9 @@ $(document).ready(function() {
   if($(".fancybox"))
     $(".fancybox").fancybox();
 
-});
+  });
+
+  $('.js-fancybox-title').on('click', function(evt) {
+    evt.preventDefault();
+    $(evt.target).parent().parent().find(".js-fancybox-img").trigger("click")
+  });

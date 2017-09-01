@@ -41,6 +41,23 @@
         min-height 500px
         width 50%
         vertical-align bottom
+        position relative
+        a
+          &:focus
+            outline none
+        .fancybox-text
+          display block
+          position absolute
+          &.rp
+            left 10%
+            top 40%
+            width 55%
+            height 50%
+          &.lp
+            left 35%
+            top 35%
+            width 50%
+            height 60%
   &__footer
     background-color $col-bg-grey
     .c-chain__footer--line-before

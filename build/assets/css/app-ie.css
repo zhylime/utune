@@ -4898,6 +4898,26 @@ form .text-input textarea {
   min-height: 500px;
   width: 50%;
   vertical-align: bottom;
+  position: relative;
+}
+.c-plan__main-design--content a:focus {
+  outline: none;
+}
+.c-plan__main-design--content .fancybox-text {
+  display: block;
+  position: absolute;
+}
+.c-plan__main-design--content .fancybox-text.rp {
+  left: 10%;
+  top: 40%;
+  width: 55%;
+  height: 50%;
+}
+.c-plan__main-design--content .fancybox-text.lp {
+  left: 35%;
+  top: 35%;
+  width: 50%;
+  height: 60%;
 }
 .c-plan__footer {
   background-color: #292b2f;
