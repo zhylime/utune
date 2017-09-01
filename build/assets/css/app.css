@@ -4876,6 +4876,7 @@ form .text-input textarea {
   background-color: #fff;
   margin: 10px auto;
   color: #737373;
+  max-width: 1440px;
 }
 .c-plan__main-design {
   display: table;
