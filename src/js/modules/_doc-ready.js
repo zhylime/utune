@@ -39,5 +39,5 @@ $(document).ready(function() {
 
   $('.js-fancybox-title').on('click', function(evt) {
     evt.preventDefault();
-    $(evt.target).parent().parent().find(".js-fancybox-img").trigger("click")
+    //$(evt.target).parent().parent().find(".js-fancybox-img").trigger("click")
   });
