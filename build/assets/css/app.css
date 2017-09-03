@@ -1258,6 +1258,38 @@ html.fp-enabled,
     transform: rotate(360deg);
   }
 }
+@-moz-keyframes btnscroll {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
+@-webkit-keyframes btnscroll {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
+@-o-keyframes btnscroll {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
+@keyframes btnscroll {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
 .bg--cover {
   background-size: cover;
 }
@@ -4190,13 +4222,21 @@ form .text-input textarea {
 }
 .c-homepage__next-button {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -15px;
   height: 83px;
-  width: 40px;
-  font-size: 64px;
+  width: 30px;
   cursor: pointer;
+}
+.c-homepage__next-button img {
+  max-width: 100%;
+}
+.c-homepage__next-button .arrow {
+  position: relative;
+  top: 0;
+  width: 30px;
+  animation: btnscroll 1.5s linear 0s infinite;
 }
 .c-homepage__2 {
   background-color: #292b2f;
@@ -4569,6 +4609,9 @@ form .text-input textarea {
   font-size: 16px;
   line-height: 1.5em;
   margin-top: 180px;
+}
+.c-homepage .font-icon-btn-next:before {
+  content: "" !important;
 }
 .c-image-hue {
   background-size: 100%;

@@ -17,13 +17,20 @@
       opacity  0
   &__next-button
     position absolute
-    bottom 30px
+    bottom 10px
     left 50%
-    margin-left -20px
+    margin-left -15px
     height 83px
-    width 40px
-    font-size 64px
+    width 30px
+    //font-size 64px
     cursor pointer
+    img
+      max-width 100%
+    .arrow
+      position relative
+      top 0
+      width 30px
+      animation btnscroll 1.5s linear 0s infinite
   &__2
     background-color $col-bg-grey
   &__tab-1
@@ -341,3 +348,8 @@
       line-height 1.5em
       margin-top 180px
       // margin-bottom 100px
+
+  //override css
+  .font-icon-btn-next
+    &:before
+      content ""!important
