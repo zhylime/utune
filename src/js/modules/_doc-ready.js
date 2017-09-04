@@ -32,7 +32,23 @@ $(document).ready(function() {
   }, 0);
 
 
-  if($(".fancybox"))
-    $(".fancybox").fancybox();
+  if($(".fancybox").length)
+    $(".fancybox").fancybox({
+        loop : true ,
+        prevEffect: 'elastic',
+        nextEffect: 'elastic',
+        helpers : {
+            title : null
+        }
 
+    });
+    $('.js-fancybox-thumb').on('click', function(evt) {
+        evt.preventDefault();
+        $(evt.target).siblings(".js-fancybox-img").trigger("click")
+    });
   });
+
+
+
+
+

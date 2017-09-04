@@ -26,3 +26,38 @@
   margin 4px
   &:focus
     outline none
+
+//fancybox
+.fancybox-container
+
+  button.fancybox-arrow--right , button.fancybox-arrow--left
+    border-radius 50%
+    width 60px
+    height 60px
+    background-color $color-close-dark-grey
+    &:hover
+      background-color $color-close-hover-grey
+    &:after
+      border-top 5px solid $col-white
+      border-right 5px solid $col-white
+      width 20px
+      height 20px
+      top 18px
+
+  .fancybox-arrow
+    &:after
+      background none
+    &--right
+      right 2%
+      top 50%
+      &:after
+        left 15px
+        transform rotate(45deg)
+    &--left
+      left 2%
+      top 50%
+      &:after
+        left 15px
+        transform rotate(45deg)
+  .fancybox-caption
+    display none
