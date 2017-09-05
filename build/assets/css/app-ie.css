@@ -5034,6 +5034,9 @@ form .text-input textarea {
 .c-plan__footer .c-chain__footer--icon span {
   color: #c598ff;
 }
+.c-plan .gallery-carousel-control {
+  display: none;
+}
 .c-side-nav {
   position: fixed;
   z-index: 10;
