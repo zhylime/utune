@@ -5007,6 +5007,9 @@ form .text-input textarea {
   width: 50%;
   height: 60%;
 }
+.c-plan__main-design--content .hide {
+  display: none !important;
+}
 .c-plan__footer {
   background-color: #292b2f;
 }
