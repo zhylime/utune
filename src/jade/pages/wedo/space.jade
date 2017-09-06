@@ -2,7 +2,6 @@ extends ../../_partials/_template
 include ../../_mixins/_side-nav
 
 block headJs
-  script(src=paths.js + 'loading.js')
   link(rel="stylesheet" href="/public/utune.min.css")
   script(src="/public/utune-detectors.min.js")
 block js
@@ -13,7 +12,7 @@ block js
 block content
   +side-nav(1)
   .c-chain.c-space
-    .c-chain__header.c-space__header.toload.home
+    .c-chain__header.c-space__header.home
       #ourintro
         .header-gradient-bg
         #webgl-canvas
