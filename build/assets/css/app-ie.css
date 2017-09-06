@@ -5436,13 +5436,11 @@ form .text-input textarea {
 .c-wedo__overlay {
   width: 80%;
   left: 10%;
-  height: 244px;
   top: 20%;
 }
 @media (min-width: 1200px) {
   .c-wedo__overlay {
     top: 25%;
-    height: 264px;
   }
 }
 @media (min-width: 1400px) {
