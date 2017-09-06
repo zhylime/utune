@@ -106,6 +106,8 @@
       font-size 14px
       line-height 22px
       margin-bottom 30px
+      @media (max-width:1200px)
+        font-size 13px
     a.font-icon-arrow
       font-family $font-roboto-light
       color inherit
@@ -123,8 +125,15 @@
   &__overlay
     width 80%
     left 10%
-    height 230px
-    top 31%
+    height 244px
+    top 20%
+    @media (min-width:1200px)
+      top 25%
+      height 264px
+    @media (min-width:1400px)
+      top 30%
+    @media (min-width:1600px)
+      top 35%
   
   &__carousel-nav
     position absolute
