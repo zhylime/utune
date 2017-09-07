@@ -5410,14 +5410,9 @@ form .text-input textarea {
   height: 2px;
 }
 .c-wedo__brief__content {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 22px;
   margin-bottom: 30px;
-}
-@media (max-width: 1200px) {
-  .c-wedo__brief__content {
-    font-size: 13px;
-  }
 }
 .c-wedo__brief a.font-icon-arrow {
   font-family: "Roboto Light";
@@ -5433,6 +5428,7 @@ form .text-input textarea {
   position: absolute;
   right: 0;
   font-size: 12px;
+  top: 2px;
 }
 .c-wedo__overlay {
   width: 80%;
