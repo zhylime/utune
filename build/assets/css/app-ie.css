@@ -5286,6 +5286,10 @@ form .text-input textarea {
 .c-wedo {
   background-color: #464646;
 }
+.c-wedo .owl-item,
+.c-wedo__title-container {
+  min-height: 767px;
+}
 .c-wedo__title {
   background-image: url("../img/about-us-img-0.jpg");
   background-size: cover;
