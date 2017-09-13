@@ -22,7 +22,8 @@ block content
             .l-absolute.c-wedo__overlay
               .c-wedo__brief__heading!= item.title
               .c-wedo__brief__content!= item.content
-              a.font-icon-arrow(href=item.link) More Details
+              a(href=item.link).
+                More Details <span class="font-icon-arrow"></span>
     .c-wedo__carousel-nav
       .c-wedo__carousel-nav__btn.c-wedo__carousel-nav__prev.js-carousel-prev
         i.font-icon-btn
