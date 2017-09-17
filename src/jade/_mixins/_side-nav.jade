@@ -1,15 +1,20 @@
-mixin side-nav(activeClass)
+mixin side-nav(activeClass, ifIndex)
+  - var homepageLink = ifIndex == 1 ? "./index.html" : "../index.html"
+
   .c-side-nav(data-js-side-nav)
     .c-side-nav__btn.js-hamburger
       .c-side-nav__btn__hamburger
 
     .c-side-nav__panel.js-panel
       .c-side-nav__panel__logo
-        a(href="./index.html")
+        a(href=homepageLink)
           img(src=paths.img + 'side-nav-logo.png')
       .c-side-nav__panel__menu
         ul
           each item, index in sideMenu
             - var className = activeClass == index ? "active" : "" 
             li(class=className)
-              a(href=item.link)!= item.name
+              - if(index == 0)
+                a(href=homepageLink)!= item.name
+              - else
+                a(href=item.link)!= item.name

@@ -1,8 +1,12 @@
 extends ../_partials/_template
 include ../_mixins/_side-nav
 
+block metaKeywords
+  meta(name='keywords', content="悦动力,品牌沟通,产品策划,供应链管理,utune, Brand communication, product planning, supply-chain management")
+block metaDescription
+  meta(name="description", content="北京悦动力自成立以来，在品牌传播，产品策划，创意创新，采购与生产等领域不断拓展前行。")
 block content
-  +side-nav(1)
+  +side-nav(1, 1)
   .c-content.c-wedo
     .l-flt--l.js-wedo-title.c-wedo__title-container(style="width:25%")
       .c-wedo__slider

@@ -3,6 +3,10 @@ include ../_mixins/_nav
 include ../_mixins/_contactForm
 block headJs
   script(src=paths.js + 'loading.js')
+block metaKeywords
+  meta(name='keywords', content="悦动力,utune,创意,品牌沟通,产品策划,供应链管理,解决方案,执行,utune, Brand communication, product planning, supply chain,management,strategy,design,vision,wisdom,understand,research,explore,solution, implementation")
+block metaDescription
+  meta(name="description", content="北京悦动力自成立以来，在品牌传播，产品策划，创意创新，采购与生产等领域不断拓展前行。Utune,Team Vision Innovation Passion Standard Quality Profession System")
 block content
   +nav(0)
   .c-content.c-homepage(data-js-fullpage)

@@ -6,8 +6,10 @@ head
   title=stripTags(app.name)
   //meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
   meta(charset='utf-8')
-  meta(name='description', content=app.description)
-  meta(name='keywords', content=app.keywords)
+  //- meta(name='description', content=app.description)
+  //- meta(name='keywords', content=app.keywords)
+  block metaKeywords
+  block metaDescription
   block headJs
   <!--[if (gt IE 8)]><!-->
   link(rel='stylesheet', href=paths.css + 'app.css')
