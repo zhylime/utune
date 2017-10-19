@@ -30,6 +30,7 @@ class GalleryPopup extends MLP.apps.MLPModule {
     });
 
     this.el.gallery.hide();
+    this.el.close.hide();
     
     this.el.btns.each(function(index){
       $(this).on('click', function(e){
@@ -68,11 +69,16 @@ class GalleryPopup extends MLP.apps.MLPModule {
 
   openPopup(num){
     var _this = this;
-    var _screenTop = $(window).scrollTop();
-    var _screenHeight = $(window).height();
-    var _screenWidth = $(window).width();
+    var _screenTop;
+    var _screenHeight;
+    var _screenWidth;
     var galleryWidth = $(this.el.gallery).width();
-
+    $('body').css({
+      'overflow': 'hidden'
+    });
+    _screenTop = $(window).scrollTop();
+    _screenHeight = $(window).height();
+    _screenWidth = $(window).width();
     _this.popupOpened = true;
     
 
@@ -89,12 +95,10 @@ class GalleryPopup extends MLP.apps.MLPModule {
       left: (_screenWidth - galleryWidth)/2
     });
 
-    $('body').css({
-      'overflow': 'hidden'
-    });
 
     this.el.cover.show();
     this.el.gallery.show();
+    this.el.close.show();
 
 
     
@@ -111,11 +115,12 @@ class GalleryPopup extends MLP.apps.MLPModule {
     
     this.el.cover.hide();
     this.el.gallery.hide();
+    this.el.close.hide();
     $('body').css({
       'overflow': ''
     });
 
-    n
+    
 
   }
 

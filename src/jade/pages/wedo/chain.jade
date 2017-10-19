@@ -1,5 +1,6 @@
 extends ../../_partials/_template
 include ../../_mixins/_side-nav
+include ../../_mixins/_legalFootNote
 
 block metaKeywords
   meta(name='keywords', content="Logistical Management,cost contral,Quality assurance,Quality control,Supplier Management,Warehouse and logistics management,供应链管理,成品控制,质量保证,质量控制,供应商管理,仓储物流管理")
@@ -59,3 +60,4 @@ block content
               a(href="#")
                 img(src=paths.img + item.img +".svg")
                 span=item.txt
+        +legalFootNote

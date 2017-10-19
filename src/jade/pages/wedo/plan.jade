@@ -1,5 +1,6 @@
 extends ../../_partials/_template
 include ../../_mixins/_side-nav
+include ../../_mixins/_legalFootNote
 
 block metaKeywords
   meta(name='keywords', content="product planning,premium design,theme design,film implantation,industrial design,business gift,促品设计，专题设计，电影植入，产品工业设计，高端礼品")
@@ -98,4 +99,6 @@ block content
               a(href="#")
                 img(src=paths.img + item.img +"-plan.svg")
                 span=item.txt
+
+      +legalFootNote
 

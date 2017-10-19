@@ -1,5 +1,6 @@
 extends ../_partials/_template
 include ../_mixins/_side-nav
+include ../_mixins/_legalFootNote
 
 block metaKeywords
   meta(name='keywords', content="悦动力,品牌沟通,产品策划,供应链管理,utune, Brand communication, product planning, supply-chain management")
@@ -46,3 +47,5 @@ block content
         广东工厂<br/>东莞市英尚硅胶制品有限公司
     .c-about-us__partners
       img(src=paths.img + 'about-us-partners.jpg')
+      +legalFootNote
+

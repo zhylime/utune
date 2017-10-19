@@ -1,5 +1,6 @@
 extends ../../_partials/_template
 include ../../_mixins/_side-nav
+include ../../_mixins/_legalFootNote
 
 block metaKeywords
   meta(name='keywords', content="策略,设计,视觉,解决方案,执行,strategy,design,vision,wisdom,understand,research,explore,solution, implementation")
@@ -100,6 +101,7 @@ block content
                   a(href="#")
                     img(src=paths.img + item.img +"-plan.svg")
                     span.txt-space-grey=item.txt
+            +legalFootNote
 
     .gallery-cover.js-gallery-cover
       .gallery-popup-close.js-gallery-close

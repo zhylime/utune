@@ -1,5 +1,6 @@
 extends ../../_partials/_template
 include ../../_mixins/_side-nav
+include ../../_mixins/_legalFootNote
 
 block metaKeywords
   meta(name='keywords', content="space design,空间设计，视觉设计,空间导视,舞台搭建,VR技术,多媒体制作,展台搭建")
@@ -87,3 +88,4 @@ block content
               a(href="#")
                 img(src=paths.img + item.img +".svg")
                 span=item.txt
+        +legalFootNote

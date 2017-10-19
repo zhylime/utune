@@ -1,6 +1,8 @@
 extends ../_partials/_template
 include ../_mixins/_nav
 include ../_mixins/_contactForm
+include ../_mixins/_legalFootNote
+
 block headJs
   script(src=paths.js + 'loading.js')
 block metaKeywords
@@ -91,4 +93,5 @@ block content
         img(src=paths.img + "logo-green.svg")
       .c-homepage__6--text.font--roboto-regular!=aboutUtune.text
       .c-homepage__6--footer.font--roboto-light!=aboutUtune.footer_text
+      +legalFootNote
 

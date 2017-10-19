@@ -1,6 +1,7 @@
 extends ../_partials/_template
 include ../_mixins/_side-nav
 include ../_mixins/_contactForm
+include ../_mixins/_legalFootNote
 
 block metaKeywords
   meta(name='keywords', content="悦动力,品牌沟通,产品策划,供应链管理,utune, Brand communication, product planning, supply-chain management")
@@ -9,7 +10,10 @@ block metaDescription
 block content
   +side-nav(3)
   .c-content.c-contact
-    .l-display-middle(data-js-white-box)
-      canvas
-      h1 contact us
-      +contactForm("js-white-box-content")
+    .l-display-table
+      .l-display-middle(data-js-white-box)
+        canvas
+        h1 contact us
+        +contactForm("js-white-box-content")
+    +legalFootNote
+
