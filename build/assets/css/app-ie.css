@@ -4592,7 +4592,7 @@ form .text-input textarea {
   height: 100%;
 }
 .c-homepage__6--logo {
-  margin: 160px auto;
+  margin: 100px auto;
 }
 .c-homepage__6 img {
   width: 181px;
@@ -4658,6 +4658,10 @@ form .text-input textarea {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9;
+}
+.c-legal-footnote p {
+  color: #939393;
+  font-size: 14px;
 }
 .c-legal-footnote a {
   color: #939393;
