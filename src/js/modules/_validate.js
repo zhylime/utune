@@ -26,7 +26,8 @@ class Validate extends MLP.apps.MLPModule {
     $(_this.el._submit).on("click", function(){
       if(_this.validate()){
         $.ajax({
-          url: "sendmail.php",
+          //服务器上使用，本地测试需要删除 /phpbin/
+          url: "./phpbin/sendmail.php",
           type: "POST",
           data: $("#contact-form").serialize(),
           error: function(){
