@@ -67,7 +67,7 @@
         $mail->From       = "cutune2017@sina.com";   //显示的邮箱名称
         $mail->FromName   = "cutune";  //显示的名称
 
-        $to = "176872637@qq.com"; //接收方，可任意修改
+        $to = "info@utune.com.cn"; //接收方，可任意修改
         $mail->AddAddress($to);
         $mail->Subject  = "Contact Us -- from web site";
         $mail->Body = "<p>NAME： ".$name."<br>EMAIL： ".$email."<br>SUBJECT： ".$subject."<br>MESSAGE： ".$message."</p>"; //邮件格式
