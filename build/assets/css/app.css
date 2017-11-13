@@ -3676,18 +3676,23 @@ html {
 }
 .c-about-us__map__overlay--beijing {
   width: 364px;
-  top: 110px;
-  right: -1px;
+  top: 135px;
+  right: 5px;
 }
 .c-about-us__map__overlay--guangzhou {
   width: 300px;
-  top: 401px;
-  right: 28px;
+  top: 399px;
+  right: 75px;
 }
 .c-about-us__map__overlay--guangdong {
   width: 255px;
-  top: 410px;
-  left: 217px;
+  top: 425px;
+  left: 250px;
+}
+.c-about-us__map__overlay--hongkong {
+  width: 350px;
+  top: 566px;
+  right: 42px;
 }
 .c-about-us__partners {
   position: relative;
