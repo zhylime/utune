@@ -73,25 +73,35 @@ block content
       //- (data-js-masonry)
       .c-masonry
         each item in clients
-          a.c-masonry__item(href=item.href alt=item.alt)
+          .c-masonry__item
             i
             img(src=paths.img + item.img)
 
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
         img(src=paths.img + 'mouse-scroll.png')
         img.arrow(src=paths.img + 'mouse-arrow.png')
-
+    //- ip
     .section.c-homepage__5(data-anchor="panel5")
+      h2 IP LICENSING
+      .c-masonry
+        each item in ip
+          .c-masonry__item
+            i
+            img(src=paths.img + item.img)
+
+    //- contact us
+    .section.c-homepage__6(data-anchor="panel6")
       h2 contact us
-      .c-homepage__5__main
+      .c-homepage__6__main
         +contactForm()
       .font-icon-btn-next.c-homepage__next-button.js-fullpage-next-button
         img(src=paths.img + 'mouse-scroll.png')
         img.arrow(src=paths.img + 'mouse-arrow.png')
-    .section.c-homepage__6(data-anchor="panel6")
-      .c-homepage__6--logo
+    
+    .section.c-homepage__7(data-anchor="panel7")
+      .c-homepage__7--logo
         img(src=paths.img + "logo-green.svg")
-      .c-homepage__6--text.font--roboto-regular!=aboutUtune.text
-      .c-homepage__6--footer.font--roboto-light!=aboutUtune.footer_text
+      .c-homepage__7--text.font--roboto-regular!=aboutUtune.text
+      .c-homepage__7--footer.font--roboto-light!=aboutUtune.footer_text
       +legalFootNote
 

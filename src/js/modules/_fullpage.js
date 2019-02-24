@@ -95,9 +95,6 @@ class FullPage extends MLP.apps.MLPModule {
 
 
 
-
-
-
   }
 }
 $.mlpPlugin(FullPage, 'FullPage', false);

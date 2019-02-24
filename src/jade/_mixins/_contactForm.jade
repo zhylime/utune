@@ -29,7 +29,7 @@ mixin contactForm(opt)
     .l-grid__col.l-col-10-5
       .l-grid__col.l-col-10-5
         .font-icon-mail
-        .c-homepage__5__email
+        .c-homepage__6__email
           each item in contactEmail
             p!= item.name
               br
@@ -38,16 +38,16 @@ mixin contactForm(opt)
       .l-grid__col.l-col-10-5.l-pad--l-2
         div
           .font-icon-address
-          .c-homepage__5__location
+          .c-homepage__6__location
             p!= contactAddress.add
             
-            p!= contactAddress.postcode
+            // p!= contactAddress.postcode
             
             p!= contactAddress.chineseAdd
         .clear
         div
           .font-icon-phone
-          .c-homepage__5__phone
+          .c-homepage__6__phone
             p.
               #{contactPhone.name}
               <br>

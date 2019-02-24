@@ -3997,8 +3997,9 @@ html {
 }
 .c-masonry {
   margin: 60px auto 150px;
-  width: 76.5%;
+  width: 90%;
   min-width: 1025px;
+  text-align: left;
 }
 .c-masonry img {
   max-width: 120px;
@@ -4006,7 +4007,7 @@ html {
 }
 .c-masonry__item {
   text-align: center;
-  width: 210px;
+  width: 16%;
   height: 120px;
   display: inline-block;
   background-color: transparent;
@@ -4564,17 +4565,26 @@ form .text-input textarea {
   background-color: #292b2e;
 }
 .c-homepage__5 {
+  background-color: #fff;
+}
+.c-homepage__5 h2 {
+  color: #000;
+}
+.c-homepage__5 .c-masonry__item img {
+  max-height: 86px;
+}
+.c-homepage__6 {
   background-image: url("../img/background-contact.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
 }
-.c-homepage__5 h2 {
+.c-homepage__6 h2 {
   margin: 0px auto 100px;
 }
-.c-homepage__5__email,
-.c-homepage__5__location,
-.c-homepage__5__phone {
+.c-homepage__6__email,
+.c-homepage__6__location,
+.c-homepage__6__phone {
   display: table-cell;
   vertical-align: top;
   line-height: 1.4em;
@@ -4582,47 +4592,47 @@ form .text-input textarea {
   word-break: break-all;
   font-family: "Roboto Regular";
 }
-.c-homepage__5__location {
+.c-homepage__6__location {
   padding-bottom: 0.4em;
 }
-.c-homepage__5__location p {
+.c-homepage__6__location p {
   margin-bottom: 2em;
 }
-.c-homepage__5__email a {
+.c-homepage__6__email a {
   text-decoration: none;
   color: #fff;
 }
-.c-homepage__5__email a:hover {
+.c-homepage__6__email a:hover {
   text-decoration: underline;
 }
-.c-homepage__5__email p {
+.c-homepage__6__email p {
   white-space: nowrap;
   margin-bottom: 2em;
   line-height: 1.4em;
 }
-.c-homepage__5__email p:last-child {
+.c-homepage__6__email p:last-child {
   margin-bottom: 0px;
 }
-.c-homepage__6 {
+.c-homepage__7 {
   background-color: #292b2e;
   position: relative;
   height: 100%;
 }
-.c-homepage__6--logo {
+.c-homepage__7--logo {
   margin: 100px auto;
 }
-.c-homepage__6 img {
+.c-homepage__7 img {
   width: 181px;
   height: 69px;
 }
-.c-homepage__6--text {
+.c-homepage__7--text {
   font-size: 20px;
   line-height: 1.5em;
 }
-.c-homepage__6--text span {
+.c-homepage__7--text span {
   color: #9ece12;
 }
-.c-homepage__6--footer {
+.c-homepage__7--footer {
   font-size: 16px;
   line-height: 1.5em;
   margin-top: 100px;
