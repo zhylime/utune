@@ -534,7 +534,8 @@ gulp.task('watch-all', function() {
     unsetBusy();
     gulp.start([featureEnabled.style]);
   });
-  watch(paths.regex[config.jsLang], function(file) {
+  console.log(paths.src.js);
+  watch(paths.src.js, function(file) {
     changedFile = file;
     unsetBusy();
     gulp.start([config.jsLang]);

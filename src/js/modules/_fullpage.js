@@ -46,6 +46,9 @@ class FullPage extends MLP.apps.MLPModule {
             _panel.removeClass('in');
           }
         }
+        else if(_index === 3 || _index === 4){
+          $(_this.el.navItems[2]).addClass('active');
+        }
         // 最后一个section 导航倒数第二个加active
         else if(_index == navLong){
           _index -= 2;
@@ -74,6 +77,7 @@ class FullPage extends MLP.apps.MLPModule {
       //前两个section
       if(_index <= 2){
         $(this).on('click', function(){
+          console.log(_index);
           $.fn.fullpage.moveTo(_index);
         });
       }
