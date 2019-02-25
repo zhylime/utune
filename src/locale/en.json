@@ -435,7 +435,7 @@
   ],
   "contactMsg":"<p>Thank you for contacting us!<br> Your message has been sent successfully and we’ll get back to you soon.<br> Or you may also give us a call if this issue is urgent. We wish you a nice day!<br> <br> 感谢您联系我们，您的讯息已成功发送至我们的接收专员，我们将尽快反馈您的洽询。<br> 如您的洽询要求尽快回复，请您直接致电我们。再次感谢，顺祝安康！<br> <br>  <a href='javascript:;' class='js-msg_close'>关闭 x</a></p>",
   "contactAddress":{
-    "add":"No.3 LingHang <br/><span style='white-space:nowrap'>Room 603-604, Unit-2 , Tower 3,</span><br/>Linghang International Center, <br/>Guangqumen Nanxiaojie Street, <br/>Dongcheng District,<br/>Beijing, 100061, China.",
+    "add":"No.3 LingHang Room 603-604, Unit-2 , Tower 3,<br/><span style='white-space:nowrap;'>Linghang International Center, </span><br/><span style='white-space:nowrap;'>Guangqumen Nanxiaojie Street,</span> <br/>Dongcheng District,<br/>Beijing, 100061, China.",
     "postcode":"100061",
     "chineseAdd":"北京市东城区广渠门<br/>领行国际3-2-603-606"
   },

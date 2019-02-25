@@ -61,6 +61,16 @@ class FullPage extends MLP.apps.MLPModule {
           _panel.removeClass('in');
           _creative.removeClass('in');
         }
+
+        // 滚到IP部分，给导航变色
+        if(_index === 4){
+          $('.c-nav').addClass('invert');
+          $('#fp-nav').addClass('invert');
+        }
+        else{
+          $('.c-nav').removeClass('invert');
+          $('#fp-nav').removeClass('invert');
+        }
         
       }
     });
@@ -77,7 +87,6 @@ class FullPage extends MLP.apps.MLPModule {
       //前两个section
       if(_index <= 2){
         $(this).on('click', function(){
-          console.log(_index);
           $.fn.fullpage.moveTo(_index);
         });
       }

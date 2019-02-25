@@ -4051,7 +4051,7 @@ html {
 }
 .c-contact__form {
   position: relative;
-  max-width: 1025px;
+  max-width: 1200px;
   margin: auto;
   text-align: left;
   z-index: 1;
@@ -4748,6 +4748,9 @@ form .text-input textarea {
   padding: 20px 29px 0;
   min-width: 1025px;
 }
+.c-nav.invert {
+  background-color: rgba(0,0,0,0.9);
+}
 .c-nav__logo,
 .c-nav__menu {
   display: inline-block;
@@ -4801,6 +4804,12 @@ form .text-input textarea {
 #fp-nav ul li a:focus,
 .fp-slidesNav ul li a:focus {
   outline: none;
+}
+#fp-nav.invert ul li a.active span {
+  background: #000;
+}
+#fp-nav.invert ul li a span {
+  border: 1px solid #000;
 }
 #fp-nav.right {
   right: 45px;
