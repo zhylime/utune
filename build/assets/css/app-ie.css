@@ -4747,7 +4747,7 @@ form .text-input textarea {
   min-width: 1025px;
 }
 .c-nav.invert {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.6);
 }
 .c-nav__logo,
 .c-nav__menu {
